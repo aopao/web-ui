@@ -3,6 +3,9 @@ web-ui
 
 基于[layui](http://www.layui.com/) v2.3.0的一套后台系统界面。
 
+## 系统原型
+
+[智慧党建](https://pro.modao.cc/app/3pmYgsQBYNnAs0EtQuBinl7YpugIKox)
 
 ## 目录结构
 	
@@ -42,7 +45,7 @@ web-ui
 
 - 使用layui的模块加载自定义组件
 
-## 其他要求
+## 相关要求
 
 * 以 layUI 和 Jquery1.8.3 为核心。
 * 方便的多主题切换（不止皮肤，还包括布局）。
@@ -57,6 +60,7 @@ web-ui
 * 除非真正的表格，禁止使用table。
 * 避免在 html 标签中书写 style 属性或者和样式相关的代码。
 * 在移动设备（iPad）可以基本正常操作。
+
 
 ## 本周任务
 

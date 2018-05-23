@@ -1,0 +1,55 @@
+//_variables
+
+//_reboot
+
+//_grid
+
+//_mixins
+
+//_theme
+
+
+//_layout
+.layui-layout-master {
+  .layui-header {
+    position: relative;
+    z-index: 1000;
+    height: 86px;
+    background-color: #23262E;
+  }
+  .layui-side {
+    position: fixed;
+    left: 0;
+    top: 86px;
+    width: 256px;
+    background-color: #393D49;
+    -webkit-box-shadow: 2px 0 6px rgba(0,21,41,.35);
+    box-shadow: 2px 0 6px rgba(0,21,41,.35);
+    overflow-x: hidden;
+  }
+  .layui-body {
+    position: absolute;
+    left: 256px;
+    right: 0;
+    top: 86px;
+    bottom: 44px;
+    z-index: 998;
+    width: auto;
+    overflow: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+  .layui-footer {
+    position: fixed;
+    left: 256px;
+    right: 0;
+    bottom: 0;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 15px;
+    background-color: #eee;
+  }
+  .layui-nav-tree {
+    width: 100%;
+  }
+}
