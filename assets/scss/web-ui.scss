@@ -8,48 +8,110 @@
 
 //_theme
 
-
 //_layout
-.layui-layout-master {
-  .layui-header {
-    position: relative;
-    z-index: 1000;
-    height: 86px;
-    background-color: #23262E;
-  }
-  .layui-side {
-    position: fixed;
-    left: 0;
-    top: 86px;
-    width: 256px;
-    background-color: #393D49;
-    -webkit-box-shadow: 2px 0 6px rgba(0,21,41,.35);
-    box-shadow: 2px 0 6px rgba(0,21,41,.35);
-    overflow-x: hidden;
-  }
-  .layui-body {
-    position: absolute;
-    left: 256px;
-    right: 0;
-    top: 86px;
-    bottom: 44px;
-    z-index: 998;
-    width: auto;
-    overflow: hidden;
-    overflow-y: auto;
-    box-sizing: border-box;
-  }
-  .layui-footer {
-    position: fixed;
-    left: 256px;
-    right: 0;
-    bottom: 0;
-    height: 44px;
-    line-height: 44px;
-    padding: 0 15px;
-    background-color: #eee;
-  }
-  .layui-nav-tree {
-    width: 100%;
-  }
+
+.layui-header {
+  position: relative;
+  z-index: 1000;
+  height: 86px;
+  background-color: #23262E;
+}
+.layui-header .logo {
+  position: absolute;
+  left: 20px;
+  top: 18px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 28px;
+  font-family: simhei;
+  color: #fff;
+}
+.layui-header .logo img {
+  margin-right: 10px;
+  display: inline-block;
+  width: 40px;
+  height: auto;
+  vertical-align: middle;
+}
+.layui-header .logo:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  vertical-align: middle;
+}
+.layui-side {
+  position: fixed;
+  left: 0;
+  top: 86px;
+  width: 220px;
+  background-color: #393D49;
+  -webkit-box-shadow: 2px 0 6px rgba(0,21,41,.35);
+  box-shadow: 2px 0 6px rgba(0,21,41,.35);
+  overflow-x: hidden;
+}
+.layui-body {
+  position: absolute;
+  left: 220px;
+  right: 0;
+  top: 86px;
+  bottom: 0;
+  z-index: 998;
+  width: auto;
+  overflow: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+.layui-nav-tree {
+  width: 100%;
+}
+.layui-nav-tree .layui-nav-item>a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.layui-nav-tree .layui-nav-item a {
+  padding-left: 45px;
+  padding-right: 30px;
+  height: 40px;
+  line-height: 40px;
+}
+.layui-nav-tree .layui-nav-item .layui-icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  margin-top: -20px;
+}
+.child-iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background-color: #efefef;
+}
+.index-panel-tips {
+  padding-top: 15px;
+}
+.index-panel-tips .layui-tips {
+  padding: 16px;
+  height: 48px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.index-panel-model .layui-model {
+  padding: 16px;
+  height: 80px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.index-panel-list {
+  margin-bottom: 10px;
+}
+.index-panel-list .layui-card-header {
+  padding: 0 16px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 16px;
+}
+.index-panel-list .layui-card-body {
+  height: 240px;
 }
