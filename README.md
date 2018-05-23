@@ -3,6 +3,11 @@ web-ui
 
 基于[layui](http://www.layui.com/) v2.3.0的一套后台系统界面。
 
+## 如何使用
+```
+git clone git@github.com:rs-sos/web-ui.git
+```
+
 ## 系统原型
 
 [智慧党建](https://pro.modao.cc/app/3pmYgsQBYNnAs0EtQuBinl7YpugIKox)
