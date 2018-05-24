@@ -11,7 +11,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="../layui/css/layui.css">
-    <link rel="stylesheet" href="../assets/css/web-ui.css">
+    <!--滚动条插件-->
+    <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body class="page_body">
     <div class="layui-fluid">
@@ -23,32 +25,32 @@
             </div>
         </div>
         <div class="layui-row layui-col-space15 index-panel-model">
-            <div class="layui-col-md2">
+            <div class="layui-col-md2 layui-col-sm6">
                 <div class="layui-model layui-bg-black">
                     重点工作
                 </div>
             </div>
-            <div class="layui-col-md2">
+            <div class="layui-col-md2 layui-col-sm6">
                 <div class="layui-model layui-bg-cyan">
                     党建E图
                 </div>
             </div>
-            <div class="layui-col-md2">
+            <div class="layui-col-md2 layui-col-sm6">
                 <div class="layui-model layui-bg-black">
                     民情E吧
                 </div>
             </div>
-            <div class="layui-col-md2">
+            <div class="layui-col-md2 layui-col-sm6">
                 <div class="layui-model layui-bg-green">
                     基层民主协商
                 </div>
             </div>
-            <div class="layui-col-md2">
+            <div class="layui-col-md2 layui-col-sm6">
                 <div class="layui-model layui-bg-cyan">
                     在职党员进社区
                 </div>
             </div>
-            <div class="layui-col-md2">
+            <div class="layui-col-md2 layui-col-sm6">
                 <div class="layui-model layui-bg-green">
                     党建云会议
                 </div>
@@ -88,6 +90,7 @@
                             <li class="layui-this">两列列表</li>
                             <li>三列列表</li>
                             <li>四列列表</li>
+                            <li>五列列表</li>
                         </ul>
                         <div class="layui-tab-content">
                             <div class="layui-tab-item layui-show">
@@ -97,14 +100,18 @@
                                             <a href="javascript:;"><span>名称</span><em>时间</em></a>
                                         </dt>
                                         <dd>
-                                            <ul>
-                                                <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，</span><em>2018-05-24</em></a></li>
-                                                <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，</span><em>2018-05-24</em></a></li>
-                                                <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，</span><em>2018-05-24</em></a></li>
-                                                <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，</span><em>2018-05-24</em></a></li>
-                                                <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，</span><em>2018-05-24</em></a></li>
-                                                <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，</span><em>2018-05-24</em></a></li>
-                                            </ul>
+                                            <div class="layui-list-scroll">
+                                                <ul>
+                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，</span><em>2018-05-24</em></a></li>
+                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，</span><em>2018-05-24</em></a></li>
+                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，</span><em>2018-05-24</em></a></li>
+                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，</span><em>2018-05-24</em></a></li>
+                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，</span><em>2018-05-24</em></a></li>
+                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，</span><em>2018-05-24</em></a></li>
+                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，</span><em>2018-05-24</em></a></li>
+                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，</span><em>2018-05-24</em></a></li>
+                                                </ul>
+                                            </div>
                                         </dd>
                                     </dl>
                                 </div>
@@ -116,14 +123,15 @@
                                             <a href="javascript:;"><span>名称</span><span>地点</span><span>时间</span></a>
                                         </dt>
                                         <dd>
-                                            <ul>
-                                                <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感</span><span>学院都市常盘台</span><span>2018-05-24</span></a></li>
-                                                <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感</span><span>学院都市常盘台</span><span>2018-05-24</span></a></li>
-                                                <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感</span><span>学院都市常盘台</span><span>2018-05-24</span></a></li>
-                                                <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感</span><span>学院都市常盘台</span><span>2018-05-24</span></a></li>
-                                                <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感</span><span>学院都市常盘台</span><span>2018-05-24</span></a></li>
-                                                <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感</span><span>学院都市常盘台</span><span>2018-05-24</span></a></li>
-                                            </ul>
+                                            <div class="layui-list-scroll">
+                                                <ul>
+                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感</span><span>学院都市常盘台</span><span>2018-05-24</span></a></li>
+                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感</span><span>学院都市常盘台</span><span>2018-05-24</span></a></li>
+                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感</span><span>学院都市常盘台</span><span>2018-05-24</span></a></li>
+                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感</span><span>学院都市常盘台</span><span>2018-05-24</span></a></li>
+                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感</span><span>学院都市常盘台</span><span>2018-05-24</span></a></li>
+                                                </ul>
+                                            </div>
                                         </dd>
                                     </dl>
                                 </div>
@@ -135,14 +143,35 @@
                                             <a href="javascript:;"><span>党组织名称</span><span>地点</span><span>类型</span></span><span>时间</span></a>
                                         </dt>
                                         <dd>
-                                            <ul>
-                                                <li><a href="javascript:;" title="昆明经济技术开发区工作委员会"><span>昆明经济技术开发区工作委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>党员教育</span><span>2018-05-24</span></a></li>
-                                                <li><a href="javascript:;" title="昆明市呈贡区洛羊街道工作委员会"><span>昆明市呈贡区洛羊街道工作委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>志愿服务</span><span>2018-05-24</span></a></li>
-                                                <li><a href="javascript:;" title="昆明市官渡区阿拉街道工作委员会"><span>昆明市官渡区阿拉街道工作委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>干部党员教育</span><span>2018-05-24</span></a></li>
-                                                <li><a href="javascript:;" title="昆明经济技术开发区非公有制经济组织和社会组织委员会"><span>昆明经济技术开发区非公有制经济组织和社会组织委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>党员教育</span><span>2018-05-24</span></a></li>
-                                                <li><a href="javascript:;" title="昆明经济技术开发区社会事业局委员会"><span>昆明经济技术开发区社会事业局委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>志愿服务</span><span>2018-05-24</span></a></li>
-                                                <li><a href="javascript:;" title="昆明经济技术开发区投资开发（集团）有限公司委员会"><span>昆明经济技术开发区投资开发（集团）有限公司委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>志愿服务</span><span>2018-05-24</span></a></li>
-                                            </ul>
+                                            <div class="layui-list-scroll">
+                                                <ul>
+                                                    <li><a href="javascript:;" title="昆明经济技术开发区工作委员会"><span>昆明经济技术开发区工作委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>党员教育</span><span>2018-05-24</span></a></li>
+                                                    <li><a href="javascript:;" title="昆明市呈贡区洛羊街道工作委员会"><span>昆明市呈贡区洛羊街道工作委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>志愿服务</span><span>2018-05-24</span></a></li>
+                                                    <li><a href="javascript:;" title="昆明市官渡区阿拉街道工作委员会"><span>昆明市官渡区阿拉街道工作委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>干部党员教育</span><span>2018-05-24</span></a></li>
+                                                    <li><a href="javascript:;" title="昆明经济技术开发区非公有制经济组织和社会组织委员会"><span>昆明经济技术开发区非公有制经济组织和社会组织委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>党员教育</span><span>2018-05-24</span></a></li>
+                                                    <li><a href="javascript:;" title="昆明经济技术开发区投资开发（集团）有限公司委员会"><span>昆明经济技术开发区投资开发（集团）有限公司委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>志愿服务</span><span>2018-05-24</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="layui-tab-item">
+                                <div class="layui-list layui-list-col5">
+                                    <dl>
+                                        <dt>
+                                            <a href="javascript:;"><span>党组织名称</span><span>地点</span><span>类型</span></span><span>时间</span></a>
+                                        </dt>
+                                        <dd>
+                                            <div class="layui-list-scroll">
+                                                <ul>
+                                                    <li><a href="javascript:;" title="昆明经济技术开发区工作委员会"><span>昆明经济技术开发区工作委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>党员教育</span><span>2018-05-24</span></a></li>
+                                                    <li><a href="javascript:;" title="昆明市呈贡区洛羊街道工作委员会"><span>昆明市呈贡区洛羊街道工作委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>志愿服务</span><span>2018-05-24</span></a></li>
+                                                    <li><a href="javascript:;" title="昆明市官渡区阿拉街道工作委员会"><span>昆明市官渡区阿拉街道工作委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>干部党员教育</span><span>2018-05-24</span></a></li>
+                                                    <li><a href="javascript:;" title="昆明经济技术开发区非公有制经济组织和社会组织委员会"><span>昆明经济技术开发区非公有制经济组织和社会组织委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>党员教育</span><span>2018-05-24</span></a></li>
+                                                    <li><a href="javascript:;" title="昆明经济技术开发区投资开发（集团）有限公司委员会"><span>昆明经济技术开发区投资开发（集团）有限公司委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>志愿服务</span><span>2018-05-24</span></a></li>
+                                                </ul>
+                                            </div>
                                         </dd>
                                     </dl>
                                 </div>
@@ -178,14 +207,18 @@
 
 
 <script type="text/javascript" src="../layui/layui.js"></script>
+<script src="../assets/js/jquery-1.8.3.min.js"></script>
 <script src="../assets/js/common.js"></script>
+<!--滚动条插件    -->
+<script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!--图表组件-->
 <script src="../assets/js/echarts.min.js"></script>
 <script>
 
 
 
 
-layui.use('carousel', function(){
+layui.use(['carousel'], function(){
     var carousel = layui.carousel;
     //建造实例
     carousel.render({
@@ -198,9 +231,9 @@ layui.use('carousel', function(){
         //,anim: 'updown' //切换动画方式
     });
     carousel.on('change(test1)', function(obj){ //test1来源于对应HTML容器的 lay-filter="test1" 属性值
-        console.log(obj.index); //当前条目的索引
-        console.log(obj.prevIndex); //上一个条目的索引
-        console.log(obj.item); //当前条目的元素对象
+        // console.log(obj.index); //当前条目的索引
+        // console.log(obj.prevIndex); //上一个条目的索引
+        // console.log(obj.item); //当前条目的元素对象
         var optionObj = {};
         var option1 = {
             tooltip : {
@@ -210,7 +243,7 @@ layui.use('carousel', function(){
                 }
             },
             legend: {
-                data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎','百度','谷歌','必应','其他']
+                data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎','百度','谷歌']
             },
             grid: {
                 left: '3%',
@@ -280,18 +313,6 @@ layui.use('carousel', function(){
                     type:'bar',
                     stack: '搜索引擎',
                     data:[120, 132, 101, 134, 290, 230, 220]
-                },
-                {
-                    name:'必应',
-                    type:'bar',
-                    stack: '搜索引擎',
-                    data:[60, 72, 71, 74, 190, 130, 110]
-                },
-                {
-                    name:'其他',
-                    type:'bar',
-                    stack: '搜索引擎',
-                    data:[62, 82, 91, 84, 109, 110, 120]
                 }
             ]
         };
@@ -397,7 +418,7 @@ layui.use('carousel', function(){
                 }
             },
             legend: {
-                data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎','百度','谷歌','必应','其他']
+                data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎','百度','谷歌']
             },
             grid: {
                 left: '3%',
@@ -467,18 +488,6 @@ layui.use('carousel', function(){
                     type:'bar',
                     stack: '搜索引擎',
                     data:[120, 132, 101, 134, 290, 230, 220]
-                },
-                {
-                    name:'必应',
-                    type:'bar',
-                    stack: '搜索引擎',
-                    data:[60, 72, 71, 74, 190, 130, 110]
-                },
-                {
-                    name:'其他',
-                    type:'bar',
-                    stack: '搜索引擎',
-                    data:[62, 82, 91, 84, 109, 110, 120]
                 }
             ]
         };
@@ -486,8 +495,12 @@ layui.use('carousel', function(){
         myChart.setOption(option, true);
     })();
 
+
 });
 
+$(function () {
+    $(".layui-list-scroll").mCustomScrollbar();
+});
 
 
 
