@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../layui/css/layui.css">
     <!--滚动条插件-->
     <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
     <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body class="page_body">
@@ -20,39 +21,55 @@
         <div class="layui-row layui-col-space15 index-panel-tips">
             <div class="layui-col-md12">
                 <div class="layui-tips">
-                    活动提醒
+                    <span><i class="layui-icon layui-icon-speaker"></i>活动提醒：</span>
+                    <div class="layui-tips-scroll">
+                        <div class="bd">
+                            <ul>
+                                <li><a href="#">昌宏社区4月主题党日联合“两新”党组织开展全民阅读宣传活动</a></li>
+                                <li><a href="#">联合开展文明卫生志愿活动</a></li>
+                                <li><a href="#">3月固定活动日、专题讨论党的十九大</a></li>
+                                <li><a href="#">4月固定活动日，组织观看“厉害了，我的国”</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="layui-row layui-col-space15 index-panel-model">
             <div class="layui-col-md2 layui-col-sm6">
-                <div class="layui-model layui-bg-black">
+                <div class="layui-model">
                     重点工作
+                    <i class="layui-icon layui-icon-read"></i>
                 </div>
             </div>
             <div class="layui-col-md2 layui-col-sm6">
-                <div class="layui-model layui-bg-cyan">
+                <div class="layui-model">
                     党建E图
+                    <i class="layui-icon layui-icon-carousel"></i>
                 </div>
             </div>
             <div class="layui-col-md2 layui-col-sm6">
-                <div class="layui-model layui-bg-black">
+                <div class="layui-model">
                     民情E吧
+                    <i class="layui-icon layui-icon-layouts"></i>
                 </div>
             </div>
             <div class="layui-col-md2 layui-col-sm6">
-                <div class="layui-model layui-bg-green">
+                <div class="layui-model">
                     基层民主协商
+                    <i class="layui-icon layui-icon-user"></i>
                 </div>
             </div>
             <div class="layui-col-md2 layui-col-sm6">
-                <div class="layui-model layui-bg-cyan">
+                <div class="layui-model">
                     在职党员进社区
+                    <i class="layui-icon layui-icon-survey"></i>
                 </div>
             </div>
             <div class="layui-col-md2 layui-col-sm6">
-                <div class="layui-model layui-bg-green">
+                <div class="layui-model">
                     党建云会议
+                    <i class="layui-icon layui-icon-website"></i>
                 </div>
             </div>
         </div>
@@ -60,15 +77,32 @@
         <div class="layui-row layui-col-space15 index-panel-list">
             <div class="layui-col-md6">
                 <div class="layui-card">
-                    <div class="layui-card-header">活动列表</div>
+                    <div class="layui-card-header">活动列表<a class="layui-fr" href="javascript:;">更多<i class="layui-icon layui-icon-next" style="margin-left: 5px; font-size: 12px;"></i></a></div>
                     <div class="layui-card-body">
-
+                        <div class="layui-list layui-list-col4">
+                            <dl>
+                                <dt class="layui-list-header">
+                                    <a href="javascript:;"><span>活动名称</span><span>类型</span><span>组织名称</span><span>时间</span></a>
+                                </dt>
+                                <dd class="layui-list-content layui-list-scrollTop">
+                                    <ul>
+                                        <li><a href="javascript:;" title="创新载体 实现纪律教育全覆盖"><span>创新载体 实现纪律教育全覆盖</span><span>党员活动日</span><span>第一支部</span><span>2018-05-24</span></a></li>
+                                        <li><a href="javascript:;" title="传承中华美德，缅怀英模活动  "><span>传承中华美德，缅怀英模活动  </span><span>党员活动日</span><span>区委办</span><span>2018-05-24</span></a></li>
+                                        <li><a href="javascript:;" title="点亮万家灯火光明温暖人生"><span>点亮万家灯火光明温暖人生</span><span>党员活动日</span><span>经济开发区组织部</span><span>2018-05-24</span></a></li>
+                                        <li><a href="javascript:;" title="迎接新征程  为远程教育工作奋斗圆梦想  "><span>迎接新征程  为远程教育工作奋斗圆梦想 </span><span>党员活动日</span><span>文广局</span><span>2018-05-24</span></a></li>
+                                        <li><a href="javascript:;" title="办好百姓事  聚力惠民生  "><span>办好百姓事  聚力惠民生  </span><span>党员活动日</span><span>街道委员会</span><span>2018-05-24</span></a></li>
+                                        <li><a href="javascript:;" title="点亮万家灯火光明温暖人生"><span>点亮万家灯火光明温暖人生</span><span>党员活动日</span><span>第二支部</span><span>2018-05-24</span></a></li>
+                                        <li><a href="javascript:;" title="迎接新征程  为远程教育工作奋斗圆梦想  "><span>迎接新征程  为远程教育工作奋斗圆梦想 </span><span>党员活动日</span><span>文广局</span><span>2018-05-24</span></a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="layui-col-md6">
                 <div class="layui-card">
-                    <div class="layui-card-header">统计图表</div>
+                    <div class="layui-card-header">数据分析</div>
                     <div class="layui-card-body">
                         <div class="layui-carousel-container">
                             <div class="layui-carousel" id="test1" lay-filter="test1">
@@ -85,95 +119,55 @@
             </div>
             <div class="layui-col-md6">
                 <div class="layui-card">
-                    <div class="layui-tab layui-tab-brief" lay-filter="">
+                    <div class="layui-tab layui-tab-brief layui-tab-scrollleft" lay-filter="">
                         <ul class="layui-tab-title">
-                            <li class="layui-this">两列列表</li>
-                            <li>三列列表</li>
-                            <li>四列列表</li>
-                            <li>五列列表</li>
+                            <li class="layui-this">党员先锋分排行</li>
+                            <li>党员堡垒分排行</li>
                         </ul>
                         <div class="layui-tab-content">
-                            <div class="layui-tab-item layui-show">
-                                <div class="layui-list layui-list-col2">
-                                    <dl>
-                                        <dt>
-                                            <a href="javascript:;"><span>名称</span><em>时间</em></a>
-                                        </dt>
-                                        <dd>
-                                            <div class="layui-list-scroll">
+                            <div class="layui-tab-contentInner">
+                                <div class="layui-tab-item layui-show">
+                                    <div class="layui-list layui-list-col5">
+                                        <dl>
+                                            <dt class="layui-list-header">
+                                                <a href="javascript:;"><span>排行</span><span>姓名</span><span>时间</span><span>得分</span><span>组织名称</span></a>
+                                            </dt>
+                                            <dd class="layui-list-content layui-list-scroll">
                                                 <ul>
-                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，</span><em>2018-05-24</em></a></li>
-                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，</span><em>2018-05-24</em></a></li>
-                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，</span><em>2018-05-24</em></a></li>
-                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，</span><em>2018-05-24</em></a></li>
-                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，</span><em>2018-05-24</em></a></li>
-                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，</span><em>2018-05-24</em></a></li>
-                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，</span><em>2018-05-24</em></a></li>
-                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，</span><em>2018-05-24</em></a></li>
+                                                    <li><a href="javascript:;"><span>第一名<i class="layui-icon layui-icon-fire"></i></span><span>玛法里奥</span><span>2018-05-25</span><span>90</span><span>株洲市新桥镇湖丘村支部委员会</span></a></li>
+                                                    <li><a href="javascript:;"><span>第二名<i class="layui-icon layui-icon-fire"></i></span><span>伊利丹</span><span>2018-05-24</span><span>85</span><span>株洲市新桥镇湖丘村支部委员会</span></a></li>
+                                                    <li><a href="javascript:;"><span>第三名<i class="layui-icon layui-icon-fire"></i></span><span>洛萨</span><span>2018-05-24</span><span>82</span><span>株洲市新桥镇湖丘村支部委员会</span></a></li>
+                                                    <li><a href="javascript:;"><span>第四名</span><span>麦迪文</span><span>2018-05-25</span><span>80</span><span>株洲市新桥镇湖丘村支部委员会</span></a></li>
+                                                    <li><a href="javascript:;"><span>第五名</span><span>达拉然</span><span>2018-05-23</span><span>79</span><span>株洲市新桥镇湖丘村支部委员会</span></a></li>
                                                 </ul>
-                                            </div>
-                                        </dd>
-                                    </dl>
+                                            </dd>
+                                        </dl>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="layui-tab-item">
-                                <div class="layui-list layui-list-col3">
-                                    <dl>
-                                        <dt>
-                                            <a href="javascript:;"><span>名称</span><span>地点</span><span>时间</span></a>
-                                        </dt>
-                                        <dd>
-                                            <div class="layui-list-scroll">
-                                                <ul>
-                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感</span><span>学院都市常盘台</span><span>2018-05-24</span></a></li>
-                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感</span><span>学院都市常盘台</span><span>2018-05-24</span></a></li>
-                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感</span><span>学院都市常盘台</span><span>2018-05-24</span></a></li>
-                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感</span><span>学院都市常盘台</span><span>2018-05-24</span></a></li>
-                                                    <li><a href="javascript:;" title="视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感，"><span>视觉疲劳的形成往往是由于颜色过于丰富或过于单一形成的麻木感</span><span>学院都市常盘台</span><span>2018-05-24</span></a></li>
-                                                </ul>
-                                            </div>
-                                        </dd>
-                                    </dl>
-                                </div>
-                            </div>
-                            <div class="layui-tab-item">
-                                <div class="layui-list layui-list-col4">
-                                    <dl>
-                                        <dt>
-                                            <a href="javascript:;"><span>党组织名称</span><span>地点</span><span>类型</span></span><span>时间</span></a>
-                                        </dt>
-                                        <dd>
-                                            <div class="layui-list-scroll">
-                                                <ul>
-                                                    <li><a href="javascript:;" title="昆明经济技术开发区工作委员会"><span>昆明经济技术开发区工作委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>党员教育</span><span>2018-05-24</span></a></li>
-                                                    <li><a href="javascript:;" title="昆明市呈贡区洛羊街道工作委员会"><span>昆明市呈贡区洛羊街道工作委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>志愿服务</span><span>2018-05-24</span></a></li>
-                                                    <li><a href="javascript:;" title="昆明市官渡区阿拉街道工作委员会"><span>昆明市官渡区阿拉街道工作委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>干部党员教育</span><span>2018-05-24</span></a></li>
-                                                    <li><a href="javascript:;" title="昆明经济技术开发区非公有制经济组织和社会组织委员会"><span>昆明经济技术开发区非公有制经济组织和社会组织委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>党员教育</span><span>2018-05-24</span></a></li>
-                                                    <li><a href="javascript:;" title="昆明经济技术开发区投资开发（集团）有限公司委员会"><span>昆明经济技术开发区投资开发（集团）有限公司委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>志愿服务</span><span>2018-05-24</span></a></li>
-                                                </ul>
-                                            </div>
-                                        </dd>
-                                    </dl>
-                                </div>
-                            </div>
-                            <div class="layui-tab-item">
-                                <div class="layui-list layui-list-col5">
-                                    <dl>
-                                        <dt>
-                                            <a href="javascript:;"><span>党组织名称</span><span>地点</span><span>类型</span></span><span>时间</span></a>
-                                        </dt>
-                                        <dd>
-                                            <div class="layui-list-scroll">
-                                                <ul>
-                                                    <li><a href="javascript:;" title="昆明经济技术开发区工作委员会"><span>昆明经济技术开发区工作委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>党员教育</span><span>2018-05-24</span></a></li>
-                                                    <li><a href="javascript:;" title="昆明市呈贡区洛羊街道工作委员会"><span>昆明市呈贡区洛羊街道工作委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>志愿服务</span><span>2018-05-24</span></a></li>
-                                                    <li><a href="javascript:;" title="昆明市官渡区阿拉街道工作委员会"><span>昆明市官渡区阿拉街道工作委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>干部党员教育</span><span>2018-05-24</span></a></li>
-                                                    <li><a href="javascript:;" title="昆明经济技术开发区非公有制经济组织和社会组织委员会"><span>昆明经济技术开发区非公有制经济组织和社会组织委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>党员教育</span><span>2018-05-24</span></a></li>
-                                                    <li><a href="javascript:;" title="昆明经济技术开发区投资开发（集团）有限公司委员会"><span>昆明经济技术开发区投资开发（集团）有限公司委员会</span><span>昆明市呈贡区鸿翔一心堂药业集团</span><span>志愿服务</span><span>2018-05-24</span></a></li>
-                                                </ul>
-                                            </div>
-                                        </dd>
-                                    </dl>
+                                <div class="layui-tab-item">
+                                    <div class="layui-list layui-list-col3">
+                                        <div class="layui-list layui-list-col5">
+                                            <dl>
+                                                <dt class="layui-list-header">
+                                                    <a href="javascript:;"><span>排行</span><span>姓名</span><span>时间</span><span>得分</span><span>组织名称</span></a>
+                                                </dt>
+                                                <dd class="layui-list-content layui-list-scroll">
+                                                    <ul>
+                                                        <li><a href="javascript:;"><span>第一名<i class="layui-icon layui-icon-fire"></i></span><span>麦迪文</span><span>2018-05-25</span><span>90</span><span>株洲市新桥镇湖丘村支部委员会</span></a></li>
+                                                        <li><a href="javascript:;"><span>第二名<i class="layui-icon layui-icon-fire"></i></span><span>伊利丹</span><span>2018-05-24</span><span>85</span><span>株洲市新桥镇湖丘村支部委员会</span></a></li>
+                                                        <li><a href="javascript:;"><span>第三名<i class="layui-icon layui-icon-fire"></i></span><span>玛法里奥</span><span>2018-05-24</span><span>82</span><span>株洲市新桥镇湖丘村支部委员会</span></a></li>
+                                                        <li><a href="javascript:;"><span>第四名</span><span>达拉然</span><span>2018-05-25</span><span>80</span><span>株洲市新桥镇湖丘村支部委员会</span></a></li>
+                                                        <li><a href="javascript:;"><span>第五名</span><span>洛萨</span><span>2018-05-23</span><span>79</span><span>株洲市新桥镇湖丘村支部委员会</span></a></li>
+                                                        <li><a href="javascript:;"><span>第六名</span><span>玛法里奥</span><span>2018-05-23</span><span>79</span><span>株洲市新桥镇湖丘村支部委员会</span></a></li>
+                                                        <li><a href="javascript:;"><span>第七名</span><span>玛法里奥</span><span>2018-05-23</span><span>79</span><span>株洲市新桥镇湖丘村支部委员会</span></a></li>
+                                                        <li><a href="javascript:;"><span>第八名</span><span>玛法里奥</span><span>2018-05-23</span><span>79</span><span>株洲市新桥镇湖丘村支部委员会</span></a></li>
+                                                        <li><a href="javascript:;"><span>第九名</span><span>玛法里奥</span><span>2018-05-23</span><span>79</span><span>株洲市新桥镇湖丘村支部委员会</span></a></li>
+                                                        <li><a href="javascript:;"><span>第十名</span><span>玛法里奥</span><span>2018-05-23</span><span>79</span><span>株洲市新桥镇湖丘村支部委员会</span></a></li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -184,20 +178,68 @@
                 <div class="layui-card">
                     <div class="layui-tab layui-tab-brief" lay-filter="">
                         <ul class="layui-tab-title">
-                            <li class="layui-this">网站设置</li>
-                            <li>用户管理</li>
-                            <li>权限分配</li>
-                            <li>商品管理</li>
-                            <li>订单管理</li>
+                            <li class="layui-this">政治生日</li>
+                            <li>基本分提醒</li>
+                            <li>先锋分提醒</li>
                         </ul>
                         <div class="layui-tab-content">
                             <div class="layui-tab-item layui-show">
-                                <div id="charts-11" style="height: 100%;"></div>
+                                <div class="layui-list layui-list-col3">
+                                    <dl>
+                                        <dt class="layui-list-header">
+                                            <a href="javascript:;"><span>组织名称</span><span>姓名</span><span>党龄</span></a>
+                                        </dt>
+                                        <dd class="layui-list-content layui-list-scroll">
+                                            <ul>
+                                                <li><a href="javascript:;" title="中共昆明市官渡区阿拉街道工作委员会"><span>中共昆明市官渡区阿拉街道工作委员会</span><span>倪家乐</span><span>30年</span></a></li>
+                                                <li><a href="javascript:;" title="中共航天社区支部委员会"><span>中共航天社区支部委员会</span><span>阳闫旭</span><span>19年</span></a></li>
+                                                <li><a href="javascript:;" title="中共阿拉社区白水塘支部委员会"><span>中共阿拉社区白水塘支部委员会</span><span>秦新华</span><span>21年</span></a></li>
+                                                <li><a href="javascript:;" title="中共阿拉社区金线洞支部委员会"><span>中共阿拉社区金线洞支部委员会</span><span>赖晓乐</span><span>6年</span></a></li>
+                                                <li><a href="javascript:;" title="中共阿拉社区阿拉支部委员会"><span>中共阿拉社区阿拉支部委员会</span><span>乐佳</span><span>12年</span></a></li>
+                                                <li><a href="javascript:;" title="中共阿拉社区金线洞支部委员会"><span>中共阿拉社区金线洞支部委员会</span><span>明凯</span><span>17年</span></a></li>
+                                                <li><a href="javascript:;" title="中共昌宏支部委员会"><span>中共昌宏支部委员会</span><span>严君泽</span><span>26年</span></a></li>
+                                                <li><a href="javascript:;" title="中共高坡社区小普莲支部委员会"><span>中共高坡社区小普莲支部委员会</span><span>简自豪</span><span>14年</span></a></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
                             </div>
-                            <div class="layui-tab-item">2</div>
-                            <div class="layui-tab-item">3</div>
-                            <div class="layui-tab-item">4</div>
-                            <div class="layui-tab-item">4</div>
+                            <div class="layui-tab-item">
+                                <div class="layui-list layui-list-col2">
+                                    <dl>
+                                        <dt class="layui-list-header">
+                                            <a href="javascript:;"><span>名称</span><span>时间</span></a>
+                                        </dt>
+                                        <dd class="layui-list-content layui-list-scroll">
+                                            <ul>
+                                                <li><a href="javascript:;" title="昌宏社区4月主题党日联合“两新”党组织开展全民阅读宣传活动"><span>昌宏社区4月主题党日联合“两新”党组织开展全民阅读宣传活动</span><span>2018-05-24</span></a></li>
+                                                <li><a href="javascript:;" title="昌宏社区4月主题党日联合“两新”党组织开展全民阅读宣传活动"><span>昌宏社区4月主题党日联合“两新”党组织开展全民阅读宣传活动</span><span>2018-05-24</span></a></li>
+                                                <li><a href="javascript:;" title="昌宏社区4月主题党日联合“两新”党组织开展全民阅读宣传活动"><span>昌宏社区4月主题党日联合“两新”党组织开展全民阅读宣传活动</span><span>2018-05-24</span></a></li>
+                                                <li><a href="javascript:;" title="昌宏社区4月主题党日联合“两新”党组织开展全民阅读宣传活动"><span>昌宏社区4月主题党日联合“两新”党组织开展全民阅读宣传活动</span><span>2018-05-24</span></a></li>
+                                                <li><a href="javascript:;" title="昌宏社区4月主题党日联合“两新”党组织开展全民阅读宣传活动"><span>昌宏社区4月主题党日联合“两新”党组织开展全民阅读宣传活动</span><span>2018-05-24</span></a></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="layui-tab-item">
+                                <div class="layui-list layui-list-col2">
+                                    <dl>
+                                        <dt class="layui-list-header">
+                                            <a href="javascript:;"><span>名称</span><span>时间</span></a>
+                                        </dt>
+                                        <dd class="layui-list-content">
+                                            <ul>
+                                                <li><a href="javascript:;" title="机关第一党支部专题党课----学习新思想，牢记新使命，"><span>机关第一党支部专题党课----学习新思想，牢记新使命</span><span>2018-05-24</span></a></li>
+                                                <li><a href="javascript:;" title="机关第一党支部专题党课----学习新思想，牢记新使命，"><span>机关第一党支部专题党课----学习新思想，牢记新使命</span><span>2018-05-24</span></a></li>
+                                                <li><a href="javascript:;" title="机关第一党支部专题党课----学习新思想，牢记新使命，"><span>机关第一党支部专题党课----学习新思想，牢记新使命</span><span>2018-05-24</span></a></li>
+                                                <li><a href="javascript:;" title="机关第一党支部专题党课----学习新思想，牢记新使命，"><span>机关第一党支部专题党课----学习新思想，牢记新使命</span><span>2018-05-24</span></a></li>
+                                                <li><a href="javascript:;" title="机关第一党支部专题党课----学习新思想，牢记新使命，"><span>机关第一党支部专题党课----学习新思想，牢记新使命</span><span>2018-05-24</span></a></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -209,15 +251,15 @@
 <script type="text/javascript" src="../layui/layui.js"></script>
 <script src="../assets/js/jquery-1.8.3.min.js"></script>
 <script src="../assets/js/common.js"></script>
+<!--轮播插件    -->
+<script src="../assets/js/jquery.SuperSlide.2.1.1.js"></script>
 <!--滚动条插件    -->
 <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <!--图表组件-->
 <script src="../assets/js/echarts.min.js"></script>
 <script>
 
-
-
-
+// 图表轮播
 layui.use(['carousel'], function(){
     var carousel = layui.carousel;
     //建造实例
@@ -228,6 +270,7 @@ layui.use(['carousel'], function(){
         ,arrow: 'none' //始终显示箭头
         ,trigger: 'mouseover'
         ,indicator: 'outside'
+        // ,interval: '4000'
         //,anim: 'updown' //切换动画方式
     });
     carousel.on('change(test1)', function(obj){ //test1来源于对应HTML容器的 lay-filter="test1" 属性值
@@ -243,7 +286,7 @@ layui.use(['carousel'], function(){
                 }
             },
             legend: {
-                data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎','百度','谷歌']
+                data:['主题党日','志愿服务','党员大会','支部委员会','党员教育','组织生活会','党工委会']
             },
             grid: {
                 left: '3%',
@@ -254,7 +297,7 @@ layui.use(['carousel'], function(){
             xAxis : [
                 {
                     type : 'category',
-                    data : ['周一','周二','周三','周四','周五','周六','周日']
+                    data : ['一月','二月','三月','四月','五月','六月','七月']
                 }
             ],
             yAxis : [
@@ -264,30 +307,30 @@ layui.use(['carousel'], function(){
             ],
             series : [
                 {
-                    name:'直接访问',
+                    name:'主题党日',
                     type:'bar',
                     data:[320, 332, 301, 334, 390, 330, 320]
                 },
                 {
-                    name:'邮件营销',
+                    name:'志愿服务',
                     type:'bar',
                     stack: '广告',
                     data:[120, 132, 101, 134, 90, 230, 210]
                 },
                 {
-                    name:'联盟广告',
+                    name:'党员大会',
                     type:'bar',
                     stack: '广告',
                     data:[220, 182, 191, 234, 290, 330, 310]
                 },
                 {
-                    name:'视频广告',
+                    name:'支部委员会',
                     type:'bar',
                     stack: '广告',
                     data:[150, 232, 201, 154, 190, 330, 410]
                 },
                 {
-                    name:'搜索引擎',
+                    name:'党员教育',
                     type:'bar',
                     data:[862, 1018, 964, 1026, 1679, 1600, 1570],
                     markLine : {
@@ -302,14 +345,14 @@ layui.use(['carousel'], function(){
                     }
                 },
                 {
-                    name:'百度',
+                    name:'组织生活会',
                     type:'bar',
                     barWidth : 5,
                     stack: '搜索引擎',
                     data:[620, 732, 701, 734, 1090, 1130, 1120]
                 },
                 {
-                    name:'谷歌',
+                    name:'党工委会',
                     type:'bar',
                     stack: '搜索引擎',
                     data:[120, 132, 101, 134, 290, 230, 220]
@@ -321,7 +364,7 @@ layui.use(['carousel'], function(){
                 trigger: 'axis'
             },
             legend: {
-                data:['邮件营销','联盟广告','视频广告','直接访问','搜索引擎']
+                data:['主题党日','志愿服务','党员大会','支部委员会','党员教育']
             },
             grid: {
                 left: '3%',
@@ -332,38 +375,38 @@ layui.use(['carousel'], function(){
             xAxis: {
                 type: 'category',
                 boundaryGap: false,
-                data: ['周一','周二','周三','周四','周五','周六','周日']
+                data : ['一月','二月','三月','四月','五月','六月','七月']
             },
             yAxis: {
                 type: 'value'
             },
             series: [
                 {
-                    name:'邮件营销',
+                    name:'主题党日',
                     type:'line',
                     stack: '总量',
                     data:[120, 132, 101, 134, 90, 230, 210]
                 },
                 {
-                    name:'联盟广告',
+                    name:'志愿服务',
                     type:'line',
                     stack: '总量',
                     data:[220, 182, 191, 234, 290, 330, 310]
                 },
                 {
-                    name:'视频广告',
+                    name:'党员大会',
                     type:'line',
                     stack: '总量',
                     data:[150, 232, 201, 154, 190, 330, 410]
                 },
                 {
-                    name:'直接访问',
+                    name:'支部委员会',
                     type:'line',
                     stack: '总量',
                     data:[320, 332, 301, 334, 390, 330, 320]
                 },
                 {
-                    name:'搜索引擎',
+                    name:'党员教育',
                     type:'line',
                     stack: '总量',
                     data:[820, 932, 901, 934, 1290, 1330, 1320]
@@ -378,7 +421,7 @@ layui.use(['carousel'], function(){
             legend: {
                 orient: 'vertical',
                 left: 'left',
-                data: ['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
+                data: ['主题党日','志愿服务','党员大会','支部委员会','党员教育']
             },
             series : [
                 {
@@ -387,11 +430,11 @@ layui.use(['carousel'], function(){
                     radius : '55%',
                     center: ['50%', '50%'],
                     data:[
-                        {value:335, name:'直接访问'},
-                        {value:310, name:'邮件营销'},
-                        {value:234, name:'联盟广告'},
-                        {value:135, name:'视频广告'},
-                        {value:1548, name:'搜索引擎'}
+                        {value:335, name:'主题党日'},
+                        {value:310, name:'志愿服务'},
+                        {value:234, name:'党员大会'},
+                        {value:135, name:'支部委员会'},
+                        {value:1548, name:'党员教育'}
                     ],
                     itemStyle: {
                         emphasis: {
@@ -420,7 +463,7 @@ layui.use(['carousel'], function(){
                 }
             },
             legend: {
-                data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎','百度','谷歌']
+                data:['主题党日','志愿服务','党员大会','支部委员会','党员教育','组织生活会','党工委会']
             },
             grid: {
                 left: '3%',
@@ -431,7 +474,7 @@ layui.use(['carousel'], function(){
             xAxis : [
                 {
                     type : 'category',
-                    data : ['周一','周二','周三','周四','周五','周六','周日']
+                    data : ['一月','二月','三月','四月','五月','六月','七月']
                 }
             ],
             yAxis : [
@@ -441,30 +484,30 @@ layui.use(['carousel'], function(){
             ],
             series : [
                 {
-                    name:'直接访问',
+                    name:'主题党日',
                     type:'bar',
                     data:[320, 332, 301, 334, 390, 330, 320]
                 },
                 {
-                    name:'邮件营销',
+                    name:'志愿服务',
                     type:'bar',
                     stack: '广告',
                     data:[120, 132, 101, 134, 90, 230, 210]
                 },
                 {
-                    name:'联盟广告',
+                    name:'党员大会',
                     type:'bar',
                     stack: '广告',
                     data:[220, 182, 191, 234, 290, 330, 310]
                 },
                 {
-                    name:'视频广告',
+                    name:'支部委员会',
                     type:'bar',
                     stack: '广告',
                     data:[150, 232, 201, 154, 190, 330, 410]
                 },
                 {
-                    name:'搜索引擎',
+                    name:'党员教育',
                     type:'bar',
                     data:[862, 1018, 964, 1026, 1679, 1600, 1570],
                     markLine : {
@@ -479,14 +522,14 @@ layui.use(['carousel'], function(){
                     }
                 },
                 {
-                    name:'百度',
+                    name:'组织生活会',
                     type:'bar',
                     barWidth : 5,
                     stack: '搜索引擎',
                     data:[620, 732, 701, 734, 1090, 1130, 1120]
                 },
                 {
-                    name:'谷歌',
+                    name:'党工委会',
                     type:'bar',
                     stack: '搜索引擎',
                     data:[120, 132, 101, 134, 290, 230, 220]
@@ -501,7 +544,38 @@ layui.use(['carousel'], function(){
 });
 
 $(function () {
-    $(".layui-list-scroll").mCustomScrollbar();
+    // 菜单左右滚动
+    // $(".index-panel-model").slide({mainCell:".layui-row",autoPlay:true,effect:"leftLoop",vis:6});
+    // 消息提醒
+    $(".layui-tips-scroll").slide({mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",interTime:50});
+    // 标签页滚动
+    $(".layui-tab-scrollleft").slide({
+        titCell:".layui-tab-title li",
+        mainCell:".layui-tab-contentInner",
+        effect:"leftLoop",
+        trigger:"click",
+        startFun: function(i, c, s){
+            console.log(s.find(".layui-list-scroll").eq(i))
+            s.find(".layui-list-scroll").eq(i).mCustomScrollbar({
+                scrollTo: 0,
+                autoHideScrollbar: "true"
+            });
+        }
+    });
+    // 列表上下滚动
+    $(".layui-list-scrollTop").slide({
+        mainCell:"ul",
+        autoPage:true,
+        effect:"topLoop",
+        autoPlay:true,
+        vis:5
+    });
+    // 列表滚动条
+    $(".layui-list-scroll").mCustomScrollbar({
+        scrollTo: 0,
+        autoHideScrollbar: "true"
+    });
+
 });
 
 

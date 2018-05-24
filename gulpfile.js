@@ -5,7 +5,7 @@ var gulp = require('gulp'),
 // 默认任务
 gulp.task('default',['del', 'scss', 'watchScss']);
 
-// sass编译
+// 处理css
 gulp.task('scss', function(){
     gulp.src('./assets/scss/*.scss')
         .pipe(sass({outputStyle: 'expanded'}))

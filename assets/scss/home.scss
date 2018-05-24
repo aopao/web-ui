@@ -1,15 +1,3 @@
-//_variables
-
-//_reboot
-
-//_grid
-
-//_mixins
-
-//_theme
-
-//_layout
-
 .layui-header {
   position: relative;
   z-index: 1000;
@@ -31,7 +19,7 @@
   display: inline-block;
   width: 40px;
   height: auto;
-  vertical-align: middle;
+  vertical-align: -8px;
 }
 .layui-header .logo:after {
   content: '';

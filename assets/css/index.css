@@ -1,0 +1,11 @@
+.layui-fl {
+  float: left !important;
+}
+
+.layui-fr {
+  float: right !important;
+}
+
+.mCSB_inside > .mCSB_container {
+  margin-right: 0;
+}

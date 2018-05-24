@@ -1,18 +1,58 @@
+
+/*活动提醒*/
 .index-panel-tips {
   padding-top: 15px;
 }
 .index-panel-tips .layui-tips {
   padding: 16px;
-  height: 48px;
+  position: relative;
+  line-height: 24px;
+  font-size: 14px;
+  background-color: #fff;
+}
+.layui-tips span i {
+  margin-right: 5px;
+  font-size: 20px;
+  vertical-align: -2px;
+}
+.layui-tips-scroll {
+  position: absolute;
+  left: 120px;
+  right: 16px;
+  top: 16px;
+}
+.layui-tips-scroll .tempWrap {
+  width: 100%!important;
+}
+.layui-tips-scroll ul {overflow:hidden; zoom:1;}
+.layui-tips-scroll ul li {margin-right:20px; float:left; height:24px; line-height:24px;  text-align:left; _display:inline; width:auto !important;}
+.layui-tips-scroll ul li a {
+  padding-left: 50px;
+}
+
+  /*菜单*/
+.index-panel-model .layui-model {
+  padding: 16px 30px;
+  height: 80px;
+  line-height: 48px;
+  font-size: 18px;
   background-color: #fff;
   box-sizing: border-box;
 }
-.index-panel-model .layui-model {
-  padding: 16px;
-  height: 80px;
-  font-size: 16px;
-  background-color: #fff;
-  box-sizing: border-box;
+.index-panel-model .layui-model i {
+  float: right;
+  font-size: 30px;
+  color: #009688;
+}
+@media (max-width: 1600px) {
+  .index-panel-model .layui-model {
+    padding: 16px 16px;
+    font-size: 16px;
+  }
+  .index-panel-model .layui-model i {
+    float: right;
+    font-size: 24px;
+  }
 }
 .index-panel-list {
   margin-bottom: 10px;
@@ -22,6 +62,7 @@
   height: 48px;
   line-height: 48px;
   font-size: 14px;
+  border-bottom: 1px solid #e8e8e8;
 }
 .index-panel-list .layui-card-body {
   height: 240px;
@@ -42,33 +83,33 @@
 .index-panel-list .layui-tab-content {
   height: 240px;
 }
-.layui-list dl {
+
+/*列表*/
+.layui-list a {
+  display: block;
+  overflow: hidden;
+}
+.layui-list-header {
   height: 40px;
   line-height: 40px;
 }
-.layui-list dl a {
+.layui-list-header a {
   display: block;
   font-size: 14px;
   color: #333;
   overflow: hidden;
 }
-.layui-list dl a em {
-  float: right;
-  font-style: normal;
-}
-.layui-list dt {
+.layui-list-header {
   padding: 0 16px;
 }
-.layui-list dt a span {
-  padding-left: 10px;
+.layui-list-header a span {
+  padding-left: 5px;
 }
-.layui-list dt a em {
-  padding-right: 15px;
-}
-.layui-list-scroll {
+.layui-list-content {
   height: 200px;
+  overflow: hidden;
 }
-.layui-list dd ul li {
+.layui-list-content ul li {
   padding: 0 16px;
   height: 40px;
   line-height: 40px;
@@ -83,6 +124,13 @@
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
+  }
+  dl a span+span {
+    float: right;
+    width: auto;
+  }
+  .layui-list-header a span+span {
+    padding-right: 10px;
   }
 }
 .layui-list-col3 {
@@ -103,8 +151,8 @@
     float: right;
     width: auto;
   }
-  dt a span+span+span {
-    padding-right: 15px;
+  .layui-list-header a span+span+span {
+    padding-right: 5px;
   }
 }
 .layui-list-col4 {
@@ -119,17 +167,17 @@
     box-sizing: border-box;
   }
   dl a span+span {
-    width: 30%;
+    width: 20%;
   }
   dl a span+span+span {
-    width: 15%;
+    width: 20%;
   }
   dl a span+span+span+span {
     float: right;
     width: auto;
   }
-  dt a span+span+span+span {
-    padding-right: 15px;
+  .layui-list-header a span+span+span+span {
+    padding-right: 10px;
   }
 }
 .layui-list-col5 {
@@ -143,8 +191,20 @@
     overflow: hidden;
     box-sizing: border-box;
   }
+  dl a span+span+span+span {
+    padding-left: 20px;
+    width: 10%;
+  }
+  dl a span+span+span+span+span {
+    width: 30%;
+    text-align: right;
+  }
+  .layui-list-header a span+span+span+span+span {
+    padding-right: 10px;
+    text-align: right;
+  }
 }
-
+/*轮播*/
 .layui-carousel-container {
   height: 100%;
 }
@@ -171,4 +231,12 @@
 }
 .layui-carousel-container .layui-carousel>[carousel-item]>* {
   background-color: #fff;
+}
+/*标签页切换*/
+.layui-tab-scrollleft .layui-tab-item {
+  display: block;
+}
+.layui-tab-scrollleft .layui-icon-fire {
+  margin-left: 5px;
+  color: #ff1b11;
 }

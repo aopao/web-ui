@@ -37,18 +37,22 @@ git clone git@github.com:rs-sos/web-ui.git
 
 ## 编码规范
 
+> 完整文档请参考[layui页面元素规范与说明](http://www.layui.com/doc/base/element.html)
+
 #### HTML
 
-- 可以使用部分 HTML5 标签，只要保证浏览器兼容。兼容 IE8+，Safari，Chrome，Firefox。
-- 命名统一使用 layui-*
+自定义属性以 lay- 作为前缀;
 
 #### CSS
 
-- 推荐使用 CSS3 属性, 渐进增强, 优雅降级。
+class命名前缀：layui，连接符：-，如：class="layui-form"
+
 
 #### JS
 
-- 使用layui的模块加载自定义组件
+通过layui.use(mods, callback)方法加载模块
+
+
 
 ## 相关要求
 

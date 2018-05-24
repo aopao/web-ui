@@ -21,7 +21,7 @@
   display: inline-block;
   width: 40px;
   height: auto;
-  vertical-align: middle;
+  vertical-align: -8px;
 }
 
 .layui-header .logo:after {
