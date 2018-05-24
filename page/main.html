@@ -73,9 +73,9 @@
                         <div class="layui-carousel-container">
                             <div class="layui-carousel" id="test1" lay-filter="test1">
                                 <div carousel-item>
+                                    <div id="charts-0"></div>
                                     <div id="charts-1"></div>
                                     <div id="charts-2"></div>
-                                    <div id="charts-3"></div>
                                 </div>
                             </div>
                         </div>
@@ -408,6 +408,8 @@ layui.use(['carousel'], function(){
         optionObj[2] = option3;
         var myChart = echarts.init(obj.item[0]);
         myChart.setOption(optionObj[obj.index], true);
+        var prevChart = echarts.init(document.getElementById('charts-'+obj.prevIndex));
+        prevChart.dispose();
     });
     (function() {
         option = {
@@ -491,7 +493,7 @@ layui.use(['carousel'], function(){
                 }
             ]
         };
-        var myChart = echarts.init(document.getElementById('charts-1'));
+        var myChart = echarts.init(document.getElementById('charts-0'));
         myChart.setOption(option, true);
     })();
 
