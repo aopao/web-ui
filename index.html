@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="./assets/css/index.css">
 	<link rel="stylesheet" href="./assets/css/home.css">
 </head>
-<body class="main_body gray">
+<body class="main_body">
 	<div class="layui-layout layui-layout-master">
 		<!-- 顶部 -->
 		<div class="layui-header">
@@ -29,11 +29,11 @@
                             <i class="layui-icon layui-icon-set-sm"></i>设置&nbsp;&nbsp;&nbsp;&nbsp;
                         </a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-theme"></i>主题切换</a></dd>
+                            <dd><a id="themes-btn" href="javascript:;"><i class="layui-icon layui-icon-theme"></i>主题切换</a></dd>
                             <dd><a href="javascript:;"><i class="layui-icon layui-icon-util"></i>退出</a></dd>
                         </dl>
                     </li>
-                    <li class="layui-nav-item"><a href=""><i class="layui-icon layui-icon-home"></i>返回主页</a></li>
+                    <li class="layui-nav-item"><a href=""><i class="layui-icon layui-icon-home"></i>返回</a></li>
 
                 </ul>
             </div>
@@ -210,8 +210,11 @@
 	<script type="text/javascript" src="./layui/layui.js"></script>
 	<script src="./assets/js/common.js"></script>
     <script>
-        layui.use('jquery',function () {
+        layui.use(['form','element','layer','jquery'],function () {
             var $ = layui.jquery;
+            var form = layui.form;
+            var layer = layui.layer;
+            var element = layui.element;
             var $sideSwitch = $('.layui-side-switch');
             var $sideMenu = $('.layui-side-menu');
             var $layBody = $('.layui-body');
@@ -236,6 +239,121 @@
 
                 }
             });
+            //更换皮肤
+            function skins(){
+                var skin = window.sessionStorage.getItem("skin");
+                if(skin){  //如果更换过皮肤
+                    if(window.sessionStorage.getItem("skinValue") != "自定义"){
+                        $("body").addClass(window.sessionStorage.getItem("skin"));
+                    }else{
+                        $(".layui-layout-admin .layui-header").css("background-color",skin.split(',')[0]);
+                        $(".layui-bg-black").css("background-color",skin.split(',')[1]);
+                        $(".hideMenu").css("background-color",skin.split(',')[2]);
+                    }
+                }
+            }
+            skins();
+            $("#themes-btn").click(function(){
+                layer.open({
+                    title : "更换皮肤",
+                    area : ["280px","210px"],
+                    type : "1",
+                    content : '<div class="skins_box" style="padding: 20px 20px 0;">'+
+                    '<form class="layui-form">'+
+                    '<div class="layui-form-item">'+
+                    '<input type="radio" name="skin" value="默认" title="默认" lay-filter="default" checked="">'+
+                    '<input type="radio" name="skin" value="绿色" title="绿色" lay-filter="green">'+
+                    '<input type="radio" name="skin" value="蓝色" title="蓝色" lay-filter="blue">'+
+                    '<input type="radio" name="skin" value="灰色" title="灰色" lay-filter="gray">'+
+                    // '<input type="radio" name="skin" value="自定义" title="自定义" lay-filter="custom">'+
+                    // '<div class="skinCustom">'+
+                    // '<input type="text" class="layui-input topColor" name="topSkin" placeholder="顶部颜色" />'+
+                    // '<input type="text" class="layui-input leftColor" name="leftSkin" placeholder="左侧颜色" />'+
+                    // '<input type="text" class="layui-input menuColor" name="btnSkin" placeholder="顶部菜单按钮" />'+
+                    // '</div>'+
+                    '</div>'+
+                    '<div class="layui-form-item skinBtn">'+
+                    '<a href="javascript:;" class="layui-btn layui-btn-small layui-btn-normal" lay-submit="" lay-filter="changeSkin">确定更换</a>'+
+                    '<a href="javascript:;" class="layui-btn layui-btn-small layui-btn-primary" lay-submit="" lay-filter="noChangeSkin">我再想想</a>'+
+                    '</div>'+
+                    '</form>'+
+                    '</div>',
+                    success : function(index, layero){
+                        var skin = window.sessionStorage.getItem("skin");
+                        if(window.sessionStorage.getItem("skinValue")){
+                            $(".skins_box input[value="+window.sessionStorage.getItem("skinValue")+"]").attr("checked","checked");
+                        };
+                        if($(".skins_box input[value=自定义]").attr("checked")){
+                            $(".skinCustom").css("visibility","inherit");
+                            $(".topColor").val(skin.split(',')[0]);
+                            $(".leftColor").val(skin.split(',')[1]);
+                            $(".menuColor").val(skin.split(',')[2]);
+                        };
+                        form.render();
+                        // $(".skins_box").removeClass("layui-hide");
+                        $(".skins_box .layui-form-radio").on("click",function(){
+                            var skinColor;
+                            if($(this).find("div").text() == "绿色"){
+                                skinColor = "green";
+                            }else if($(this).find("div").text() == "蓝色"){
+                                skinColor = "blue";
+                            }else if($(this).find("div").text() == "灰色"){
+                                skinColor = "gray";
+                            }else if($(this).find("div").text() == "默认"){
+                                skinColor = "";
+                            }
+                            if($(this).find("div").text() != "自定义"){
+                                $(".topColor,.leftColor,.menuColor").val('');
+                                $("body").removeAttr("class").addClass("main_body "+skinColor+"");
+                                // $(".skinCustom").removeAttr("style");
+                                // $(".layui-bg-black,.hideMenu,.layui-layout-admin .layui-header").removeAttr("style");
+                            }else{
+                                // $(".skinCustom").css("visibility","inherit");
+                            }
+                        })
+                        var skinStr,skinColor;
+                        // $(".topColor").blur(function(){
+                        //     $(".layui-layout-admin .layui-header").css("background-color",$(this).val());
+                        // })
+                        // $(".leftColor").blur(function(){
+                        //     $(".layui-bg-black").css("background-color",$(this).val());
+                        // })
+                        // $(".menuColor").blur(function(){
+                        //     $(".hideMenu").css("background-color",$(this).val());
+                        // })
+
+                        form.on("submit(changeSkin)",function(data){
+                            if(data.field.skin != "自定义"){
+                                if(data.field.skin == "绿色"){
+                                    skinColor = "green";
+                                }else if(data.field.skin == "蓝色"){
+                                    skinColor = "blue";
+                                }else if(data.field.skin == "灰色"){
+                                    skinColor = "gray";
+                                }else if(data.field.skin == "默认"){
+                                    skinColor = "";
+                                }
+                                window.sessionStorage.setItem("skin",skinColor);
+                            }
+                            window.sessionStorage.setItem("skinValue",data.field.skin);
+                            $(".child-iframe").contents().find('body').removeAttr("class").addClass("page_body "+window.sessionStorage.getItem("skin")+"");
+                            layer.closeAll("page");
+
+
+                        });
+                        form.on("submit(noChangeSkin)",function(){
+                            $("body").removeAttr("class").addClass("main_body "+window.sessionStorage.getItem("skin")+"");
+                            $(".child-iframe").contents().find('body').removeAttr("class").addClass("page_body "+window.sessionStorage.getItem("skin")+"");
+                            skins();
+                            layer.closeAll("page");
+                        });
+                    },
+                    cancel : function(){
+                        $("body").removeAttr("class").addClass("main_body "+window.sessionStorage.getItem("skin")+"");
+                        skins();
+                    }
+                })
+            })
 
         });
     </script>

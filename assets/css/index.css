@@ -14,7 +14,7 @@
   /*main.html*/
 }
 
-.green a:hover {
+.green .layui-list a:hover {
   color: #038d55;
 }
 
@@ -127,7 +127,7 @@
   /*main.html*/
 }
 
-.blue a:hover {
+.blue .layui-list a:hover {
   color: #244281;
 }
 
@@ -244,7 +244,7 @@
   /*main.html*/
 }
 
-.gray a:hover {
+.gray .layui-list a:hover {
   color: #082a4e;
 }
 
