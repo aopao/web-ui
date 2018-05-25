@@ -23,7 +23,7 @@
 }
 
 .green .layui-header {
-  background-color: #026d41;
+  background-color: #54a785;
 }
 
 .green .layui-side {
@@ -40,6 +40,10 @@
 
 .green .layui-nav .layui-nav-item a {
   color: #333;
+}
+
+.green .layui-nav .layui-nav-child dd.layui-this a, .green .layui-nav-child dd.layui-this {
+  background-color: #038d55;
 }
 
 .green .layui-nav-tree .layui-nav-item a:hover {
@@ -80,11 +84,15 @@
 }
 
 .green .layui-nav .layui-nav-more {
-  border-color: #026d41 transparent transparent;
+  border-color: #038d55 transparent transparent;
 }
 
 .green .layui-nav .layui-nav-mored, .green .layui-nav-itemed > a .layui-nav-more {
   border-color: transparent transparent #038d55;
+}
+
+.green .layui-nav .layui-this:after, .green .layui-nav-bar, .green .layui-nav-tree .layui-nav-itemed:after {
+  background-color: #038d55;
 }
 
 .green .layui-header .layui-nav .layui-nav-more {
@@ -107,6 +115,244 @@
   color: #038d55;
 }
 
+.green .layui-tab-brief > .layui-tab-more li.layui-this:after, .green .layui-tab-brief > .layui-tab-title .layui-this:after {
+  border-color: #038d55;
+}
+
 .green .index-panel-model .layui-model i {
   color: #038d55;
+}
+
+.blue {
+  /*main.html*/
+}
+
+.blue a:hover {
+  color: #244281;
+}
+
+.blue .layui-icon {
+  color: #244281;
+}
+
+.blue .layui-header {
+  background-color: #3B5999;
+}
+
+.blue .layui-side {
+  background-color: #fff;
+}
+
+.blue .layui-nav {
+  background-color: #fff;
+}
+
+.blue .layui-nav {
+  color: #333;
+}
+
+.blue .layui-nav .layui-nav-item a {
+  color: #333;
+}
+
+.blue .layui-nav .layui-nav-child dd.layui-this a, .blue .layui-nav-child dd.layui-this {
+  background-color: #244281;
+}
+
+.blue .layui-nav-tree .layui-nav-item a:hover {
+  background-color: #e8e8e8;
+}
+
+.blue .layui-header .layui-nav .layui-nav-item a .layui-icon {
+  color: #fff;
+}
+
+.blue .layui-header .layui-nav .layui-nav-child a .layui-icon {
+  color: #244281;
+}
+
+.blue .layui-layout-right .layui-nav .layui-nav-child a {
+  color: #244281;
+}
+
+.blue .layui-layout-right .layui-nav dd.layui-this a {
+  color: #fff;
+}
+
+.blue .layui-header .layui-nav .layui-nav-child dd.layui-this a .layui-icon, .blue .layui-header .layui-nav-child dd.layui-this .layui-icon {
+  color: #fff;
+}
+
+.blue .layui-nav-itemed > .layui-nav-child {
+  background-color: #f8f8f8 !important;
+}
+
+.blue .layui-nav-itemed > a, .blue .layui-nav-tree .layui-nav-title a, .blue .layui-nav-tree .layui-nav-title a:hover {
+  color: #244281 !important;
+}
+
+.blue .layui-nav-tree .layui-nav-child dd.layui-this, .blue .layui-nav-tree .layui-nav-child dd.layui-this a, .blue .layui-nav-tree .layui-this, .blue .layui-nav-tree .layui-this > a, .blue .layui-nav-tree .layui-this > a:hover {
+  background-color: #efefef;
+  color: #244281;
+}
+
+.blue .layui-nav .layui-nav-more {
+  border-color: #244281 transparent transparent;
+}
+
+.blue .layui-nav .layui-nav-mored, .blue .layui-nav-itemed > a .layui-nav-more {
+  border-color: transparent transparent #244281;
+}
+
+.blue .layui-nav-tree .layui-nav-bar {
+  background-color: #244281;
+}
+
+.blue .layui-nav .layui-this:after, .blue .layui-nav-bar, .blue .layui-nav-tree .layui-nav-itemed:after {
+  background-color: #244281;
+}
+
+.blue .layui-header .layui-nav .layui-nav-more {
+  border-color: #fff transparent transparent;
+}
+
+.blue .layui-header .layui-nav .layui-nav-mored, .blue .layui-header .layui-nav-itemed > a .layui-nav-more {
+  border-color: transparent transparent #fff;
+}
+
+.blue .layui-side-switch .layui-icon {
+  color: #fff;
+}
+
+.blue .child-iframe {
+  background-color: #e8e8e8;
+}
+
+.blue .layui-tab-brief > .layui-tab-title .layui-this {
+  color: #244281;
+}
+
+.blue .layui-tab-brief > .layui-tab-more li.layui-this:after, .blue .layui-tab-brief > .layui-tab-title .layui-this:after {
+  border-color: #244281;
+}
+
+.blue .index-panel-model .layui-model i {
+  color: #244281;
+}
+
+.gray {
+  /*main.html*/
+}
+
+.gray a:hover {
+  color: #082a4e;
+}
+
+.gray .layui-icon {
+  color: #082a4e;
+}
+
+.gray .layui-header {
+  background-color: #31363c;
+}
+
+.gray .layui-side {
+  background-color: #fff;
+}
+
+.gray .layui-nav {
+  background-color: #fff;
+}
+
+.gray .layui-nav {
+  color: #333;
+}
+
+.gray .layui-nav .layui-nav-item a {
+  color: #333;
+}
+
+.gray .layui-nav .layui-nav-child dd.layui-this a, .gray .layui-nav-child dd.layui-this {
+  background-color: #082a4e;
+}
+
+.gray .layui-nav-tree .layui-nav-item a:hover {
+  background-color: #e8e8e8;
+}
+
+.gray .layui-header .layui-nav .layui-nav-item a .layui-icon {
+  color: #fff;
+}
+
+.gray .layui-header .layui-nav .layui-nav-child a .layui-icon {
+  color: #082a4e;
+}
+
+.gray .layui-layout-right .layui-nav .layui-nav-child a {
+  color: #082a4e;
+}
+
+.gray .layui-layout-right .layui-nav dd.layui-this a {
+  color: #fff;
+}
+
+.gray .layui-header .layui-nav .layui-nav-child dd.layui-this a .layui-icon, .gray .layui-header .layui-nav-child dd.layui-this .layui-icon {
+  color: #fff;
+}
+
+.gray .layui-nav-itemed > .layui-nav-child {
+  background-color: #f8f8f8 !important;
+}
+
+.gray .layui-nav-itemed > a, .gray .layui-nav-tree .layui-nav-title a, .gray .layui-nav-tree .layui-nav-title a:hover {
+  color: #082a4e !important;
+}
+
+.gray .layui-nav-tree .layui-nav-child dd.layui-this, .gray .layui-nav-tree .layui-nav-child dd.layui-this a, .gray .layui-nav-tree .layui-this, .gray .layui-nav-tree .layui-this > a, .gray .layui-nav-tree .layui-this > a:hover {
+  background-color: #efefef;
+  color: #082a4e;
+}
+
+.gray .layui-nav .layui-nav-more {
+  border-color: #082a4e transparent transparent;
+}
+
+.gray .layui-nav .layui-nav-mored, .gray .layui-nav-itemed > a .layui-nav-more {
+  border-color: transparent transparent #082a4e;
+}
+
+.gray .layui-nav-tree .layui-nav-bar {
+  background-color: #082a4e;
+}
+
+.gray .layui-nav .layui-this:after, .gray .layui-nav-bar, .gray .layui-nav-tree .layui-nav-itemed:after {
+  background-color: #082a4e;
+}
+
+.gray .layui-header .layui-nav .layui-nav-more {
+  border-color: #fff transparent transparent;
+}
+
+.gray .layui-header .layui-nav .layui-nav-mored, .gray .layui-header .layui-nav-itemed > a .layui-nav-more {
+  border-color: transparent transparent #fff;
+}
+
+.gray .layui-side-switch .layui-icon {
+  color: #fff;
+}
+
+.gray .child-iframe {
+  background-color: #e8e8e8;
+}
+
+.gray .layui-tab-brief > .layui-tab-title .layui-this {
+  color: #082a4e;
+}
+
+.gray .layui-tab-brief > .layui-tab-more li.layui-this:after, .gray .layui-tab-brief > .layui-tab-title .layui-this:after {
+  border-color: #082a4e;
+}
+
+.gray .index-panel-model .layui-model i {
+  color: #082a4e;
 }

@@ -17,6 +17,10 @@
   color: #fff;
 }
 
+.layui-header .logo:hover {
+  color: #fff;
+}
+
 .layui-header .logo img {
   margin-right: 10px;
   display: inline-block;
