@@ -9,3 +9,104 @@
 .mCSB_inside > .mCSB_container {
   margin-right: 0;
 }
+
+.green {
+  /*main.html*/
+}
+
+.green a:hover {
+  color: #038d55;
+}
+
+.green .layui-icon {
+  color: #038d55;
+}
+
+.green .layui-header {
+  background-color: #026d41;
+}
+
+.green .layui-side {
+  background-color: #fff;
+}
+
+.green .layui-nav {
+  background-color: #fff;
+}
+
+.green .layui-nav {
+  color: #333;
+}
+
+.green .layui-nav .layui-nav-item a {
+  color: #333;
+}
+
+.green .layui-nav-tree .layui-nav-item a:hover {
+  background-color: #e8e8e8;
+}
+
+.green .layui-header .layui-nav .layui-nav-item a .layui-icon {
+  color: #fff;
+}
+
+.green .layui-header .layui-nav .layui-nav-child a .layui-icon {
+  color: #038d55;
+}
+
+.green .layui-layout-right .layui-nav .layui-nav-child a {
+  color: #038d55;
+}
+
+.green .layui-layout-right .layui-nav dd.layui-this a {
+  color: #fff;
+}
+
+.green .layui-header .layui-nav .layui-nav-child dd.layui-this a .layui-icon, .green .layui-header .layui-nav-child dd.layui-this .layui-icon {
+  color: #fff;
+}
+
+.green .layui-nav-itemed > .layui-nav-child {
+  background-color: #f8f8f8 !important;
+}
+
+.green .layui-nav-itemed > a, .green .layui-nav-tree .layui-nav-title a, .green .layui-nav-tree .layui-nav-title a:hover {
+  color: #038d55 !important;
+}
+
+.green .layui-nav-tree .layui-nav-child dd.layui-this, .green .layui-nav-tree .layui-nav-child dd.layui-this a, .green .layui-nav-tree .layui-this, .green .layui-nav-tree .layui-this > a, .green .layui-nav-tree .layui-this > a:hover {
+  background-color: #efefef;
+  color: #038d55;
+}
+
+.green .layui-nav .layui-nav-more {
+  border-color: #026d41 transparent transparent;
+}
+
+.green .layui-nav .layui-nav-mored, .green .layui-nav-itemed > a .layui-nav-more {
+  border-color: transparent transparent #038d55;
+}
+
+.green .layui-header .layui-nav .layui-nav-more {
+  border-color: #fff transparent transparent;
+}
+
+.green .layui-header .layui-nav .layui-nav-mored, .green .layui-header .layui-nav-itemed > a .layui-nav-more {
+  border-color: transparent transparent #fff;
+}
+
+.green .layui-side-switch .layui-icon {
+  color: #fff;
+}
+
+.green .child-iframe {
+  background-color: #e8e8e8;
+}
+
+.green .layui-tab-brief > .layui-tab-title .layui-this {
+  color: #038d55;
+}
+
+.green .index-panel-model .layui-model i {
+  color: #038d55;
+}

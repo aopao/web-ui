@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../assets/css/index.css">
     <link rel="stylesheet" href="../assets/css/main.css">
 </head>
-<body class="page_body">
+<body class="page_body green">
     <div class="layui-fluid">
         <div class="layui-row layui-col-space15 index-panel-tips">
             <div class="layui-col-md12">
@@ -25,10 +25,10 @@
                     <div class="layui-tips-scroll">
                         <div class="bd">
                             <ul>
-                                <li><a href="#">昌宏社区4月主题党日联合“两新”党组织开展全民阅读宣传活动</a></li>
-                                <li><a href="#">联合开展文明卫生志愿活动</a></li>
-                                <li><a href="#">3月固定活动日、专题讨论党的十九大</a></li>
-                                <li><a href="#">4月固定活动日，组织观看“厉害了，我的国”</a></li>
+                                <li><a href="#">昌宏社区4月主题党日联合“两新”党组织开展全民阅读宣传活动</a><a href="#">联合开展文明卫生志愿活动</a></li>
+                                <li><a href="#">联合开展文明卫生志愿活动</a><a href="#">3月固定活动日、专题讨论党的十九大</a></li>
+                                <li><a href="#">4月固定活动日，组织观看“厉害了，我的国”</a><a href="#">3月固定活动日、专题讨论党的十九大</a></li>
+                                <li><a href="#">昌宏社区4月主题党日联合“两新”党组织开展全民阅读宣传活动</a><a href="#">联合开展文明卫生志愿活动</a></li>
                             </ul>
                         </div>
                     </div>
@@ -255,6 +255,7 @@
 <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <!--图表组件-->
 <script src="../assets/js/echarts.min.js"></script>
+<script src="../assets/js/wonderland.js"></script>
 <script>
 
 // 图表轮播
@@ -447,7 +448,7 @@ layui.use(['carousel'], function(){
         optionObj[0] = option1;
         optionObj[1] = option2;
         optionObj[2] = option3;
-        var myChart = echarts.init(obj.item[0]);
+        var myChart = echarts.init(obj.item[0],'wonderland');
         myChart.setOption(optionObj[obj.index], true);
         var prevChart = echarts.init(document.getElementById('charts-'+obj.prevIndex));
         prevChart.dispose();
@@ -534,7 +535,7 @@ layui.use(['carousel'], function(){
                 }
             ]
         };
-        var myChart = echarts.init(document.getElementById('charts-0'));
+        var myChart = echarts.init(document.getElementById('charts-0'),'wonderland');
         myChart.setOption(option, true);
     })();
 

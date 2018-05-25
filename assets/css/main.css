@@ -53,26 +53,15 @@
   padding: 16px 30px;
   height: 80px;
   line-height: 48px;
-  font-size: 18px;
+  font-size: 16px;
   background-color: #fff;
   box-sizing: border-box;
 }
 
 .index-panel-model .layui-model i {
   float: right;
-  font-size: 30px;
+  font-size: 26px;
   color: #009688;
-}
-
-@media (max-width: 1600px) {
-  .index-panel-model .layui-model {
-    padding: 16px 16px;
-    font-size: 16px;
-  }
-  .index-panel-model .layui-model i {
-    float: right;
-    font-size: 24px;
-  }
 }
 
 .index-panel-list {
@@ -127,6 +116,10 @@
   font-size: 14px;
   color: #333;
   overflow: hidden;
+}
+
+.layui-list-header a:hover {
+  color: #333;
 }
 
 .layui-list-header {

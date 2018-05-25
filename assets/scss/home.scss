@@ -28,6 +28,31 @@
   height: 0;
   vertical-align: middle;
 }
+.layui-layout-right p {
+  float: left;
+  line-height: 86px;
+  color: #efefef;
+}
+.layui-layout-right .layui-nav {
+  float: left;
+  background-color: transparent;
+}
+.layui-layout-right .layui-nav i {
+  margin-right: 8px;
+}
+.layui-layout-right .layui-nav-item {
+  line-height: 86px;
+}
+.layui-layout-right .layui-nav-child {
+  top: 86px;
+}
+.layui-layout-right .layui-nav .layui-nav-item a {
+  padding: 0 15px;
+  color: #efefef;
+}
+.layui-layout-right .layui-nav .layui-nav-child a {
+  color: #333;
+}
 .layui-side {
   position: fixed;
   left: 0;
@@ -98,4 +123,23 @@
   height: 100%;
   border: 0;
   background-color: #efefef;
+}
+/*收起菜单*/
+.layui-side-switch {
+  position: fixed;
+  z-index: 9999;
+  left: 170px;
+  bottom: 10px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #afafaf;
+  background: rgba(0,0,0,0.3);
+  opacity: .8;
+  text-align: center;
+}
+.layui-side-switch:hover {
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  opacity: 1;
 }

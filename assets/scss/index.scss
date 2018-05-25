@@ -6,8 +6,6 @@
 
 //_mixins
 
-//_theme
-
 //_layout
 .layui-fl {
   float: left!important;
@@ -16,5 +14,85 @@
   float: right!important;
 }
 
-// plugins
 .mCSB_inside>.mCSB_container{margin-right: 0;}
+
+//_theme
+.green {
+  a:hover {
+    color: #038d55;
+  }
+  .layui-icon {
+    color: #038d55;
+  }
+  .layui-header {
+    background-color: #026d41;
+  }
+  .layui-side {
+    background-color: #fff;
+  }
+  .layui-nav {
+    background-color: #fff;
+  }
+  .layui-nav {
+    color: #333;
+  }
+  .layui-nav .layui-nav-item a {
+    color: #333;
+  }
+  .layui-nav-tree .layui-nav-item a:hover {
+    background-color: #e8e8e8;
+  }
+  .layui-header .layui-nav .layui-nav-item a .layui-icon {
+    color: #fff;
+  }
+  .layui-header .layui-nav .layui-nav-child a .layui-icon {
+    color: #038d55;
+  }
+  .layui-layout-right .layui-nav .layui-nav-child a {
+    color: #038d55;
+  }
+  .layui-layout-right .layui-nav dd.layui-this a {
+    color: #fff;
+  }
+  .layui-header .layui-nav .layui-nav-child dd.layui-this a .layui-icon, .layui-header .layui-nav-child dd.layui-this .layui-icon{
+    color: #fff;
+  }
+  .layui-nav-itemed>.layui-nav-child {
+    background-color: #f8f8f8!important;
+  }
+  .layui-nav-itemed>a, .layui-nav-tree .layui-nav-title a, .layui-nav-tree .layui-nav-title a:hover {
+    color: #038d55!important;
+  }
+  .layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-nav-child dd.layui-this a, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover {
+    background-color: #efefef;
+    color: #038d55;
+  }
+  .layui-nav .layui-nav-more {
+    border-color: #026d41 transparent transparent;
+  }
+  .layui-nav .layui-nav-mored, .layui-nav-itemed>a .layui-nav-more {
+    border-color: transparent transparent #038d55;
+  }
+  .layui-header .layui-nav .layui-nav-more {
+    border-color: #fff transparent transparent;
+  }
+  .layui-header .layui-nav .layui-nav-mored, .layui-header .layui-nav-itemed>a .layui-nav-more {
+    border-color: transparent transparent #fff;
+  }
+  .layui-side-switch .layui-icon {
+    color: #fff;
+  }
+  .child-iframe {
+    background-color: #e8e8e8;
+  }
+  /*main.html*/
+  .layui-tab-brief>.layui-tab-title .layui-this {
+    color: #038d55;
+  }
+  .index-panel-model .layui-model i {
+    color: #038d55;
+  }
+  .layui-tab-scrollleft .layui-icon-fire {
+
+  }
+}
