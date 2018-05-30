@@ -245,15 +245,15 @@
 }
 
 .gray .layui-list a:hover {
-  color: #082a4e;
+  color: #909090;
 }
 
 .gray .layui-icon {
-  color: #082a4e;
+  color: #909090;
 }
 
 .gray .layui-header {
-  background-color: #31363c;
+  background-color: #474747;
 }
 
 .gray .layui-side {
@@ -273,7 +273,7 @@
 }
 
 .gray .layui-nav .layui-nav-child dd.layui-this a, .gray .layui-nav-child dd.layui-this {
-  background-color: #082a4e;
+  background-color: #909090;
 }
 
 .gray .layui-nav-tree .layui-nav-item a:hover {
@@ -285,11 +285,11 @@
 }
 
 .gray .layui-header .layui-nav .layui-nav-child a .layui-icon {
-  color: #082a4e;
+  color: #909090;
 }
 
 .gray .layui-layout-right .layui-nav .layui-nav-child a {
-  color: #082a4e;
+  color: #909090;
 }
 
 .gray .layui-layout-right .layui-nav dd.layui-this a {
@@ -305,28 +305,28 @@
 }
 
 .gray .layui-nav-itemed > a, .gray .layui-nav-tree .layui-nav-title a, .gray .layui-nav-tree .layui-nav-title a:hover {
-  color: #082a4e !important;
+  color: #909090 !important;
 }
 
 .gray .layui-nav-tree .layui-nav-child dd.layui-this, .gray .layui-nav-tree .layui-nav-child dd.layui-this a, .gray .layui-nav-tree .layui-this, .gray .layui-nav-tree .layui-this > a, .gray .layui-nav-tree .layui-this > a:hover {
   background-color: #efefef;
-  color: #082a4e;
+  color: #909090;
 }
 
 .gray .layui-nav .layui-nav-more {
-  border-color: #082a4e transparent transparent;
+  border-color: #909090 transparent transparent;
 }
 
 .gray .layui-nav .layui-nav-mored, .gray .layui-nav-itemed > a .layui-nav-more {
-  border-color: transparent transparent #082a4e;
+  border-color: transparent transparent #909090;
 }
 
 .gray .layui-nav-tree .layui-nav-bar {
-  background-color: #082a4e;
+  background-color: #909090;
 }
 
 .gray .layui-nav .layui-this:after, .gray .layui-nav-bar, .gray .layui-nav-tree .layui-nav-itemed:after {
-  background-color: #082a4e;
+  background-color: #909090;
 }
 
 .gray .layui-header .layui-nav .layui-nav-more {
@@ -346,13 +346,13 @@
 }
 
 .gray .layui-tab-brief > .layui-tab-title .layui-this {
-  color: #082a4e;
+  color: #909090;
 }
 
 .gray .layui-tab-brief > .layui-tab-more li.layui-this:after, .gray .layui-tab-brief > .layui-tab-title .layui-this:after {
-  border-color: #082a4e;
+  border-color: #909090;
 }
 
 .gray .index-panel-model .layui-model i {
-  color: #082a4e;
+  color: #909090;
 }

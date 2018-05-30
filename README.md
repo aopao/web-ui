@@ -53,7 +53,6 @@ class命名前缀：layui，连接符：-，如：class="layui-form"
 通过layui.use(mods, callback)方法加载模块
 
 
-
 ## 相关要求
 
 * 以 layUI 和 Jquery1.8.3 为核心。
@@ -72,8 +71,5 @@ class命名前缀：layui，连接符：-，如：class="layui-form"
 
 ## 主题风格
     绿色系
-    win10风格/传统风格
+    纯色块
 
-## 本周任务
-
-* 首页布局
