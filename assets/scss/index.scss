@@ -13,19 +13,33 @@ $theme-side-bg: #fff;
 //_mixins
 
 //_layout
+.layui-fluid {
+  padding: 15px;
+}
 .layui-fl {
   float: left!important;
 }
 .layui-fr {
   float: right!important;
 }
-
+.layui-laydate {
+  width: 100% !important;
+}
+.layui-laydate-main {
+  width: 100% !important;
+}
+.layui-laydate-content table {
+  width: 100% !important;
+}
+.layui-laydate-content td, .layui-laydate-content th {
+  padding: 4px 5px !important;
+}
 .mCSB_inside>.mCSB_container{margin-right: 0;}
 
 //_theme
 .green {
   $theme-base: #038d55;
-  $theme-header-bg: #54a785;
+  $theme-header-bg: #22d7bd;
   $theme-side-bg: #fff;
 
   .layui-list a:hover {

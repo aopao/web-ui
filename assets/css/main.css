@@ -1,9 +1,5 @@
 @charset "UTF-8";
 /*活动提醒*/
-.index-panel-tips {
-  padding-top: 15px;
-}
-
 .index-panel-tips .layui-tips {
   padding: 16px;
   position: relative;
@@ -131,20 +127,32 @@
 }
 
 .layui-list-content {
-  height: 200px;
+  height: 180px;
   overflow: hidden;
 }
 
-.layui-list-content ul li {
-  padding: 0 16px;
-  height: 40px;
-  line-height: 40px;
+.layui-list-content ul li a {
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  overflow: hidden;
+}
+
+.layui-list-col1 dl a span {
+  padding-right: 5px;
+  float: left;
+  width: 100%;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .layui-list-col2 dl a span {
   padding-right: 5px;
   float: left;
-  width: 70%;
+  width: 80%;
   -ms-text-overflow: ellipsis;
   text-overflow: ellipsis;
   white-space: nowrap;

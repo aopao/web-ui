@@ -1,9 +1,29 @@
+.layui-fluid {
+  padding: 15px;
+}
+
 .layui-fl {
   float: left !important;
 }
 
 .layui-fr {
   float: right !important;
+}
+
+.layui-laydate {
+  width: 100% !important;
+}
+
+.layui-laydate-main {
+  width: 100% !important;
+}
+
+.layui-laydate-content table {
+  width: 100% !important;
+}
+
+.layui-laydate-content td, .layui-laydate-content th {
+  padding: 4px 5px !important;
 }
 
 .mCSB_inside > .mCSB_container {
@@ -23,7 +43,7 @@
 }
 
 .green .layui-header {
-  background-color: #54a785;
+  background-color: #22d7bd;
 }
 
 .green .layui-side {
