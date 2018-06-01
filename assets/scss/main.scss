@@ -243,3 +243,22 @@
   margin-left: 5px;
   color: #ff1b11;
 }
+
+//链接
+.layui-index-link a {
+  display: block;
+  height: 104px;
+  text-align: center;
+  box-sizing: border-box;
+  border-bottom: 1px solid #dadada;
+}
+.layui-index-link a:last-child {
+  border-bottom: none;
+}
+.layui-index-link a:before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}

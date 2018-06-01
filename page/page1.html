@@ -17,12 +17,12 @@
     <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body class="page_body">
-    <div class="layui-fluid">
+    <div class="layui-layout layui-fluid">
         <div class="layui-row layui-col-space15">
             <div class="layui-col-md8">
                 <div class="layui-row layui-col-space15">
                     <div class="layui-col-md12">
-                        <div class="layui-card" style="height: 80px;">
+                        <div class="layui-card" style="height: 120px;">
 
                         </div>
                     </div>
@@ -31,7 +31,7 @@
                     <div class="layui-col-md6">
                         <div class="layui-card">
                         <div class="layui-card-header">活动日历</div>
-                        <div class="layui-card-body" style="height: 344px;">
+                        <div class="layui-card-body" style="height: 304px;">
                             <div id="date"></div>
                         </div>
                     </div>
@@ -39,14 +39,13 @@
                     <div class="layui-col-md6">
                         <div class="layui-card">
                             <div class="layui-card-header">活动开展分析</div>
-                            <div class="layui-card-body" style="height: 344px;">
+                            <div class="layui-card-body" style="height: 304px;">
                                 <div class="layui-carousel-container">
                                     <div class="layui-carousel" id="test1" lay-filter="test1">
                                         <div carousel-item>
                                             <div id="charts-0"></div>
                                             <div id="charts-1"></div>
                                             <div id="charts-2"></div>
-                                            <div id="charts-3"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -104,7 +103,7 @@
                 <div class="layui-card">
                     <div class="layui-card-header">考核排名</div>
                     <div class="layui-card-body">
-                        <div id="charts-4" style="height: 240px;"></div>
+                        <div id="charts-4" style="height: 250px;"></div>
                     </div>
                 </div>
             </div>
@@ -112,13 +111,17 @@
                 <div class="layui-card">
                     <div class="layui-card-header">我的分析</div>
                     <div class="layui-card-body">
-                        <div id="charts-5" style="height: 240px;"></div>
+                        <div id="charts-5" style="height: 250px;"></div>
                     </div>
                 </div>
             </div>
             <div class="layui-col-md2">
                 <div class="layui-card">
-                    xxx
+                    <div class="layui-index-link">
+                        <a href="#"><i></i>考核标准</a>
+                        <a href="#"><i></i>提升排名</a>
+                        <a href="#"><i></i>党性分析</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -159,15 +162,14 @@ layui.use(['carousel','laydate'], function(){
         var optionObj = {};
         optionObj[0] = chartsComment.optionObj.option1;
         optionObj[1] = chartsComment.optionObj.option2;
-        optionObj[2] = chartsComment.optionObj.option3;
-        optionObj[3] = chartsComment.optionObj.option4;
+        optionObj[2] = chartsComment.optionObj.option3;        
         var myChart = echarts.init(obj.item[0],'wonderland');
         myChart.setOption(optionObj[obj.index], true);
         var prevChart = echarts.init(document.getElementById('charts-'+obj.prevIndex));
         prevChart.dispose();
     });
     var chartsComment = {};
-    chartsComment.optionObj = ['option1','option2','option3','option4'];
+    chartsComment.optionObj = ['option1','option2','option3'];
     chartsComment.optionObj.option1Data = [
         {
             name: '主题\n党日',
@@ -621,8 +623,8 @@ layui.use(['carousel','laydate'], function(){
             radius: [0, '95%'],
             sort: null,
             levels: [{}, {
-                r0: '15%',
-                r: '35%',
+                r0: '10%',
+                r: '30%',
                 itemStyle: {
                     borderWidth: 2
                 },
@@ -630,14 +632,14 @@ layui.use(['carousel','laydate'], function(){
                     rotate: 'tangential'
                 }
             }, {
-                r0: '35%',
-                r: '68%',
+                r0: '30%',
+                r: '63%',
                 label: {
                     align: 'right'
                 }
             }, {
-                r0: '68%',
-                r: '70%',
+                r0: '63%',
+                r: '65%',
                 label: {
                     position: 'outside',
                     padding: 3,
@@ -650,87 +652,6 @@ layui.use(['carousel','laydate'], function(){
         }
     };
     chartsComment.optionObj.option2 = {
-        tooltip : {
-            trigger: 'axis',
-            axisPointer : {            // 坐标轴指示器，坐标轴触发有效
-                type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
-            }
-        },
-        legend: {
-            data:['主题党日','志愿服务','党员大会','支部委员会','党员教育','组织生活会','党工委会']
-        },
-        grid: {
-            left: '3%',
-            right: '4%',
-            bottom: '3%',
-            containLabel: true
-        },
-        xAxis : [
-            {
-                type : 'category',
-                data : ['一月','二月','三月','四月','五月','六月','七月']
-            }
-        ],
-        yAxis : [
-            {
-                type : 'value'
-            }
-        ],
-        series : [
-            {
-                name:'主题党日',
-                type:'bar',
-                data:[320, 332, 301, 334, 390, 330, 320]
-            },
-            {
-                name:'志愿服务',
-                type:'bar',
-                stack: '广告',
-                data:[120, 132, 101, 134, 90, 230, 210]
-            },
-            {
-                name:'党员大会',
-                type:'bar',
-                stack: '广告',
-                data:[220, 182, 191, 234, 290, 330, 310]
-            },
-            {
-                name:'支部委员会',
-                type:'bar',
-                stack: '广告',
-                data:[150, 232, 201, 154, 190, 330, 410]
-            },
-            {
-                name:'党员教育',
-                type:'bar',
-                data:[862, 1018, 964, 1026, 1679, 1600, 1570],
-                markLine : {
-                    lineStyle: {
-                        normal: {
-                            type: 'dashed'
-                        }
-                    },
-                    data : [
-                        [{type : 'min'}, {type : 'max'}]
-                    ]
-                }
-            },
-            {
-                name:'组织生活会',
-                type:'bar',
-                barWidth : 5,
-                stack: '搜索引擎',
-                data:[620, 732, 701, 734, 1090, 1130, 1120]
-            },
-            {
-                name:'党工委会',
-                type:'bar',
-                stack: '搜索引擎',
-                data:[120, 132, 101, 134, 290, 230, 220]
-            }
-        ]
-    };
-    chartsComment.optionObj.option3 = {
         tooltip: {
             trigger: 'axis'
         },
@@ -784,7 +705,7 @@ layui.use(['carousel','laydate'], function(){
             }
         ]
     };
-    chartsComment.optionObj.option4 = {
+    chartsComment.optionObj.option3 = {
         tooltip : {
             trigger: 'item',
             formatter: "{a} <br/>{b} : {c} ({d}%)"
@@ -844,7 +765,7 @@ layui.use(['carousel','laydate'], function(){
         series: [{
             name: 'rank',
             type: 'bar',
-            data: [7700, 9900, 14200, 18400, 20500, 22600, 26700],
+            data: [77, 99, 184, 142, 205, 232, 162],
             label: {
                 normal: {
                     show: true,
@@ -858,10 +779,11 @@ layui.use(['carousel','laydate'], function(){
                 normal: {
                     color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
                         offset: 0,
-                        color: 'rgba(41,134,207,1)' // 0% 处的颜色
+                        color: 'rgba(0,255,205,.9)' // 0% 处的颜色
                     }, {
                         offset: 1,
-                        color: 'rgba(0,255,205,.9)' // 100% 处的颜色
+                        color: 'rgba(240,140,178,1)' // 100% 处的颜色
+
                     }], false)
                 }
             }
@@ -870,38 +792,35 @@ layui.use(['carousel','laydate'], function(){
     chartsComment.optionObj.option6 = {
         tooltip: {
             trigger: 'item',
-            backgroundColor : 'rgba(0,0,250,0.4)'
+            backgroundColor : 'rgba(0,200,180,0.5)'
         },
-        // legend: {
-        //     type: 'scroll',
-        //     bottom: 10,
-        //     data: (function (){
-        //         var list = [];
-        //         for (var i = 1; i <=28; i++) {
-        //             list.push(i + 2000 + '');
-        //         }
-        //         return list;
-        //     })()
-        // },
+        legend: {
+            orient: 'vertical',
+            top: 'center',
+            left: 10,
+            data: ['第一季度','第二季度','第三季度','第四季度']
+        },
         visualMap: {
             top: 'middle',
             right: 10,
+            max: 100,
             calculable: true
         },
         radar: {
             indicator : [
-                { text: '进攻-', max: 400},
-                { text: '防守', max: 400},
-                { text: '力量', max: 400},
-                { text: '速度', max: 400},
-                { text: '技巧', max: 400}
+                { text: '主题党日', max: 100},
+                { text: '志愿服务', max: 100},
+                { text: '党员大会', max: 100},
+                { text: '党员教育', max: 100},
+                { text: '党工委会', max: 100}
             ]
         },
         series : (function (){
             var series = [];
-            for (var i = 1; i <= 4; i++) {
+            var nameArr = ['第一季度','第二季度','第三季度','第四季度'];
+            for (var i = 0; i <= 4; i++) {
                 series.push({
-                    name:'浏览器（数据纯属虚构）',
+                    name:'个人分析',
                     type: 'radar',
                     symbol: 'none',
                     lineStyle: {
@@ -910,7 +829,7 @@ layui.use(['carousel','laydate'], function(){
                     areaStyle: {
                         normal: {
                             opacity: 0.9,
-                            color: new echarts.graphic.RadialGradient(0.5, 0.5, 1, [
+                            color: new echarts.graphic.RadialGradient(0.5, 0.5, .5, [
                                 {
                                     color: '#B8D3E4',
                                     offset: 0
@@ -925,13 +844,9 @@ layui.use(['carousel','laydate'], function(){
                     data:[
                         {
                             value:[
-                                (40 - i) * 10,
-                                (38 - i) * 4 + 60,
-                                (40 - i) * 10,
-                                (38 - i) * 4 + 60,
-                                (38 - i) * 4 + 60,
+                                92-2*i, 68-3*i, 74-3*i, 65+2*i, 80+2*i
                             ],
-                            name: i + 2014 + ''
+                            name: nameArr[i]
                         }
                     ]
                 });
@@ -943,18 +858,33 @@ layui.use(['carousel','laydate'], function(){
         var option = chartsComment.optionObj.option1;
         var myChart = echarts.init(document.getElementById('charts-0'),'wonderland');
         myChart.setOption(option, true);
-    })();
-    ;(function() {
-        var option = chartsComment.optionObj.option5;
-        var myChart = echarts.init(document.getElementById('charts-4'),'wonderland');
-        myChart.setOption(option, true);
     }());
-    ;(function() {
-        var option = chartsComment.optionObj.option6;
-        var myChart = echarts.init(document.getElementById('charts-5'),'wonderland');
+    // 自动刷新charts
+    var chartsInit = function(opts, id, speed) {
+        var option = opts;
+        var speed = speed || 6000;
+        var myChart = echarts.init(document.getElementById(id),'wonderland');
         myChart.setOption(option, true);
-    }());
+        var timer = setInterval(function () {
+            myChart.dispose();
+            myChart = echarts.init(document.getElementById(id),'wonderland');
+            myChart.setOption(option, true);
+        }, speed);
+        document.getElementById(id).onmouseover = function () {
+            clearInterval(timer);
+        }
+        document.getElementById(id).onmouseleave = function () {
+            timer = setInterval(function () {
+                myChart.dispose();
+                myChart = echarts.init(document.getElementById(id),'wonderland');
+                myChart.setOption(option, true);
+            }, speed);
+        }
+    }
+    chartsInit(chartsComment.optionObj.option5, 'charts-4');
+    chartsInit(chartsComment.optionObj.option6, 'charts-5');
 
+    // 日期
     var laydate = layui.laydate;
     var mydate = laydate.render({
         elem: '#date'
