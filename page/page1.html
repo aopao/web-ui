@@ -22,9 +22,40 @@
             <div class="layui-col-md8">
                 <div class="layui-row layui-col-space15">
                     <div class="layui-col-md12">
-                        <div class="layui-card" style="height: 120px;">
 
-                        </div>
+                            <div class="layui-row layui-index-menu">
+                                <div class="layui-col-md2">
+                                    <a href="#" class="layui-menu-items layui-menu-items-1">
+                                        <p><i class="layui-icon layui-icon-user"></i><span>党员</span></p> <div class="tips"><span>总数： 2</span><span>今日变化： 2</span><span>本周变化： 2</span></div>
+                                    </a>
+                                </div>
+                                <div class="layui-col-md2">
+                                    <a href="#" class="layui-menu-items layui-menu-items-2">
+                                        <p><i class="layui-icon layui-icon-flag"></i><span>党组织</span></p> <div class="tips"><span>总数： 2</span><span>今日变化： 2</span><span>本周变化： 2</span></div>
+                                    </a>
+                                </div>
+                                <div class="layui-col-md2">
+                                    <a href="#" class="layui-menu-items layui-menu-items-3">
+                                        <p><i class="layui-icon layui-icon-date"></i><span>活动</span></p> <div class="tips"><span>总数： 2</span><span>今日变化： 2</span><span>本周变化： 2</span></div>
+                                    </a>
+                                </div>
+                                <div class="layui-col-md2">
+                                    <a href="#" class="layui-menu-items layui-menu-items-4">
+                                        <p><i class="layui-icon layui-icon-survey"></i><span>考核</span></p> <div class="tips"><span>总数： 2</span><span>今日变化： 2</span><span>本周变化： 2</span></div>
+                                    </a>
+                                </div>
+                                <div class="layui-col-md2">
+                                    <a href="#" class="layui-menu-items layui-menu-items-5">
+                                        <p><i class="layui-icon layui-icon-read"></i><span>学习资料</span></p> <div class="tips"><span>总数： 2</span><span>今日变化： 2</span><span>本周变化： 2</span></div>
+                                    </a>
+                                </div>
+                                <div class="layui-col-md2">
+                                    <a href="#" class="layui-menu-items layui-menu-items-6">
+                                        <p><i class="layui-icon layui-icon-release"></i><span>待办</span></p> <div class="tips"><span>总数： 2</span><span>今日变化： 2</span><span>本周变化： 2</span></div>
+                                    </a>
+                                </div>
+                            </div>
+
                     </div>
                 </div>
                 <div class="layui-row layui-col-space15">
@@ -117,10 +148,10 @@
             </div>
             <div class="layui-col-md2">
                 <div class="layui-card">
-                    <div class="layui-index-link">
-                        <a href="#"><i></i>考核标准</a>
-                        <a href="#"><i></i>提升排名</a>
-                        <a href="#"><i></i>党性分析</a>
+                    <div class="layui-row layui-index-link layui-index-link2">
+                        <p class="layui-col-md12"><a href="#"><i class="layui-icon layui-icon-template"></i><span>考核标准</span></a></p>
+                        <p class="layui-col-md12"><a href="#"><i class="layui-icon layui-icon-fire"></i><span>提升排名</span></a></p>
+                        <p class="layui-col-md12"><a href="#"><i class="layui-icon layui-icon-engine"></i><span>党性分析</span></a></p>
                     </div>
                 </div>
             </div>
@@ -880,7 +911,7 @@ layui.use(['carousel','laydate'], function(){
                 myChart.setOption(option, true);
             }, speed);
         }
-    }
+    };
     chartsInit(chartsComment.optionObj.option5, 'charts-4');
     chartsInit(chartsComment.optionObj.option6, 'charts-5');
 

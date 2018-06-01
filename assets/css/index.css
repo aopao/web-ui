@@ -163,6 +163,10 @@
   background-color: #4da397 !important;
 }
 
+.layui-layout .layui-carousel-container .layui-carousel-ind li.layui-this {
+  background-color: #4da397;
+}
+
 .red {
   /*main.html*/
 }
@@ -278,6 +282,10 @@
 
 .red .layui-laydate .layui-this {
   background-color: #f5222d !important;
+}
+
+.red .layui-carousel-container .layui-carousel-ind li.layui-this {
+  background-color: #f5222d;
 }
 
 .blue {
@@ -401,6 +409,10 @@
   background-color: #007ccf !important;
 }
 
+.blue .layui-carousel-container .layui-carousel-ind li.layui-this {
+  background-color: #007ccf;
+}
+
 .gray {
   /*main.html*/
 }
@@ -520,4 +532,8 @@
 
 .gray .layui-laydate .layui-this {
   background-color: #909090 !important;
+}
+
+.gray .layui-carousel-container .layui-carousel-ind li.layui-this {
+  background-color: #909090;
 }

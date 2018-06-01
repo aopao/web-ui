@@ -143,6 +143,9 @@ $theme-side-bg: #fff;
   .layui-laydate .layui-this {
     background-color: $theme-base!important;
   }
+  .layui-carousel-container .layui-carousel-ind li.layui-this {
+    background-color: $theme-base;
+  }
 }
 .red {
   $theme-base: #f5222d;
@@ -237,6 +240,9 @@ $theme-side-bg: #fff;
   }
   .layui-laydate .layui-this {
     background-color: $theme-base!important;
+  }
+  .layui-carousel-container .layui-carousel-ind li.layui-this {
+    background-color: $theme-base;
   }
 }
 .blue {
@@ -336,6 +342,9 @@ $theme-side-bg: #fff;
   .layui-laydate .layui-this {
     background-color: $theme-base!important;
   }
+  .layui-carousel-container .layui-carousel-ind li.layui-this {
+    background-color: $theme-base;
+  }
 }
 .gray {
   $theme-base: #909090;
@@ -433,5 +442,8 @@ $theme-side-bg: #fff;
   }
   .layui-laydate .layui-this {
     background-color: $theme-base!important;
+  }
+  .layui-carousel-container .layui-carousel-ind li.layui-this {
+    background-color: $theme-base;
   }
 }

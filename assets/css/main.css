@@ -292,7 +292,7 @@
   color: #ff1b11;
 }
 
-.layui-index-link a {
+.layui-index-link p {
   display: block;
   height: 104px;
   text-align: center;
@@ -300,8 +300,30 @@
   border-bottom: 1px solid #dadada;
 }
 
-.layui-index-link a:last-child {
+.layui-index-link p:last-child {
   border-bottom: none;
+}
+
+.layui-index-link a span {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.layui-index-link a i {
+  margin-right: 10%;
+  display: inline-block;
+  font-size: 36px;
+  color: #f58db2 !important;
+  vertical-align: middle;
+}
+
+.layui-index-link p + p a i {
+  color: #89b8d7 !important;
+}
+
+.layui-index-link p + p + p a i {
+  color: #23c3aa !important;
 }
 
 .layui-index-link a:before {
@@ -310,4 +332,92 @@
   width: 0;
   height: 100%;
   vertical-align: middle;
+}
+
+.layui-index-link p:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: #f58db2;
+}
+
+.layui-index-link p + p:before {
+  background-color: #89b8d7;
+}
+
+.layui-index-link p + p + p:before {
+  background-color: #23c3aa;
+}
+
+.layui-index-menu {
+  overflow: hidden;
+}
+
+.layui-menu-items {
+  position: relative;
+  display: block;
+  height: 120px;
+  text-align: center;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: .3s;
+}
+
+.layui-menu-items:before {
+  content: '';
+  position: absolute;
+  z-index: 9;
+  right: -1px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #dadada;
+}
+
+.layui-menu-items p {
+  font-size: 14px;
+  height: 90px;
+}
+
+.layui-menu-items p i {
+  font-size: 30px;
+  margin-right: 10%;
+  vertical-align: middle;
+}
+
+.layui-menu-items p:after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.layui-menu-items .tips {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: -1px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #4da397;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.layui-menu-items .tips span {
+  display: block;
+  color: #fff;
+}
+
+.layui-menu-items:hover {
+  background-color: #f8f8f8;
+}
+
+.layui-menu-items:hover .tips {
+  height: 90px;
+  background-color: #23c3aa;
 }
