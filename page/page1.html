@@ -26,32 +26,32 @@
                             <div class="layui-row layui-index-menu">
                                 <div class="layui-col-md2">
                                     <a href="#" class="layui-menu-items layui-menu-items-1">
-                                        <p><i class="layui-icon layui-icon-user"></i><span>党员</span></p> <div class="tips"><span>总数： 2</span><span>今日变化： 2</span><span>本周变化： 2</span></div>
+                                        <p><i class="layui-icon layui-icon-user"></i><span>党员</span></p> <div class="tips"><span>总计： 20122</span><span>今日变化： 2</span><span>本周变化： 2</span></div>
                                     </a>
                                 </div>
                                 <div class="layui-col-md2">
                                     <a href="#" class="layui-menu-items layui-menu-items-2">
-                                        <p><i class="layui-icon layui-icon-flag"></i><span>党组织</span></p> <div class="tips"><span>总数： 2</span><span>今日变化： 2</span><span>本周变化： 2</span></div>
+                                        <p><i class="layui-icon layui-icon-flag"></i><span>党组织</span></p> <div class="tips"><span>总计： 211</span><span>今日变化： 2</span><span>本周变化： 2</span></div>
                                     </a>
                                 </div>
                                 <div class="layui-col-md2">
-                                    <a href="#" class="layui-menu-items layui-menu-items-3">
-                                        <p><i class="layui-icon layui-icon-date"></i><span>活动</span></p> <div class="tips"><span>总数： 2</span><span>今日变化： 2</span><span>本周变化： 2</span></div>
+                                    <a href="#" class="layui-menu-items layui-menu-items-3" id="showMap">
+                                        <p><i class="layui-icon layui-icon-date"></i><span>活动</span></p> <div class="tips"><span>总计： 1526</span><span>今日变化： 2</span><span>本周变化： 2</span></div>
                                     </a>
                                 </div>
                                 <div class="layui-col-md2">
                                     <a href="#" class="layui-menu-items layui-menu-items-4">
-                                        <p><i class="layui-icon layui-icon-survey"></i><span>考核</span></p> <div class="tips"><span>总数： 2</span><span>今日变化： 2</span><span>本周变化： 2</span></div>
+                                        <p><i class="layui-icon layui-icon-survey"></i><span>考核</span></p> <div class="tips"><span>总计： 23241</span><span>今日变化： 2</span><span>本周变化： 2</span></div>
                                     </a>
                                 </div>
                                 <div class="layui-col-md2">
                                     <a href="#" class="layui-menu-items layui-menu-items-5">
-                                        <p><i class="layui-icon layui-icon-read"></i><span>学习资料</span></p> <div class="tips"><span>总数： 2</span><span>今日变化： 2</span><span>本周变化： 2</span></div>
+                                        <p><i class="layui-icon layui-icon-read"></i><span>学习资料</span></p> <div class="tips"><span>总计： 86</span><span>今日变化： 2</span><span>本周变化： 2</span></div>
                                     </a>
                                 </div>
                                 <div class="layui-col-md2">
                                     <a href="#" class="layui-menu-items layui-menu-items-6">
-                                        <p><i class="layui-icon layui-icon-release"></i><span>待办</span></p> <div class="tips"><span>总数： 2</span><span>今日变化： 2</span><span>本周变化： 2</span></div>
+                                        <p><i class="layui-icon layui-icon-release"></i><span>待办</span></p> <div class="tips"><span>总计： 5</span><span>重要： 2</span><span>一般： 2</span></div>
                                     </a>
                                 </div>
                             </div>
@@ -156,7 +156,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
 
@@ -171,9 +170,11 @@
 <!--图表组件-->
 <script src="../assets/js/echarts.min.js"></script>
 <script src="../assets/js/wonderland.js"></script>
+<!--地图插件-->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=2lkDOKqrgrUodHwrwvG1Mv6BPbf0Id8Y"></script>
 <script>
 
-layui.use(['carousel','laydate'], function(){
+layui.use(['carousel','laydate', 'layer'], function(){
     // 轮播
     var carousel = layui.carousel;
     carousel.render({
@@ -940,6 +941,38 @@ layui.use(['carousel','laydate'], function(){
 
 
     });
+    //地图弹层
+    var showView = function () {
+        var map = new BMap.Map("allmap");
+        var myStyleJson = [
+            {
+                "featureType": "background",
+                "elementType": "all",
+                "stylers": {
+                    "color": "#252a54"
+                }
+            }];
+        map.setMapStyle({styleJson: myStyleJson});
+        map.centerAndZoom(new BMap.Point(102.858964, 24.960171), 14);  // 初始化地图,设置中心点坐标和地图级别
+        map.setCurrentCity("昆明呈贡区国家级昆明经济技术开发区");          // 设置地图显示的城市 此项是必须设置的
+        map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+        map.enableScrollWheelZoom();
+        map.enableInertialDragging();
+        map.enableContinuousZoom();
+    };
+    // 活动地图
+    $('#showMap').on('click', function () {
+        layer.open({
+            type: 1,
+            title: false,
+            shade: 0.3,
+            area: ['90%', '80%'],
+            content: '<div class="map-wrapper"><div id="allmap"></div></div>',
+        });
+        showView();
+    });
+
+
 
 });
 

@@ -167,6 +167,14 @@
   background-color: #4da397;
 }
 
+.layui-layout .layui-menu-items .tips {
+  background-color: #4da397;
+}
+
+.layui-layout .layui-menu-items:hover .tips {
+  background-color: #23c3aa;
+}
+
 .red {
   /*main.html*/
 }
@@ -286,6 +294,14 @@
 
 .red .layui-carousel-container .layui-carousel-ind li.layui-this {
   background-color: #f5222d;
+}
+
+.red .layui-menu-items .tips {
+  background-color: #f5222d;
+}
+
+.red .layui-menu-items:hover .tips {
+  background-color: #ff4d4f;
 }
 
 .blue {
@@ -413,6 +429,14 @@
   background-color: #007ccf;
 }
 
+.blue .layui-menu-items .tips {
+  background-color: #007ccf;
+}
+
+.blue .layui-menu-items:hover .tips {
+  background-color: #029df4;
+}
+
 .gray {
   /*main.html*/
 }
@@ -536,4 +560,12 @@
 
 .gray .layui-carousel-container .layui-carousel-ind li.layui-this {
   background-color: #909090;
+}
+
+.gray .layui-menu-items .tips {
+  background-color: #909090;
+}
+
+.gray .layui-menu-items:hover .tips {
+  background-color: #474747;
 }

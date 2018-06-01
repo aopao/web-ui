@@ -47,7 +47,6 @@ $theme-side-bg: #fff;
   top: 8px !important;
 }
 .mCSB_inside>.mCSB_container{margin-right: 0;}
-
 //_theme
 .layui-layout {
   $theme-base: #4da397;
@@ -146,6 +145,14 @@ $theme-side-bg: #fff;
   .layui-carousel-container .layui-carousel-ind li.layui-this {
     background-color: $theme-base;
   }
+  .layui-menu-items {
+    .tips {
+      background-color: $theme-base;
+    }
+    &:hover .tips {
+      background-color: $theme-header-bg;
+    }
+  }
 }
 .red {
   $theme-base: #f5222d;
@@ -243,6 +250,14 @@ $theme-side-bg: #fff;
   }
   .layui-carousel-container .layui-carousel-ind li.layui-this {
     background-color: $theme-base;
+  }
+  .layui-menu-items {
+    .tips {
+      background-color: $theme-base;
+    }
+    &:hover .tips {
+      background-color: $theme-header-bg;
+    }
   }
 }
 .blue {
@@ -345,6 +360,14 @@ $theme-side-bg: #fff;
   .layui-carousel-container .layui-carousel-ind li.layui-this {
     background-color: $theme-base;
   }
+  .layui-menu-items {
+    .tips {
+      background-color: $theme-base;
+    }
+    &:hover .tips {
+      background-color: $theme-header-bg;
+    }
+  }
 }
 .gray {
   $theme-base: #909090;
@@ -446,4 +469,13 @@ $theme-side-bg: #fff;
   .layui-carousel-container .layui-carousel-ind li.layui-this {
     background-color: $theme-base;
   }
+  .layui-menu-items {
+    .tips {
+      background-color: $theme-base;
+    }
+    &:hover .tips {
+      background-color: $theme-header-bg;
+    }
+  }
 }
+

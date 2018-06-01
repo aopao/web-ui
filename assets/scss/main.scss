@@ -322,10 +322,11 @@
 .layui-menu-items p {
   font-size: 14px;
   height: 90px;
+  transition: .3s;
 }
 .layui-menu-items p i {
-  font-size: 30px;
-  margin-right: 10%;
+  font-size: 24px;
+  margin-right: 15%;
   vertical-align: middle;
 }
 .layui-menu-items p:after {
@@ -337,11 +338,10 @@
 }
 .layui-menu-items .tips {
   position: absolute;
-  bottom: 0;
+  bottom: -52px;
   left: 0;
   right: -1px;
-  height: 30px;
-  line-height: 30px;
+  line-height: 26px;
   background-color: #4da397;
   overflow: hidden;
   transition: .3s;
@@ -353,49 +353,20 @@
 .layui-menu-items:hover {
   background-color: #f8f8f8;
 }
+.layui-menu-items:hover p {
+  height: 42px;
+}
 .layui-menu-items:hover .tips {
-  height: 90px;
+  bottom: 0;
   background-color: #23c3aa;
 }
-//.layui-menu-items {
-//  $base-color: #89b8d7;
-//  //color: $base-color;
-//  i.layui-icon {
-//    color: $base-color;
-//  }
-//}
-//.layui-menu-items-2 {
-//  $base-color: #22c3aa;
-//  color: $base-color;
-//  i.layui-icon {
-//    color: $base-color;
-//  }
-//}
-//.layui-menu-items-3 {
-//  $base-color: #7bd9a5;
-//  color: $base-color;
-//  i.layui-icon {
-//    color: $base-color;
-//  }
-//}
-//.layui-menu-items-4 {
-//  $base-color: #d0648a;
-//  color: $base-color;
-//  i.layui-icon {
-//    color: $base-color;
-//  }
-//}
-//.layui-menu-items-5 {
-//  $base-color: #f58db2;
-//  color: $base-color;
-//  i.layui-icon {
-//    color: $base-color;
-//  }
-//}
-//.layui-menu-items-6 {
-//  $base-color: #f58db2;
-//  color: $base-color;
-//  i.layui-icon {
-//    color: $base-color;
-//  }
-//}
+
+  //地图
+.map-wrapper {
+  width: 100%;
+  height: 100%;
+}
+#allmap {
+  width: 100%;
+  height: 100%;
+}
