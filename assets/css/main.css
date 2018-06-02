@@ -399,10 +399,10 @@
 
 .layui-menu-items .tips {
   position: absolute;
-  bottom: -52px;
+  bottom: -80px;
   left: 0;
   right: -1px;
-  line-height: 26px;
+  line-height: 40px;
   background-color: #4da397;
   overflow: hidden;
   transition: .3s;
@@ -423,6 +423,7 @@
 
 .layui-menu-items:hover .tips {
   bottom: 0;
+  line-height: 26px;
   background-color: #23c3aa;
 }
 

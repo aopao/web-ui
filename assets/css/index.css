@@ -51,15 +51,15 @@
 }
 
 .layui-layout .layui-list a:hover {
-  color: #4da397;
+  color: #3ea263;
 }
 
 .layui-layout .layui-icon {
-  color: #4da397;
+  color: #3ea263;
 }
 
 .layui-layout .layui-header {
-  background: #23c3aa;
+  background: #52ce84;
 }
 
 .layui-layout .layui-side {
@@ -79,7 +79,7 @@
 }
 
 .layui-layout .layui-nav .layui-nav-child dd.layui-this a, .layui-layout .layui-nav-child dd.layui-this {
-  background-color: #4da397;
+  background-color: #3ea263;
 }
 
 .layui-layout .layui-nav-tree .layui-nav-item a:hover {
@@ -91,11 +91,11 @@
 }
 
 .layui-layout .layui-header .layui-nav .layui-nav-child a .layui-icon {
-  color: #4da397;
+  color: #3ea263;
 }
 
 .layui-layout .layui-layout-right .layui-nav .layui-nav-child a {
-  color: #4da397;
+  color: #3ea263;
 }
 
 .layui-layout .layui-layout-right .layui-nav dd.layui-this a {
@@ -111,24 +111,24 @@
 }
 
 .layui-layout .layui-nav-itemed > a, .layui-layout .layui-nav-tree .layui-nav-title a, .layui-layout .layui-nav-tree .layui-nav-title a:hover {
-  color: #4da397 !important;
+  color: #3ea263 !important;
 }
 
 .layui-layout .layui-nav-tree .layui-nav-child dd.layui-this, .layui-layout .layui-nav-tree .layui-nav-child dd.layui-this a, .layui-layout .layui-nav-tree .layui-this, .layui-layout .layui-nav-tree .layui-this > a, .layui-layout .layui-nav-tree .layui-this > a:hover {
   background-color: #efefef;
-  color: #4da397;
+  color: #3ea263;
 }
 
 .layui-layout .layui-nav .layui-nav-more {
-  border-color: #4da397 transparent transparent;
+  border-color: #3ea263 transparent transparent;
 }
 
 .layui-layout .layui-nav .layui-nav-mored, .layui-layout .layui-nav-itemed > a .layui-nav-more {
-  border-color: transparent transparent #4da397;
+  border-color: transparent transparent #3ea263;
 }
 
 .layui-layout .layui-nav .layui-this:after, .layui-layout .layui-nav-bar, .layui-layout .layui-nav-tree .layui-nav-itemed:after {
-  background-color: #4da397;
+  background-color: #3ea263;
 }
 
 .layui-layout .layui-header .layui-nav .layui-nav-more {
@@ -148,31 +148,31 @@
 }
 
 .layui-layout .layui-tab-brief > .layui-tab-title .layui-this {
-  color: #4da397;
+  color: #3ea263;
 }
 
 .layui-layout .layui-tab-brief > .layui-tab-more li.layui-this:after, .layui-layout .layui-tab-brief > .layui-tab-title .layui-this:after {
-  border-color: #4da397;
+  border-color: #3ea263;
 }
 
 .layui-layout .index-panel-model .layui-model i {
-  color: #4da397;
+  color: #3ea263;
 }
 
 .layui-layout .layui-laydate .layui-this {
-  background-color: #4da397 !important;
+  background-color: #3ea263 !important;
 }
 
 .layui-layout .layui-carousel-container .layui-carousel-ind li.layui-this {
-  background-color: #4da397;
+  background-color: #3ea263;
 }
 
 .layui-layout .layui-menu-items .tips {
-  background-color: #4da397;
+  background-color: #3ea263;
 }
 
 .layui-layout .layui-menu-items:hover .tips {
-  background-color: #23c3aa;
+  background-color: #52ce84;
 }
 
 .red {
