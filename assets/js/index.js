@@ -7,6 +7,12 @@ layui.use(['form','element','layer','jquery'],function () {
     element.on('nav(side-menu)', function(elem){
         var $items = $(this).parent();
         $items.siblings('.layui-nav-item').removeClass('layui-nav-itemed').find('.layui-nav-item').removeClass('layui-nav-itemed');
+        if(elem.attr('href') == 'javascript:;' ) {
+            var url = elem.attr('lay-href');
+            if(url) {
+                $(".child-iframe").attr('src', url);
+            }
+        }
     });
     // 隐藏侧边导航
     var $sideSwitch = $('.layui-side-switch');

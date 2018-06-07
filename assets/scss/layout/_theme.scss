@@ -1,0 +1,432 @@
+/***** 主题颜色 *****/
+.layui-layout {
+  $theme-base: #038d55;
+  $theme-header-bg: #54a785;
+  $theme-side-bg: #fff;
+
+  .layui-list a:hover {
+    color: $theme-base;
+  }
+  .layui-icon {
+    color: $theme-base;
+  }
+  .layui-header {
+    background: $theme-header-bg;
+  }
+  .layui-side {
+    background-color: $theme-side-bg;
+  }
+  .layui-nav {
+    background-color: $theme-side-bg;
+  }
+  .layui-nav {
+    color: #333;
+  }
+  .layui-nav .layui-nav-item a {
+    color: #333;
+  }
+  .layui-nav .layui-nav-child dd.layui-this a, .layui-nav-child dd.layui-this {
+    background-color: $theme-base;
+  }
+  .layui-nav-tree .layui-nav-item a:hover {
+    background-color: #e8e8e8;
+  }
+  .layui-header .layui-nav .layui-nav-item a .layui-icon {
+    color: #fff;
+  }
+  .layui-header .layui-nav .layui-nav-child a .layui-icon {
+    color: $theme-base;
+  }
+  .layui-layout-right .layui-nav .layui-nav-child a {
+    color: $theme-base;
+  }
+  .layui-layout-right .layui-nav dd.layui-this a {
+    color: #fff;
+  }
+  .layui-header .layui-nav .layui-nav-child dd.layui-this a .layui-icon, .layui-header .layui-nav-child dd.layui-this .layui-icon{
+    color: #fff;
+  }
+  .layui-nav-itemed>.layui-nav-child {
+    background-color: #f8f8f8!important;
+  }
+  .layui-nav-itemed>a, .layui-nav-tree .layui-nav-title a, .layui-nav-tree .layui-nav-title a:hover {
+    color: $theme-base!important;
+  }
+  .layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-nav-child dd.layui-this a, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover {
+    background-color: #efefef;
+    color: $theme-base;
+  }
+  .layui-nav .layui-nav-more {
+    border-color: $theme-base transparent transparent;
+  }
+  .layui-nav .layui-nav-mored, .layui-nav-itemed>a .layui-nav-more {
+    border-color: transparent transparent $theme-base;
+  }
+  .layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after {
+    background-color: $theme-base;
+  }
+  .layui-header .layui-nav .layui-nav-more {
+    border-color: #fff transparent transparent;
+  }
+  .layui-header .layui-nav .layui-nav-mored, .layui-header .layui-nav-itemed>a .layui-nav-more {
+    border-color: transparent transparent #fff;
+  }
+  .layui-side-switch .layui-icon {
+    color: #fff;
+  }
+  .child-iframe {
+    background-color: #e8e8e8;
+  }
+  /*index.html*/
+  .layui-tab-brief>.layui-tab-title .layui-this {
+    color: $theme-base;
+  }
+  .layui-tab-brief>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after {
+    border-color: $theme-base;
+  }
+  .index-panel-model .layui-model i {
+    color: $theme-base;
+  }
+  .layui-tab-scrollleft .layui-icon-fire {
+
+  }
+  .layui-laydate .layui-this {
+    background-color: $theme-base!important;
+  }
+  .layui-carousel-container .layui-carousel-ind li.layui-this {
+    background-color: $theme-base;
+  }
+  .layui-menu-items {
+    .tips {
+      background-color: $theme-base;
+    }
+    &:hover .tips {
+      background-color: $theme-header-bg;
+    }
+  }
+}
+.red {
+  $theme-base: #f5222d;
+  $theme-header-bg: #ff4d4f;
+  $theme-side-bg: #fff;
+
+  .layui-list a:hover {
+    color: $theme-base;
+  }
+  .layui-icon {
+    color: $theme-base;
+  }
+  .layui-header {
+    background: $theme-header-bg;
+  }
+  .layui-side {
+    background-color: $theme-side-bg;
+  }
+  .layui-nav {
+    background-color: $theme-side-bg;
+  }
+  .layui-nav {
+    color: #333;
+  }
+  .layui-nav .layui-nav-item a {
+    color: #333;
+  }
+  .layui-nav .layui-nav-child dd.layui-this a, .layui-nav-child dd.layui-this {
+    background-color: $theme-base;
+  }
+  .layui-nav-tree .layui-nav-item a:hover {
+    background-color: #e8e8e8;
+  }
+  .layui-header .layui-nav .layui-nav-item a .layui-icon {
+    color: #fff;
+  }
+  .layui-header .layui-nav .layui-nav-child a .layui-icon {
+    color: $theme-base;
+  }
+  .layui-layout-right .layui-nav .layui-nav-child a {
+    color: $theme-base;
+  }
+  .layui-layout-right .layui-nav dd.layui-this a {
+    color: #fff;
+  }
+  .layui-header .layui-nav .layui-nav-child dd.layui-this a .layui-icon, .layui-header .layui-nav-child dd.layui-this .layui-icon{
+    color: #fff;
+  }
+  .layui-nav-itemed>.layui-nav-child {
+    background-color: #f8f8f8!important;
+  }
+  .layui-nav-itemed>a, .layui-nav-tree .layui-nav-title a, .layui-nav-tree .layui-nav-title a:hover {
+    color: $theme-base!important;
+  }
+  .layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-nav-child dd.layui-this a, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover {
+    background-color: #efefef;
+    color: $theme-base;
+  }
+  .layui-nav .layui-nav-more {
+    border-color: $theme-base transparent transparent;
+  }
+  .layui-nav .layui-nav-mored, .layui-nav-itemed>a .layui-nav-more {
+    border-color: transparent transparent $theme-base;
+  }
+  .layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after {
+    background-color: $theme-base;
+  }
+  .layui-header .layui-nav .layui-nav-more {
+    border-color: #fff transparent transparent;
+  }
+  .layui-header .layui-nav .layui-nav-mored, .layui-header .layui-nav-itemed>a .layui-nav-more {
+    border-color: transparent transparent #fff;
+  }
+  .layui-side-switch .layui-icon {
+    color: #fff;
+  }
+  .child-iframe {
+    background-color: #e8e8e8;
+  }
+  /*index.html*/
+  .layui-tab-brief>.layui-tab-title .layui-this {
+    color: $theme-base;
+  }
+  .layui-tab-brief>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after {
+    border-color: $theme-base;
+  }
+  .index-panel-model .layui-model i {
+    color: $theme-base;
+  }
+  .layui-tab-scrollleft .layui-icon-fire {
+
+  }
+  .layui-laydate .layui-this {
+    background-color: $theme-base!important;
+  }
+  .layui-carousel-container .layui-carousel-ind li.layui-this {
+    background-color: $theme-base;
+  }
+  .layui-menu-items {
+    .tips {
+      background-color: $theme-base;
+    }
+    &:hover .tips {
+      background-color: $theme-header-bg;
+    }
+  }
+}
+.blue {
+  $theme-base: #007ccf;
+  $theme-header-bg: #029df4;
+  $theme-side-bg: #fff;
+
+  .layui-list a:hover {
+    color: $theme-base;
+  }
+  .layui-icon {
+    color: $theme-base;
+  }
+  .layui-header {
+    background: $theme-header-bg;
+  }
+  .layui-side {
+    background-color: $theme-side-bg;
+  }
+  .layui-nav {
+    background-color: $theme-side-bg;
+  }
+  .layui-nav {
+    color: #333;
+  }
+  .layui-nav .layui-nav-item a {
+    color: #333;
+  }
+  .layui-nav .layui-nav-child dd.layui-this a, .layui-nav-child dd.layui-this {
+    background-color: $theme-base;
+  }
+  .layui-nav-tree .layui-nav-item a:hover {
+    background-color: #e8e8e8;
+  }
+  .layui-header .layui-nav .layui-nav-item a .layui-icon {
+    color: #fff;
+  }
+  .layui-header .layui-nav .layui-nav-child a .layui-icon {
+    color: $theme-base;
+  }
+  .layui-layout-right .layui-nav .layui-nav-child a {
+    color: $theme-base;
+  }
+  .layui-layout-right .layui-nav dd.layui-this a {
+    color: #fff;
+  }
+  .layui-header .layui-nav .layui-nav-child dd.layui-this a .layui-icon, .layui-header .layui-nav-child dd.layui-this .layui-icon{
+    color: #fff;
+  }
+  .layui-nav-itemed>.layui-nav-child {
+    background-color: #f8f8f8!important;
+  }
+  .layui-nav-itemed>a, .layui-nav-tree .layui-nav-title a, .layui-nav-tree .layui-nav-title a:hover {
+    color: $theme-base!important;
+  }
+  .layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-nav-child dd.layui-this a, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover {
+    background-color: #efefef;
+    color: $theme-base;
+  }
+  .layui-nav .layui-nav-more {
+    border-color: $theme-base transparent transparent;
+  }
+  .layui-nav .layui-nav-mored, .layui-nav-itemed>a .layui-nav-more {
+    border-color: transparent transparent $theme-base;
+  }
+  .layui-nav-tree .layui-nav-bar {
+    background-color: $theme-base;
+  }
+  .layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after {
+    background-color: $theme-base;
+  }
+  .layui-header .layui-nav .layui-nav-more {
+    border-color: #fff transparent transparent;
+  }
+  .layui-header .layui-nav .layui-nav-mored, .layui-header .layui-nav-itemed>a .layui-nav-more {
+    border-color: transparent transparent #fff;
+  }
+  .layui-side-switch .layui-icon {
+    color: #fff;
+  }
+  .child-iframe {
+    background-color: #e8e8e8;
+  }
+  /*index.html*/
+  .layui-tab-brief>.layui-tab-title .layui-this {
+    color: $theme-base;
+  }
+  .layui-tab-brief>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after {
+    border-color: $theme-base;
+  }
+  .index-panel-model .layui-model i {
+    color: $theme-base;
+  }
+  .layui-tab-scrollleft .layui-icon-fire {
+
+  }
+  .layui-laydate .layui-this {
+    background-color: $theme-base!important;
+  }
+  .layui-carousel-container .layui-carousel-ind li.layui-this {
+    background-color: $theme-base;
+  }
+  .layui-menu-items {
+    .tips {
+      background-color: $theme-base;
+    }
+    &:hover .tips {
+      background-color: $theme-header-bg;
+    }
+  }
+}
+.gray {
+  $theme-base: #909090;
+  $theme-header-bg: #474747;
+  $theme-side-bg: #fff;
+
+  .layui-list a:hover {
+    color: $theme-base;
+  }
+  .layui-icon {
+    color: $theme-base;
+  }
+  .layui-header {
+    background: $theme-header-bg;
+  }
+  .layui-side {
+    background-color: $theme-side-bg;
+  }
+  .layui-nav {
+    background-color: $theme-side-bg;
+  }
+  .layui-nav {
+    color: #333;
+  }
+  .layui-nav .layui-nav-item a {
+    color: #333;
+  }
+  .layui-nav .layui-nav-child dd.layui-this a, .layui-nav-child dd.layui-this {
+    background-color: $theme-base;
+  }
+  .layui-nav-tree .layui-nav-item a:hover {
+    background-color: #e8e8e8;
+  }
+  .layui-header .layui-nav .layui-nav-item a .layui-icon {
+    color: #fff;
+  }
+  .layui-header .layui-nav .layui-nav-child a .layui-icon {
+    color: $theme-base;
+  }
+  .layui-layout-right .layui-nav .layui-nav-child a {
+    color: $theme-base;
+  }
+  .layui-layout-right .layui-nav dd.layui-this a {
+    color: #fff;
+  }
+  .layui-header .layui-nav .layui-nav-child dd.layui-this a .layui-icon, .layui-header .layui-nav-child dd.layui-this .layui-icon{
+    color: #fff;
+  }
+  .layui-nav-itemed>.layui-nav-child {
+    background-color: #f8f8f8!important;
+  }
+  .layui-nav-itemed>a, .layui-nav-tree .layui-nav-title a, .layui-nav-tree .layui-nav-title a:hover {
+    color: $theme-base!important;
+  }
+  .layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-nav-child dd.layui-this a, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover {
+    background-color: #efefef;
+    color: $theme-base;
+  }
+  .layui-nav .layui-nav-more {
+    border-color: $theme-base transparent transparent;
+  }
+  .layui-nav .layui-nav-mored, .layui-nav-itemed>a .layui-nav-more {
+    border-color: transparent transparent $theme-base;
+  }
+  .layui-nav-tree .layui-nav-bar {
+    background-color: $theme-base;
+  }
+  .layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after {
+    background-color: $theme-base;
+  }
+  .layui-header .layui-nav .layui-nav-more {
+    border-color: #fff transparent transparent;
+  }
+  .layui-header .layui-nav .layui-nav-mored, .layui-header .layui-nav-itemed>a .layui-nav-more {
+    border-color: transparent transparent #fff;
+  }
+  .layui-side-switch .layui-icon {
+    color: #fff;
+  }
+  .child-iframe {
+    background-color: #e8e8e8;
+  }
+  /*index.html*/
+  .layui-tab-brief>.layui-tab-title .layui-this {
+    color: $theme-base;
+  }
+  .layui-tab-brief>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after {
+    border-color: $theme-base;
+  }
+  .index-panel-model .layui-model i {
+    color: $theme-base;
+  }
+  .layui-tab-scrollleft .layui-icon-fire {
+
+  }
+  .layui-laydate .layui-this {
+    background-color: $theme-base!important;
+  }
+  .layui-carousel-container .layui-carousel-ind li.layui-this {
+    background-color: $theme-base;
+  }
+  .layui-menu-items {
+    .tips {
+      background-color: $theme-base;
+    }
+    &:hover .tips {
+      background-color: $theme-header-bg;
+    }
+  }
+}
+

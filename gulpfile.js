@@ -10,7 +10,7 @@ gulp.task('scss', function(){
     gulp.src('./assets/scss/*.scss')
         .pipe(sass({outputStyle: 'expanded'}))
         .pipe(gulp.dest('./assets/css'))
-    gulp.src('./assets/scss/*.css')
+    gulp.src('./assets/scss/**/*.css')
         .pipe(gulp.dest('./assets/css'))
 })
 
