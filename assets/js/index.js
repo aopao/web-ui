@@ -128,6 +128,7 @@ layui.use(['form','element','layer','jquery'],function () {
             },
             cancel : function(){
                 $("body").removeAttr("class").addClass("main_body "+window.sessionStorage.getItem("skin")+"");
+                $(".child-iframe").contents().find('body').removeAttr("class").addClass("page_body "+window.sessionStorage.getItem("skin")+"");
                 skins();
             }
         })

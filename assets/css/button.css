@@ -160,19 +160,19 @@
 }
 
 .layui-layout .layui-laydate .layui-this {
-  background-color: #038d55 !important;
+  background-color: #54a785 !important;
 }
 
 .layui-layout .layui-carousel-container .layui-carousel-ind li.layui-this {
-  background-color: #038d55;
+  background-color: #54a785;
 }
 
 .layui-layout .layui-menu-items .tips {
-  background-color: #038d55;
+  background-color: #54a785;
 }
 
 .layui-layout .layui-menu-items:hover .tips {
-  background-color: #54a785;
+  background-color: #038d55;
 }
 
 .red {
@@ -289,19 +289,19 @@
 }
 
 .red .layui-laydate .layui-this {
-  background-color: #f5222d !important;
+  background-color: #ff4d4f !important;
 }
 
 .red .layui-carousel-container .layui-carousel-ind li.layui-this {
-  background-color: #f5222d;
+  background-color: #ff4d4f;
 }
 
 .red .layui-menu-items .tips {
-  background-color: #f5222d;
+  background-color: #ff4d4f;
 }
 
 .red .layui-menu-items:hover .tips {
-  background-color: #ff4d4f;
+  background-color: #f5222d;
 }
 
 .blue {
@@ -422,19 +422,19 @@
 }
 
 .blue .layui-laydate .layui-this {
-  background-color: #007ccf !important;
+  background-color: #029df4 !important;
 }
 
 .blue .layui-carousel-container .layui-carousel-ind li.layui-this {
-  background-color: #007ccf;
+  background-color: #029df4;
 }
 
 .blue .layui-menu-items .tips {
-  background-color: #007ccf;
+  background-color: #029df4;
 }
 
 .blue .layui-menu-items:hover .tips {
-  background-color: #029df4;
+  background-color: #007ccf;
 }
 
 .gray {
@@ -555,19 +555,19 @@
 }
 
 .gray .layui-laydate .layui-this {
-  background-color: #909090 !important;
+  background-color: #474747 !important;
 }
 
 .gray .layui-carousel-container .layui-carousel-ind li.layui-this {
-  background-color: #909090;
+  background-color: #474747;
 }
 
 .gray .layui-menu-items .tips {
-  background-color: #909090;
+  background-color: #474747;
 }
 
 .gray .layui-menu-items:hover .tips {
-  background-color: #474747;
+  background-color: #909090;
 }
 
 /***** 按钮 *****/
