@@ -1,6 +1,13 @@
 /***** 列表页 *****/
+.layui-bg-white {
+  margin-left: 15px;
+  background: #fff;
+}
+.layui-form-panel .layui-btn {
+  margin-left: 10px;
+}
 .layui-btn-drop {
-  margin-left: 5px;
+  margin-left: 10px;
   padding: 0 36px 0 18px;
   position: relative;
   display: inline-block;
@@ -9,7 +16,9 @@
   background-color: #fff;
   border-radius: 2px;
   border: 1px solid #c9c9c9;
+  box-sizing: border-box;
   cursor: pointer;
+  vertical-align: middle;
   a {
     display: inline-block;
     line-height: 36px;
@@ -74,5 +83,13 @@
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
     margin-top: -3px\9
+  }
+}
+.layui-table {
+  margin: 10px 0;
+  tr {
+    td:first-child {
+      text-align: center;
+    }
   }
 }

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>web-ui</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../layui/css/layui.css">
+    <link rel="stylesheet" href="../../assets/css/index.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+</head>
+<body>
+
+<div class="layui-layout layui-fluid layui-bg-white">
+    <div class="layui-form-item">
+        <form class="layui-form" action="">
+            <div class="layui-form-items">
+                <div class="layui-inline">
+                    <label class="layui-form-label">党组织名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">组织类别</label>
+                    <div class="layui-input-block">
+                        <select name="modules" lay-verify="required" lay-search="">
+                            <option value="">直接选择或搜索选择</option>
+                            <option value="1">layer</option>
+                            <option value="2">form</option>
+                            <option value="3">layim</option>
+                            <option value="4">element</option>
+                            <option value="5">laytpl</option>
+                            <option value="6">upload</option>
+                            <option value="7">laydate</option>
+                        </select>
+                    </div>
+                </div>
+                <a class="layui-btn layui-btn-primary">查询</a>
+                <a class="layui-btn layui-btn-primary">重置</a>
+                <a class="layui-btn layui-btn-primary">新增</a>
+                <a class="layui-btn layui-btn-primary">删除</a>
+                <a class="layui-btn layui-btn-primary">导出EXCEL表格</a>
+                <div class="layui-btn-drop">
+                    <dt><a href="javascript:;">更多操作按钮 <i class="layui-edge"></i></a></dt>
+                    <dl class="layui-anim layui-anim-upbit">
+                        <ul>
+                            <li><a href="javascript:;">新增</a></li>
+                            <li><a href="javascript:;">删除</a></li>
+                            <li><a href="javascript:;">导出EXCEL表格</a></li>
+                        </ul>
+                    </dl>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="layui-table-panel">
+        <div class="layui-form" >
+            <table class="layui-table" lay-even="" lay-skin="row">
+                <colgroup>
+                    <col width="20">
+                    <col width="150">
+                    <col width="100">
+                    <col width="100">
+                    <col width="150">
+                    <col width="150">
+                    <col width="200">
+                    <col width="100">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th style="text-align:center;"><input type="checkbox" lay-skin="primary" lay-filter="allChoose"></th>
+                        <th>姓名</th>
+                        <th>性别</th>
+                        <th>学历</th>
+                        <th>入党时间</th>
+                        <th>联系电话</th>
+                        <th>资料完成度</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" lay-skin="primary"></td>
+                        <td>李达康</td>
+                        <td>男</td>
+                        <td>研究生</td>
+                        <td>1982-09-12</td>
+                        <td>18186632454</td>
+                        <td class="progress-td">
+                            <div class="layui-progress layui-progress-big" lay-showpercent="true">
+                                <div class="layui-progress-bar" lay-percent="70%"></div>
+                            </div>
+                        </td>
+                        <td class="operate-btn">
+                            <!--<button class="dropdown-toggle but02">操作<i class="fa fa-caret-down fa-fw"></i></button>-->
+                            <!--<ul class="dropdown-menu">-->
+                                <!--<li><a href="form.html" target="_parent"><i class="fa fa-pencil fa-fw-01 "></i>编辑</a></li>-->
+                                <!--<li><a><i class="fa fa-eye fa-fw-01"></i>查看</a></li>-->
+                            <!--</ul>-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" lay-skin="primary"></td>
+                        <td>李达康</td>
+                        <td>男</td>
+                        <td>研究生</td>
+                        <td>1982-09-12</td>
+                        <td>18186632454</td>
+                        <td class="progress-td">
+                            <div class="layui-progress layui-progress-big" lay-showpercent="true">
+                                <div class="layui-progress-bar" lay-percent="70%"></div>
+                            </div>
+                        </td>
+                        <td class="operate-btn">
+                            <!--<button class="dropdown-toggle but02">操作<i class="fa fa-caret-down fa-fw"></i></button>-->
+                            <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="form.html" target="_parent"><i class="fa fa-pencil fa-fw-01 "></i>编辑</a></li>-->
+                            <!--<li><a><i class="fa fa-eye fa-fw-01"></i>查看</a></li>-->
+                            <!--</ul>-->
+                        </td>
+                    </tr><tr>
+                        <td><input type="checkbox" lay-skin="primary"></td>
+                        <td>李达康</td>
+                        <td>男</td>
+                        <td>研究生</td>
+                        <td>1982-09-12</td>
+                        <td>18186632454</td>
+                        <td class="progress-td">
+                            <div class="layui-progress layui-progress-big" lay-showpercent="true">
+                                <div class="layui-progress-bar" lay-percent="70%"></div>
+                            </div>
+                        </td>
+                        <td class="operate-btn">
+                            <!--<button class="dropdown-toggle but02">操作<i class="fa fa-caret-down fa-fw"></i></button>-->
+                            <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="form.html" target="_parent"><i class="fa fa-pencil fa-fw-01 "></i>编辑</a></li>-->
+                            <!--<li><a><i class="fa fa-eye fa-fw-01"></i>查看</a></li>-->
+                            <!--</ul>-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" lay-skin="primary"></td>
+                        <td>李达康</td>
+                        <td>男</td>
+                        <td>研究生</td>
+                        <td>1982-09-12</td>
+                        <td>18186632454</td>
+                        <td class="progress-td">
+                            <div class="layui-progress layui-progress-big" lay-showpercent="true">
+                                <div class="layui-progress-bar" lay-percent="70%"></div>
+                            </div>
+                        </td>
+                        <td class="operate-btn">
+                            <!--<button class="dropdown-toggle but02">操作<i class="fa fa-caret-down fa-fw"></i></button>-->
+                            <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="form.html" target="_parent"><i class="fa fa-pencil fa-fw-01 "></i>编辑</a></li>-->
+                            <!--<li><a><i class="fa fa-eye fa-fw-01"></i>查看</a></li>-->
+                            <!--</ul>-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" lay-skin="primary"></td>
+                        <td>李达康</td>
+                        <td>男</td>
+                        <td>研究生</td>
+                        <td>1982-09-12</td>
+                        <td>18186632454</td>
+                        <td class="progress-td">
+                            <div class="layui-progress layui-progress-big" lay-showpercent="true">
+                                <div class="layui-progress-bar" lay-percent="70%"></div>
+                            </div>
+                        </td>
+                        <td class="operate-btn">
+                            <!--<button class="dropdown-toggle but02">操作<i class="fa fa-caret-down fa-fw"></i></button>-->
+                            <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="form.html" target="_parent"><i class="fa fa-pencil fa-fw-01 "></i>编辑</a></li>-->
+                            <!--<li><a><i class="fa fa-eye fa-fw-01"></i>查看</a></li>-->
+                            <!--</ul>-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" lay-skin="primary"></td>
+                        <td>李达康</td>
+                        <td>男</td>
+                        <td>研究生</td>
+                        <td>1982-09-12</td>
+                        <td>18186632454</td>
+                        <td class="progress-td">
+                            <div class="layui-progress layui-progress-big" lay-showpercent="true">
+                                <div class="layui-progress-bar" lay-percent="70%"></div>
+                            </div>
+                        </td>
+                        <td class="operate-btn">
+                            <!--<button class="dropdown-toggle but02">操作<i class="fa fa-caret-down fa-fw"></i></button>-->
+                            <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="form.html" target="_parent"><i class="fa fa-pencil fa-fw-01 "></i>编辑</a></li>-->
+                            <!--<li><a><i class="fa fa-eye fa-fw-01"></i>查看</a></li>-->
+                            <!--</ul>-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" lay-skin="primary"></td>
+                        <td>李达康</td>
+                        <td>男</td>
+                        <td>研究生</td>
+                        <td>1982-09-12</td>
+                        <td>18186632454</td>
+                        <td class="progress-td">
+                            <div class="layui-progress layui-progress-big" lay-showpercent="true">
+                                <div class="layui-progress-bar" lay-percent="70%"></div>
+                            </div>
+                        </td>
+                        <td class="operate-btn">
+                            <!--<button class="dropdown-toggle but02">操作<i class="fa fa-caret-down fa-fw"></i></button>-->
+                            <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="form.html" target="_parent"><i class="fa fa-pencil fa-fw-01 "></i>编辑</a></li>-->
+                            <!--<li><a><i class="fa fa-eye fa-fw-01"></i>查看</a></li>-->
+                            <!--</ul>-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" lay-skin="primary"></td>
+                        <td>李达康</td>
+                        <td>男</td>
+                        <td>研究生</td>
+                        <td>1982-09-12</td>
+                        <td>18186632454</td>
+                        <td class="progress-td">
+                            <div class="layui-progress layui-progress-big" lay-showpercent="true">
+                                <div class="layui-progress-bar" lay-percent="70%"></div>
+                            </div>
+                        </td>
+                        <td class="operate-btn">
+                            <!--<button class="dropdown-toggle but02">操作<i class="fa fa-caret-down fa-fw"></i></button>-->
+                            <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="form.html" target="_parent"><i class="fa fa-pencil fa-fw-01 "></i>编辑</a></li>-->
+                            <!--<li><a><i class="fa fa-eye fa-fw-01"></i>查看</a></li>-->
+                            <!--</ul>-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" lay-skin="primary"></td>
+                        <td>李达康</td>
+                        <td>男</td>
+                        <td>研究生</td>
+                        <td>1982-09-12</td>
+                        <td>18186632454</td>
+                        <td class="progress-td">
+                            <div class="layui-progress layui-progress-big" lay-showpercent="true">
+                                <div class="layui-progress-bar" lay-percent="70%"></div>
+                            </div>
+                        </td>
+                        <td class="operate-btn">
+                            <!--<button class="dropdown-toggle but02">操作<i class="fa fa-caret-down fa-fw"></i></button>-->
+                            <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="form.html" target="_parent"><i class="fa fa-pencil fa-fw-01 "></i>编辑</a></li>-->
+                            <!--<li><a><i class="fa fa-eye fa-fw-01"></i>查看</a></li>-->
+                            <!--</ul>-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" lay-skin="primary"></td>
+                        <td>李达康</td>
+                        <td>男</td>
+                        <td>研究生</td>
+                        <td>1982-09-12</td>
+                        <td>18186632454</td>
+                        <td class="progress-td">
+                            <div class="layui-progress layui-progress-big" lay-showpercent="true">
+                                <div class="layui-progress-bar" lay-percent="70%"></div>
+                            </div>
+                        </td>
+                        <td class="operate-btn">
+                            <!--<button class="dropdown-toggle but02">操作<i class="fa fa-caret-down fa-fw"></i></button>-->
+                            <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="form.html" target="_parent"><i class="fa fa-pencil fa-fw-01 "></i>编辑</a></li>-->
+                            <!--<li><a><i class="fa fa-eye fa-fw-01"></i>查看</a></li>-->
+                            <!--</ul>-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" lay-skin="primary"></td>
+                        <td>李达康</td>
+                        <td>男</td>
+                        <td>研究生</td>
+                        <td>1982-09-12</td>
+                        <td>18186632454</td>
+                        <td class="progress-td">
+                            <div class="layui-progress layui-progress-big" lay-showpercent="true">
+                                <div class="layui-progress-bar" lay-percent="70%"></div>
+                            </div>
+                        </td>
+                        <td class="operate-btn">
+                            <!--<button class="dropdown-toggle but02">操作<i class="fa fa-caret-down fa-fw"></i></button>-->
+                            <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="form.html" target="_parent"><i class="fa fa-pencil fa-fw-01 "></i>编辑</a></li>-->
+                            <!--<li><a><i class="fa fa-eye fa-fw-01"></i>查看</a></li>-->
+                            <!--</ul>-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" lay-skin="primary"></td>
+                        <td>李达康</td>
+                        <td>男</td>
+                        <td>研究生</td>
+                        <td>1982-09-12</td>
+                        <td>18186632454</td>
+                        <td class="progress-td">
+                            <div class="layui-progress layui-progress-big" lay-showpercent="true">
+                                <div class="layui-progress-bar" lay-percent="70%"></div>
+                            </div>
+                        </td>
+                        <td class="operate-btn">
+                            <!--<button class="dropdown-toggle but02">操作<i class="fa fa-caret-down fa-fw"></i></button>-->
+                            <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="form.html" target="_parent"><i class="fa fa-pencil fa-fw-01 "></i>编辑</a></li>-->
+                            <!--<li><a><i class="fa fa-eye fa-fw-01"></i>查看</a></li>-->
+                            <!--</ul>-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" lay-skin="primary"></td>
+                        <td>李达康</td>
+                        <td>男</td>
+                        <td>研究生</td>
+                        <td>1982-09-12</td>
+                        <td>18186632454</td>
+                        <td class="progress-td">
+                            <div class="layui-progress layui-progress-big" lay-showpercent="true">
+                                <div class="layui-progress-bar" lay-percent="70%"></div>
+                            </div>
+                        </td>
+                        <td class="operate-btn">
+                            <!--<button class="dropdown-toggle but02">操作<i class="fa fa-caret-down fa-fw"></i></button>-->
+                            <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="form.html" target="_parent"><i class="fa fa-pencil fa-fw-01 "></i>编辑</a></li>-->
+                            <!--<li><a><i class="fa fa-eye fa-fw-01"></i>查看</a></li>-->
+                            <!--</ul>-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" lay-skin="primary"></td>
+                        <td>李达康</td>
+                        <td>男</td>
+                        <td>研究生</td>
+                        <td>1982-09-12</td>
+                        <td>18186632454</td>
+                        <td class="progress-td">
+                            <div class="layui-progress layui-progress-big" lay-showpercent="true">
+                                <div class="layui-progress-bar" lay-percent="70%"></div>
+                            </div>
+                        </td>
+                        <td class="operate-btn">
+                            <!--<button class="dropdown-toggle but02">操作<i class="fa fa-caret-down fa-fw"></i></button>-->
+                            <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="form.html" target="_parent"><i class="fa fa-pencil fa-fw-01 "></i>编辑</a></li>-->
+                            <!--<li><a><i class="fa fa-eye fa-fw-01"></i>查看</a></li>-->
+                            <!--</ul>-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" lay-skin="primary"></td>
+                        <td>李达康</td>
+                        <td>男</td>
+                        <td>研究生</td>
+                        <td>1982-09-12</td>
+                        <td>18186632454</td>
+                        <td class="progress-td">
+                            <div class="layui-progress layui-progress-big" lay-showpercent="true">
+                                <div class="layui-progress-bar" lay-percent="70%"></div>
+                            </div>
+                        </td>
+                        <td class="operate-btn">
+                            <!--<button class="dropdown-toggle but02">操作<i class="fa fa-caret-down fa-fw"></i></button>-->
+                            <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="form.html" target="_parent"><i class="fa fa-pencil fa-fw-01 "></i>编辑</a></li>-->
+                            <!--<li><a><i class="fa fa-eye fa-fw-01"></i>查看</a></li>-->
+                            <!--</ul>-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" lay-skin="primary"></td>
+                        <td>李达康</td>
+                        <td>男</td>
+                        <td>研究生</td>
+                        <td>1982-09-12</td>
+                        <td>18186632454</td>
+                        <td class="progress-td">
+                            <div class="layui-progress layui-progress-big" lay-showpercent="true">
+                                <div class="layui-progress-bar" lay-percent="70%"></div>
+                            </div>
+                        </td>
+                        <td class="operate-btn">
+                            <!--<button class="dropdown-toggle but02">操作<i class="fa fa-caret-down fa-fw"></i></button>-->
+                            <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="form.html" target="_parent"><i class="fa fa-pencil fa-fw-01 "></i>编辑</a></li>-->
+                            <!--<li><a><i class="fa fa-eye fa-fw-01"></i>查看</a></li>-->
+                            <!--</ul>-->
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div id="demo7"></div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript" src="../../layui/layui.js"></script>
+<script src="../../assets/js/jquery-1.8.3.min.js"></script>
+<script src="../../assets/js/common.js"></script>
+<script type="text/javascript">
+    layui.use(['laypage', 'element','form'], function(){
+        var laypage = layui.laypage;
+        laypage.render({
+            elem: 'demo7'
+            ,count: 70 //数据总数，从服务端得到
+            ,jump: function(obj, first){
+                //obj包含了当前分页的所有参数，比如：
+                console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
+                console.log(obj.limit); //得到每页显示的条数
+
+                //首次不执行
+                if(!first){
+                    //do something
+                }
+            }
+        });
+    });
+
+
+</script>
+
+</body>
+</html>
