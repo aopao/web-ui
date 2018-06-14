@@ -100,7 +100,7 @@
   padding-bottom: 8px;
 }
 .layui-nav-tree .layui-nav-item a {
-  padding-left: 45px;
+  padding-left: 40px;
   padding-right: 30px;
   height: 40px;
   line-height: 40px;
@@ -110,6 +110,9 @@
   top: 50%;
   left: 20px;
   margin-top: -20px;
+}
+.layui-side-menu .layui-nav-child .layui-nav-child a {
+  padding-left: 53px;
 }
 .child-iframe {
   position: absolute;
@@ -136,4 +139,8 @@
   color: #fff;
   background: rgba(0,0,0,0.5);
   opacity: 1;
+}
+/*颜色切换*/
+.skinBtn {
+  text-align: center;
 }

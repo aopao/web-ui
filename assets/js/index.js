@@ -56,7 +56,7 @@ layui.use(['form','element','layer','jquery'],function () {
     $("#themes-btn").click(function(){
         layer.open({
             title : "更换皮肤",
-            area : ["280px","210px"],
+            area : ["280px","180px"],
             type : "1",
             content : '<div class="skins_box" style="padding: 20px 20px 0;">'+
             '<form class="layui-form">'+
@@ -64,7 +64,6 @@ layui.use(['form','element','layer','jquery'],function () {
             '<input type="radio" name="skin" value="默认" title="默认" lay-filter="default" checked="">'+
             '<input type="radio" name="skin" value="红色" title="红色" lay-filter="red">'+
             '<input type="radio" name="skin" value="蓝色" title="蓝色" lay-filter="blue">'+
-            '<input type="radio" name="skin" value="灰色" title="灰色" lay-filter="gray">'+
             '</div>'+
             '<div class="layui-form-item skinBtn">'+
             '<a href="javascript:;" class="layui-btn layui-btn-small layui-btn-normal" lay-submit="" lay-filter="changeSkin">确定更换</a>'+
@@ -91,8 +90,6 @@ layui.use(['form','element','layer','jquery'],function () {
                         skinColor = "red";
                     }else if($(this).find("div").text() == "蓝色"){
                         skinColor = "blue";
-                    }else if($(this).find("div").text() == "灰色"){
-                        skinColor = "gray";
                     }else if($(this).find("div").text() == "默认"){
                         skinColor = "";
                     }
@@ -107,8 +104,6 @@ layui.use(['form','element','layer','jquery'],function () {
                             skinColor = "red";
                         }else if(data.field.skin == "蓝色"){
                             skinColor = "blue";
-                        }else if(data.field.skin == "灰色"){
-                            skinColor = "gray";
                         }else if(data.field.skin == "默认"){
                             skinColor = "";
                         }

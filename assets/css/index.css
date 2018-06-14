@@ -130,16 +130,29 @@
   background-color: #038d55;
 }
 
+.layui-layout .layui-laydate .laydate-day-mark::after {
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 12px solid #038d55;
+  border-top: 8px solid #038d55;
+  border-right: 12px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-radius: 0;
+  background: none;
+}
+
 .red {
   /*index.html*/
 }
 
 .red .layui-list a:hover {
-  color: #f5222d;
+  color: #c9393a;
 }
 
 .red .layui-header {
-  background: #ff4d4f;
+  background: #d65b5e;
 }
 
 .red .layui-side {
@@ -159,7 +172,7 @@
 }
 
 .red .layui-nav .layui-nav-child dd.layui-this a, .red .layui-nav-child dd.layui-this {
-  background-color: #f5222d;
+  background-color: #c9393a;
 }
 
 .red .layui-nav-tree .layui-nav-item a:hover {
@@ -171,11 +184,11 @@
 }
 
 .red .layui-header .layui-nav .layui-nav-child a .layui-icon {
-  color: #f5222d;
+  color: #c9393a;
 }
 
 .red .layui-layout-right .layui-nav .layui-nav-child a {
-  color: #f5222d;
+  color: #c9393a;
 }
 
 .red .layui-layout-right .layui-nav dd.layui-this a {
@@ -191,24 +204,24 @@
 }
 
 .red .layui-nav-itemed > a, .red .layui-nav-tree .layui-nav-title a, .red .layui-nav-tree .layui-nav-title a:hover {
-  color: #f5222d !important;
+  color: #c9393a !important;
 }
 
 .red .layui-nav-tree .layui-nav-child dd.layui-this, .red .layui-nav-tree .layui-nav-child dd.layui-this a, .red .layui-nav-tree .layui-this, .red .layui-nav-tree .layui-this > a, .red .layui-nav-tree .layui-this > a:hover {
   background-color: #efefef;
-  color: #f5222d;
+  color: #c9393a;
 }
 
 .red .layui-nav .layui-nav-more {
-  border-color: #f5222d transparent transparent;
+  border-color: #c9393a transparent transparent;
 }
 
 .red .layui-nav .layui-nav-mored, .red .layui-nav-itemed > a .layui-nav-more {
-  border-color: transparent transparent #f5222d;
+  border-color: transparent transparent #c9393a;
 }
 
 .red .layui-nav .layui-this:after, .red .layui-nav-bar, .red .layui-nav-tree .layui-nav-itemed:after {
-  background-color: #f5222d;
+  background-color: #c9393a;
 }
 
 .red .layui-header .layui-nav .layui-nav-more {
@@ -228,35 +241,48 @@
 }
 
 .red .layui-tab-brief > .layui-tab-title .layui-this {
-  color: #f5222d;
+  color: #c9393a;
 }
 
 .red .layui-tab-brief > .layui-tab-more li.layui-this:after, .red .layui-tab-brief > .layui-tab-title .layui-this:after {
-  border-color: #f5222d;
+  border-color: #c9393a;
 }
 
 .red .index-panel-model .layui-model i {
-  color: #f5222d;
+  color: #c9393a;
 }
 
 .red .layui-laydate .layui-this {
-  background-color: #ff4d4f !important;
+  background-color: #d65b5e !important;
 }
 
 .red .layui-carousel-container .layui-carousel-ind li.layui-this {
-  background-color: #ff4d4f;
+  background-color: #d65b5e;
 }
 
 .red .layui-menu-items .layui-icon {
-  color: #f5222d;
+  color: #c9393a;
 }
 
 .red .layui-menu-items .tips {
-  background-color: #ff4d4f;
+  background-color: #d65b5e;
 }
 
 .red .layui-menu-items:hover .tips {
-  background-color: #f5222d;
+  background-color: #c9393a;
+}
+
+.red .layui-laydate .laydate-day-mark::after {
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 12px solid #c9393a;
+  border-top: 8px solid #c9393a;
+  border-right: 12px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-radius: 0;
+  background: none;
 }
 
 .blue {
@@ -264,11 +290,11 @@
 }
 
 .blue .layui-list a:hover {
-  color: #007ccf;
+  color: #0272bd;
 }
 
 .blue .layui-header {
-  background: #029df4;
+  background: #208ed3;
 }
 
 .blue .layui-side {
@@ -288,7 +314,7 @@
 }
 
 .blue .layui-nav .layui-nav-child dd.layui-this a, .blue .layui-nav-child dd.layui-this {
-  background-color: #007ccf;
+  background-color: #0272bd;
 }
 
 .blue .layui-nav-tree .layui-nav-item a:hover {
@@ -300,11 +326,11 @@
 }
 
 .blue .layui-header .layui-nav .layui-nav-child a .layui-icon {
-  color: #007ccf;
+  color: #0272bd;
 }
 
 .blue .layui-layout-right .layui-nav .layui-nav-child a {
-  color: #007ccf;
+  color: #0272bd;
 }
 
 .blue .layui-layout-right .layui-nav dd.layui-this a {
@@ -320,28 +346,24 @@
 }
 
 .blue .layui-nav-itemed > a, .blue .layui-nav-tree .layui-nav-title a, .blue .layui-nav-tree .layui-nav-title a:hover {
-  color: #007ccf !important;
+  color: #0272bd !important;
 }
 
 .blue .layui-nav-tree .layui-nav-child dd.layui-this, .blue .layui-nav-tree .layui-nav-child dd.layui-this a, .blue .layui-nav-tree .layui-this, .blue .layui-nav-tree .layui-this > a, .blue .layui-nav-tree .layui-this > a:hover {
   background-color: #efefef;
-  color: #007ccf;
+  color: #0272bd;
 }
 
 .blue .layui-nav .layui-nav-more {
-  border-color: #007ccf transparent transparent;
+  border-color: #0272bd transparent transparent;
 }
 
 .blue .layui-nav .layui-nav-mored, .blue .layui-nav-itemed > a .layui-nav-more {
-  border-color: transparent transparent #007ccf;
-}
-
-.blue .layui-nav-tree .layui-nav-bar {
-  background-color: #007ccf;
+  border-color: transparent transparent #0272bd;
 }
 
 .blue .layui-nav .layui-this:after, .blue .layui-nav-bar, .blue .layui-nav-tree .layui-nav-itemed:after {
-  background-color: #007ccf;
+  background-color: #0272bd;
 }
 
 .blue .layui-header .layui-nav .layui-nav-more {
@@ -361,168 +383,48 @@
 }
 
 .blue .layui-tab-brief > .layui-tab-title .layui-this {
-  color: #007ccf;
+  color: #0272bd;
 }
 
 .blue .layui-tab-brief > .layui-tab-more li.layui-this:after, .blue .layui-tab-brief > .layui-tab-title .layui-this:after {
-  border-color: #007ccf;
+  border-color: #0272bd;
 }
 
 .blue .index-panel-model .layui-model i {
-  color: #007ccf;
+  color: #0272bd;
 }
 
 .blue .layui-laydate .layui-this {
-  background-color: #029df4 !important;
+  background-color: #208ed3 !important;
 }
 
 .blue .layui-carousel-container .layui-carousel-ind li.layui-this {
-  background-color: #029df4;
+  background-color: #208ed3;
 }
 
 .blue .layui-menu-items .layui-icon {
-  color: #007ccf;
+  color: #0272bd;
 }
 
 .blue .layui-menu-items .tips {
-  background-color: #029df4;
+  background-color: #208ed3;
 }
 
 .blue .layui-menu-items:hover .tips {
-  background-color: #007ccf;
+  background-color: #0272bd;
 }
 
-.gray {
-  /*index.html*/
-}
-
-.gray .layui-list a:hover {
-  color: #909090;
-}
-
-.gray .layui-header {
-  background: #474747;
-}
-
-.gray .layui-side {
-  background-color: #fff;
-}
-
-.gray .layui-nav {
-  background-color: #fff;
-}
-
-.gray .layui-nav {
-  color: #333;
-}
-
-.gray .layui-nav .layui-nav-item a {
-  color: #333;
-}
-
-.gray .layui-nav .layui-nav-child dd.layui-this a, .gray .layui-nav-child dd.layui-this {
-  background-color: #909090;
-}
-
-.gray .layui-nav-tree .layui-nav-item a:hover {
-  background-color: #e8e8e8;
-}
-
-.gray .layui-header .layui-nav .layui-nav-item a .layui-icon {
-  color: #fff;
-}
-
-.gray .layui-header .layui-nav .layui-nav-child a .layui-icon {
-  color: #909090;
-}
-
-.gray .layui-layout-right .layui-nav .layui-nav-child a {
-  color: #909090;
-}
-
-.gray .layui-layout-right .layui-nav dd.layui-this a {
-  color: #fff;
-}
-
-.gray .layui-header .layui-nav .layui-nav-child dd.layui-this a .layui-icon, .gray .layui-header .layui-nav-child dd.layui-this .layui-icon {
-  color: #fff;
-}
-
-.gray .layui-nav-itemed > .layui-nav-child {
-  background-color: #f8f8f8 !important;
-}
-
-.gray .layui-nav-itemed > a, .gray .layui-nav-tree .layui-nav-title a, .gray .layui-nav-tree .layui-nav-title a:hover {
-  color: #909090 !important;
-}
-
-.gray .layui-nav-tree .layui-nav-child dd.layui-this, .gray .layui-nav-tree .layui-nav-child dd.layui-this a, .gray .layui-nav-tree .layui-this, .gray .layui-nav-tree .layui-this > a, .gray .layui-nav-tree .layui-this > a:hover {
-  background-color: #efefef;
-  color: #909090;
-}
-
-.gray .layui-nav .layui-nav-more {
-  border-color: #909090 transparent transparent;
-}
-
-.gray .layui-nav .layui-nav-mored, .gray .layui-nav-itemed > a .layui-nav-more {
-  border-color: transparent transparent #909090;
-}
-
-.gray .layui-nav-tree .layui-nav-bar {
-  background-color: #909090;
-}
-
-.gray .layui-nav .layui-this:after, .gray .layui-nav-bar, .gray .layui-nav-tree .layui-nav-itemed:after {
-  background-color: #909090;
-}
-
-.gray .layui-header .layui-nav .layui-nav-more {
-  border-color: #fff transparent transparent;
-}
-
-.gray .layui-header .layui-nav .layui-nav-mored, .gray .layui-header .layui-nav-itemed > a .layui-nav-more {
-  border-color: transparent transparent #fff;
-}
-
-.gray .layui-side-switch .layui-icon {
-  color: #fff;
-}
-
-.gray .child-iframe {
-  background-color: #e8e8e8;
-}
-
-.gray .layui-tab-brief > .layui-tab-title .layui-this {
-  color: #909090;
-}
-
-.gray .layui-tab-brief > .layui-tab-more li.layui-this:after, .gray .layui-tab-brief > .layui-tab-title .layui-this:after {
-  border-color: #909090;
-}
-
-.gray .index-panel-model .layui-model i {
-  color: #909090;
-}
-
-.gray .layui-laydate .layui-this {
-  background-color: #474747 !important;
-}
-
-.gray .layui-carousel-container .layui-carousel-ind li.layui-this {
-  background-color: #474747;
-}
-
-.gray .layui-menu-items .layui-icon {
-  color: #909090;
-}
-
-.gray .layui-menu-items .tips {
-  background-color: #474747;
-}
-
-.gray .layui-menu-items:hover .tips {
-  background-color: #909090;
+.blue .layui-laydate .laydate-day-mark::after {
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 12px solid #0272bd;
+  border-top: 8px solid #0272bd;
+  border-right: 12px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-radius: 0;
+  background: none;
 }
 
 /***** 主体布局 *****/
@@ -647,7 +549,7 @@
 }
 
 .layui-nav-tree .layui-nav-item a {
-  padding-left: 45px;
+  padding-left: 40px;
   padding-right: 30px;
   height: 40px;
   line-height: 40px;
@@ -658,6 +560,10 @@
   top: 50%;
   left: 20px;
   margin-top: -20px;
+}
+
+.layui-side-menu .layui-nav-child .layui-nav-child a {
+  padding-left: 53px;
 }
 
 .child-iframe {
@@ -687,4 +593,9 @@
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
   opacity: 1;
+}
+
+/*颜色切换*/
+.skinBtn {
+  text-align: center;
 }
