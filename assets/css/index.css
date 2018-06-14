@@ -135,9 +135,9 @@
   top: 0;
   width: 0;
   height: 0;
-  border-left: 12px solid #038d55;
+  border-left: 10px solid #038d55;
   border-top: 8px solid #038d55;
-  border-right: 12px solid transparent;
+  border-right: 10px solid transparent;
   border-bottom: 8px solid transparent;
   border-radius: 0;
   background: none;
@@ -277,9 +277,9 @@
   top: 0;
   width: 0;
   height: 0;
-  border-left: 12px solid #c9393a;
+  border-left: 10px solid #c9393a;
   border-top: 8px solid #c9393a;
-  border-right: 12px solid transparent;
+  border-right: 10px solid transparent;
   border-bottom: 8px solid transparent;
   border-radius: 0;
   background: none;
@@ -419,9 +419,9 @@
   top: 0;
   width: 0;
   height: 0;
-  border-left: 12px solid #0272bd;
+  border-left: 10px solid #0272bd;
   border-top: 8px solid #0272bd;
-  border-right: 12px solid transparent;
+  border-right: 10px solid transparent;
   border-bottom: 8px solid transparent;
   border-radius: 0;
   background: none;
