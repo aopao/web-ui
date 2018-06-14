@@ -13,10 +13,6 @@
   float: right !important;
 }
 
-.layui-bg-white {
-  background-color: #fff;
-}
-
 .layui-laydate {
   width: 100% !important;
 }
@@ -517,6 +513,24 @@
   background: none;
 }
 
+/*/路径导航*/
+.layui-breadcrumb-panel {
+  padding: 15px 32px 0;
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.layui-breadcrumb-panel .layui-breadcrumb {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.layui-breadcrumb-panel .layui-title {
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: #000;
+}
+
 /***** 首页 *****/
 /*活动提醒*/
 .index-panel-tips .layui-tips {
@@ -966,9 +980,23 @@
   margin-right: 0;
 }
 
-/***** 按钮页 *****/
+/***** 表单页 *****/
+.layui-form-container {
+  margin: 24px;
+  padding: 24px 32px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
 /***** 列表页 *****/
 /*按钮*/
+.layui-list-container {
+  margin: 24px;
+  padding: 24px 32px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
 .layui-form-panel .layui-btn {
   margin-left: 10px;
 }
@@ -1069,12 +1097,24 @@
 }
 
 /*表格*/
+.layui-table-panel .layui-table tbody tr.active, .layui-table-panel .layui-table tbody tr:hover, .layui-table-panel .layui-table thead tr, .layui-table-panel .layui-table-click, .layui-table-panel .layui-table-header, .layui-table-panel .layui-table-hover, .layui-table-panel .layui-table-mend, .layui-table-panel .layui-table-patch, .layui-table-panel .layui-table-tool, .layui-table-panel .layui-table[lay-even] tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
 .layui-table-panel .layui-table {
   margin: 10px 0;
 }
 
 .layui-table-panel .layui-table thead tr {
-  background: #dadada;
+  background-color: #ececec;
+}
+
+.layui-table-panel .layui-table thead tr:hover {
+  background-color: #f2f2f2;
+}
+
+.layui-table-panel .layui-table thead th, .layui-table-panel .layui-table thead td {
+  line-height: 30px;
 }
 
 .layui-table-panel .layui-table tr td:first-child {

@@ -1,0 +1,15 @@
+/*/路径导航*/
+.layui-breadcrumb-panel {
+  padding: 15px 32px 0;
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  .layui-breadcrumb {
+    display: block;
+    margin-bottom: 16px;
+  }
+  .layui-title {
+    margin-bottom: 16px;
+    font-size: 20px;
+    color: #000;
+  }
+}

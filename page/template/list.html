@@ -16,70 +16,87 @@
 </head>
 <body>
 
-<div class="layui-layout layui-fluid layui-bg-white">
-    <div class="layui-form-panel">
-        <form class="layui-form" action="">
-            <div class="layui-form-items">
-                <label class="layui-form-label">省级</label>
-                <div class="layui-input-inline">
-                    <select name="quiz1">
-                        <option value="">请选择省</option>
-                        <option value="浙江" selected="">浙江省</option>
-                        <option value="你的工号">江西省</option>
-                        <option value="你最喜欢的老师">福建省</option>
-                    </select>
-                </div>
-                <label class="layui-form-label">市级</label>
-                <div class="layui-input-inline">
-                    <select name="quiz2">
-                        <option value="">请选择市</option>
-                        <option value="杭州">杭州</option>
-                        <option value="宁波" disabled="">宁波</option>
-                        <option value="温州">温州</option>
-                        <option value="温州">台州</option>
-                        <option value="温州">绍兴</option>
-                    </select>
-                </div>
-                <label class="layui-form-label">区级</label>
-                <div class="layui-input-inline">
-                    <select name="quiz3">
-                        <option value="">请选择县/区</option>
-                        <option value="西湖区">西湖区</option>
-                        <option value="余杭区">余杭区</option>
-                        <option value="拱墅区">拱墅区</option>
-                    </select>
-                </div>
-                <a class="layui-btn layui-btn-primary">查询</a>
-                <a class="layui-btn layui-btn-primary">重置</a>
-                <div class="layui-btn-drop">
-                    <dt><a href="javascript:;">更多操作按钮 <i class="layui-edge"></i></a></dt>
-                    <dl class="layui-anim layui-anim-upbit">
-                        <ul>
-                            <li><a href="javascript:;">新增</a></li>
-                            <li><a href="javascript:;">删除</a></li>
-                            <li><a href="javascript:;">导出EXCEL表格</a></li>
-                        </ul>
-                    </dl>
-                </div>
-            </div>
-        </form>
+<div class="layui-layout">
+
+    <!--路径导航-->
+    <div class="layui-breadcrumb-panel">
+        <span class="layui-breadcrumb">
+          <a href="#">首页</a>
+          <a href="#">组件</a>
+          <a href="#">列表页</a>
+        </span>
+        <div class="layui-title">列表页</div>
     </div>
-    <div class="layui-table-panel">
-        <div class="layui-form" >
-            <table class="layui-table" lay-even="" lay-skin="row">
-                <colgroup>
-                    <col width="20">
-                    <col width="150">
-                    <col width="100">
-                    <col width="100">
-                    <col width="150">
-                    <col width="150">
-                    <col width="200">
-                    <col width="100">
-                </colgroup>
-                <thead>
+    <!--路径导航-->
+
+    <div class="layui-list-container">
+        <!--查询表单-->
+        <div class="layui-form-panel">
+            <form class="layui-form" action="">
+                <div class="layui-form-items">
+                    <label class="layui-form-label">省级</label>
+                    <div class="layui-input-inline">
+                        <select name="selectTypeA" lay-filter="selectTypeA">
+                            <option value="">请选择省</option>
+                            <option value="浙江" selected="">浙江省</option>
+                            <option value="你的工号">江西省</option>
+                            <option value="你最喜欢的老师">福建省</option>
+                        </select>
+                    </div>
+                    <label class="layui-form-label">市级</label>
+                    <div class="layui-input-inline">
+                        <select name="selectTypeB" lay-filter="selectTypeB">
+                            <option value="">请选择市</option>
+                            <option value="杭州">杭州</option>
+                            <option value="宁波" disabled="">宁波</option>
+                            <option value="温州">温州</option>
+                            <option value="温州">台州</option>
+                            <option value="温州">绍兴</option>
+                        </select>
+                    </div>
+                    <label class="layui-form-label">区级</label>
+                    <div class="layui-input-inline">
+                        <select name="selectTypeC" lay-filter="selectTypeC">
+                            <option value="">请选择县/区</option>
+                            <option value="西湖区">西湖区</option>
+                            <option value="余杭区">余杭区</option>
+                            <option value="拱墅区">拱墅区</option>
+                        </select>
+                    </div>
+                    <a class="layui-btn layui-btn-primary">查询</a>
+                    <a class="layui-btn layui-btn-primary">重置</a>
+                    <div class="layui-btn-drop">
+                        <dt><a href="javascript:;">更多操作按钮 <i class="layui-edge"></i></a></dt>
+                        <dl class="layui-anim layui-anim-upbit">
+                            <ul>
+                                <li><a href="javascript:;">新增</a></li>
+                                <li><a href="javascript:;">删除</a></li>
+                                <li><a href="javascript:;">导出EXCEL表格</a></li>
+                            </ul>
+                        </dl>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--查询表单-->
+
+        <!--数据表格-->
+        <div class="layui-table-panel">
+            <div class="layui-form" id="form-list">
+                <table class="layui-table">
+                    <colgroup>
+                        <col width="20">
+                        <col width="150">
+                        <col width="100">
+                        <col width="100">
+                        <col width="150">
+                        <col width="150">
+                        <col width="200">
+                        <col width="100">
+                    </colgroup>
+                    <thead>
                     <tr>
-                        <th style="text-align:center;"><input type="checkbox" lay-skin="primary" lay-filter="allChoose"></th>
+                        <th style="text-align:center;"><input type="checkbox" lay-skin="primary" lay-filter="allChoose" id="allChoose"></th>
                         <th>姓名</th>
                         <th>性别</th>
                         <th>学历</th>
@@ -88,8 +105,8 @@
                         <th>资料完成度</th>
                         <th>操作</th>
                     </tr>
-                </thead>
-                <tbody>
+                    </thead>
+                    <tbody>
                     <tr>
                         <td><input type="checkbox" lay-skin="primary"></td>
                         <td>李达康</td>
@@ -375,11 +392,15 @@
                             </div>
                         </td>
                     </tr>
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
+            <div id="demo7"></div>
         </div>
-        <div id="demo7"></div>
+        <!--数据表格-->
     </div>
+
+
 </div>
 
 
@@ -394,8 +415,8 @@
 <script type="text/javascript">
     layui.use(['laypage', 'element','form'], function(){
         var laypage = layui.laypage;
-        var element = layui.laypage;
-        var form = layui.laypage;
+        var element = layui.element;
+        var form = layui.form;
         laypage.render({
             elem: 'demo7'
             ,count: 70 //数据总数，从服务端得到
@@ -411,10 +432,34 @@
             }
         });
 
+        // 全选
+        form.on('checkbox(allChoose)', function(data){
+            var checkAll = data.elem.checked;
+            $('#form-list').find('input[type="checkbox"]').each(function () {
+                this.checked = checkAll;
+                checkAll && ($(this).closest('tr').addClass('active')) || ($(this).closest('tr').removeClass('active'))
+            });
+            form.render('checkbox');
+        });
+        $('#form-list').on('click', 'tr', function () {
+            var $checkbox = $(this).find('input[type="checkbox"]')[0];
+            var $checkbox_layui = $(this).find('.layui-form-checkbox');
+            $checkbox.checked = !$checkbox.checked;
+            if($checkbox.checked) {
+                $checkbox_layui.addClass('layui-form-checked');
+                $(this).addClass('active');
+            } else {
+                $checkbox_layui.removeClass('layui-form-checked');
+                $(this).removeClass('active');
+                document.getElementById('allChoose').checked = false;
+                form.render('checkbox');
+            }
+        });
+
+
     });
 
 
 </script>
-
 </body>
 </html>
