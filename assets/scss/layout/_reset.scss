@@ -1,4 +1,4 @@
-/***** 引用样式重置 *****/
+/***** 样式重置 *****/
 // 布局
 .layui-fluid {
   padding: 15px;
@@ -8,6 +8,9 @@
 }
 .layui-fr {
   float: right !important;
+}
+.layui-bg-white{
+  background-color: #fff;
 }
 //日期
 .layui-laydate {

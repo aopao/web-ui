@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*===== 主要样式 =====*/
-/***** 引用样式重置 *****/
+/***** 样式重置 *****/
 .layui-fluid {
   padding: 15px;
 }
@@ -11,6 +11,10 @@
 
 .layui-fr {
   float: right !important;
+}
+
+.layui-bg-white {
+  background-color: #fff;
 }
 
 .layui-laydate {
@@ -964,13 +968,15 @@
 
 /***** 按钮页 *****/
 /***** 列表页 *****/
-.layui-bg-white {
-  margin-left: 15px;
-  background: #fff;
-}
-
+/*按钮*/
 .layui-form-panel .layui-btn {
   margin-left: 10px;
+}
+
+.layui-form-panel .layui-form-label {
+  float: none;
+  display: inline-block;
+  width: auto;
 }
 
 .layui-btn-drop {
@@ -1062,10 +1068,15 @@
   margin-top: -3px\9;
 }
 
-.layui-table {
+/*表格*/
+.layui-table-panel .layui-table {
   margin: 10px 0;
 }
 
-.layui-table tr td:first-child {
+.layui-table-panel .layui-table thead tr {
+  background: #dadada;
+}
+
+.layui-table-panel .layui-table tr td:first-child {
   text-align: center;
 }

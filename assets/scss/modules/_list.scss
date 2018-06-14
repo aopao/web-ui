@@ -1,10 +1,14 @@
 /***** 列表页 *****/
-.layui-bg-white {
-  margin-left: 15px;
-  background: #fff;
-}
-.layui-form-panel .layui-btn {
-  margin-left: 10px;
+/*按钮*/
+.layui-form-panel {
+  .layui-btn {
+    margin-left: 10px;
+  }
+  .layui-form-label {
+    float: none;
+    display: inline-block;
+    width: auto;
+  }
 }
 .layui-btn-drop {
   margin-left: 10px;
@@ -85,11 +89,25 @@
     margin-top: -3px\9
   }
 }
-.layui-table {
-  margin: 10px 0;
-  tr {
-    td:first-child {
-      text-align: center;
+/*表格*/
+.layui-table-panel {
+  .layui-table {
+    margin: 10px 0;
+    thead {
+      tr {
+        background: #dadada;
+      }
     }
+    tr {
+      td:first-child {
+        text-align: center;
+      }
+    }
+  }
+  .layui-progress {
+
+  }
+  .layui-btn-group {
+
   }
 }
