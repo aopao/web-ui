@@ -60,7 +60,7 @@
                         <div class="layui-card">
                         <div class="layui-card-header">活动日历</div>
                         <div class="layui-card-body" style="height: 304px;">
-                            <div id="date"></div>
+                            <div id="date" class="layui-date-col12"></div>
                         </div>
                     </div>
                     </div>
@@ -85,7 +85,7 @@
             </div>
             <div class="layui-col-md4">
                 <div class="layui-card">
-                    <div class="layui-card-header">通知<a class="layui-fr" href="javascript:;">更多<i class="layui-icon layui-icon-next" style="margin-left: 5px; font-size: 12px;"></i></a></div>
+                    <div class="layui-card-header">通知公告<a class="layui-fr" href="javascript:;">更多<i class="layui-icon layui-icon-next" style="margin-left: 5px; font-size: 12px;"></i></a></div>
                     <div class="layui-card-body">
                         <div class="layui-list layui-list-col2">
                             <dl>
@@ -920,8 +920,8 @@ layui.use(['carousel','laydate', 'layer'], function(){
         elem: '#date'
         ,position: 'static'
         ,mark: {
-            '2018-6-3': '测试',
-            '2018-6-12': '心形线,8'
+            '2018-6-3': '3',
+            '2018-6-12': '12,8'
         }
         ,change: function(value, date){ //监听日期被切换
             lay('#testView').html(value);

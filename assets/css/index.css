@@ -94,10 +94,6 @@
   color: #fff;
 }
 
-.layui-layout .child-iframe {
-  background-color: #e8e8e8;
-}
-
 .layui-layout .layui-tab-brief > .layui-tab-title .layui-this {
   color: #038d55;
 }
@@ -236,10 +232,6 @@
   color: #fff;
 }
 
-.red .child-iframe {
-  background-color: #e8e8e8;
-}
-
 .red .layui-tab-brief > .layui-tab-title .layui-this {
   color: #c9393a;
 }
@@ -376,10 +368,6 @@
 
 .blue .layui-side-switch .layui-icon {
   color: #fff;
-}
-
-.blue .child-iframe {
-  background-color: #e8e8e8;
 }
 
 .blue .layui-tab-brief > .layui-tab-title .layui-this {
@@ -529,7 +517,7 @@
   box-sizing: border-box;
 }
 
-.layui-side, .layui-body {
+.layui-side, .layui-body, .layui-footer {
   transition: all .3s;
   -webkit-transition: all .3s;
 }
@@ -570,7 +558,7 @@
   width: 100%;
   height: 100%;
   border: 0;
-  background-color: #efefef;
+  background-color: #f2f2f2;
 }
 
 /*收起菜单*/

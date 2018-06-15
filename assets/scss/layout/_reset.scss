@@ -10,62 +10,67 @@
   float: right !important;
 }
 // 日期
-.layui-laydate {
-  width: 100% !important;
-}
-.layui-laydate-main {
-  width: 100% !important;
-}
-.layui-laydate-header {
-  line-height: 24px !important;
-}
-.layui-laydate-content table {
-  width: 100% !important;
-}
-.layui-laydate-content td, .layui-laydate-content th {
-  padding: 3px 5px !important;
-}
-.layui-laydate-content {
-  padding: 5px 10px !important;
-}
-.layui-laydate-hint {
-  margin-top: -100px !important;
-  margin-left: 0!important;
-  left: 10% !important;
-  top: 50% !important;
-  bottom: 0 !important;
-  width: 80% !important;
-  height: 200px !important;
-  overflow: auto !important;
-}
-.layui-this .laydate-day-mark i {
-  display: none;
-}
-.laydate-day-mark {
-  background-color: #f3f3f3;
-}
-.layui-laydate-content td:hover .laydate-day-mark {
-  background-color: #eaeaea;
-}
+.layui-date-col12 {
+  .layui-laydate {
+    width: 100% !important;
+  }
+  .layui-laydate-main {
+    width: 100% !important;
+  }
+  .layui-laydate-header {
+    line-height: 24px !important;
+  }
+  .layui-laydate-content table {
+    width: 100% !important;
+  }
+  .layui-laydate-content td, .layui-laydate-content th {
+    padding: 3px 5px !important;
+  }
+  .layui-laydate-content {
+    padding: 5px 10px !important;
+  }
+  .layui-laydate-hint {
+    margin-top: -100px !important;
+    margin-left: 0!important;
+    left: 10% !important;
+    top: 50% !important;
+    bottom: 0 !important;
+    width: 80% !important;
+    height: 200px !important;
+    overflow: auto !important;
+  }
+  .layui-this .laydate-day-mark i {
+    display: none;
+  }
+  .laydate-day-mark {
+    background-color: #f3f3f3;
+  }
+  .layui-laydate-content td:hover .laydate-day-mark {
+    background-color: #eaeaea;
+  }
 
-.laydate-day-mark i {
-  position: absolute;
-  left: 0;
-  top: 2px;
-  z-index: 99;
-  width: 12px;
-  line-height: 8px;
-  font-family: Arial;
-  font-style: normal;
-  font-size: 12px;
-  color: #fff;
-  text-align: center;
-} 
-.layui-laydate-footer {
-  height: 42px !important;
-}
-.laydate-footer-btns {
-  top: 8px !important;
+  .laydate-day-mark i {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    z-index: 99;
+    width: 12px;
+    line-height: 8px;
+    font-family: Arial;
+    font-style: normal;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+  }
+  .layui-laydate-footer {
+    height: 42px !important;
+  }
+  .laydate-footer-btns {
+    top: 8px !important;
+  }
+  .laydate-day-mark {
+    color: #666 !important;
+  }
 }
 // 卡片
 .layui-card-header {
