@@ -4,4 +4,15 @@
   padding: 24px 32px;
   background-color: #fff;
   border-radius: 2px;
+  .label-td {
+    background:#F9F9F9;
+    text-align: right;
+  }
+  .layui-btn-container {
+    margin-top: 24px;
+    text-align: center;
+    .layui-btn {
+      margin: 0 20px;
+    }
+  }
 }

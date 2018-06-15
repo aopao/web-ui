@@ -988,6 +988,20 @@
   border-radius: 2px;
 }
 
+.layui-form-container .label-td {
+  background: #F9F9F9;
+  text-align: right;
+}
+
+.layui-form-container .layui-btn-container {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.layui-form-container .layui-btn-container .layui-btn {
+  margin: 0 20px;
+}
+
 /***** 列表页 *****/
 /*按钮*/
 .layui-list-container {

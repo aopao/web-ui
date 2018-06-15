@@ -441,19 +441,15 @@
             });
             form.render('checkbox');
         });
-        $('#form-list').on('click', 'tr', function () {
-            var $checkbox = $(this).find('input[type="checkbox"]')[0];
-            var $checkbox_layui = $(this).find('.layui-form-checkbox');
-            $checkbox.checked = !$checkbox.checked;
+        $('#form-list tr').on('click', '.layui-form-checkbox', function () {
+            var $checkbox = $(this).siblings('input[type="checkbox"]')[0];
             if($checkbox.checked) {
-                $checkbox_layui.addClass('layui-form-checked');
-                $(this).addClass('active');
+                $(this).closest('tr').addClass('active');
             } else {
-                $checkbox_layui.removeClass('layui-form-checked');
-                $(this).removeClass('active');
+                $(this).closest('tr').removeClass('active');
                 document.getElementById('allChoose').checked = false;
-                form.render('checkbox');
             }
+            form.render('checkbox');
         });
 
 
