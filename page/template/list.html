@@ -33,47 +33,77 @@
     <div class="layui-list-container">
         <!--查询表单-->
         <div class="layui-form-panel">
-            <form class="layui-form" action="">
-                <div class="layui-form-items">
-                    <label class="layui-form-label">党组织名称</label>
+            <div class="layui-form">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">姓名</label>
                     <div class="layui-input-inline">
-                        <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+                        <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入" class="layui-input">
                     </div>
-                    <label class="layui-form-label">组织机构类别</label>
+                    <label class="layui-form-label">性别</label>
                     <div class="layui-input-inline">
-                        <select name="modules" lay-verify="required" lay-search="">
-                            <option value="">直接选择或搜索选择</option>
-                            <option value="1">layer</option>
-                            <option value="2">form</option>
-                            <option value="3">layim</option>
-                            <option value="4">element</option>
-                            <option value="5">laytpl</option>
-                            <option value="6">upload</option>
-                            <option value="7">laydate</option>
-                            <option value="8">laypage</option>
-                            <option value="9">flow</option>
-                            <option value="10">util</option>
-                            <option value="11">code</option>
-                            <option value="12">tree</option>
-                            <option value="13">layedit</option>
-                            <option value="14">nav</option>
-                            <option value="15">tab</option>
-                            <option value="16">table</option>
-                            <option value="17">select</option>
-                            <option value="18">checkbox</option>
-                            <option value="19">switch</option>
-                            <option value="20">radio</option>
+                        <select lay-verify="required">
+                            <option value="">请选择</option>
+                            <option value="1">男</option>
+                            <option value="2">女</option>
                         </select>
                     </div>
                     <a class="layui-btn layui-btn-primary form-btn-query"><i class="iconfont icon-chaxun"></i><span>查询</span></a>
                     <a class="layui-btn layui-btn-primary form-btn-reset"><i class="iconfont icon-zhongzhi"></i><span>重置</span></a>
+                    <a class="layui-btn layui-btn-primary form-btn-query-more"><i class="iconfont icon-chaxun"></i><span>高级查询</span></a>
                     <a class="layui-btn layui-btn-primary form-btn-add"><i class="iconfont icon-xinzeng"></i><span>新增</span></a>
                     <a class="layui-btn layui-btn-primary form-btn-del"><i class="iconfont icon-shanchu"></i><span>删除</span></a>
                     <a class="layui-btn layui-btn-primary form-btn-export"><i class="iconfont icon-daochu"></i><span>导出EXCEL表格</span></a>
                 </div>
-            </form>
+            </div>
         </div>
         <!--查询表单-->
+
+        <!--高级查询弹层-->
+        <div class="layer-query-more" style="display: none;">
+            <div class="layui-form" style="padding-top: 15px;">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">党组织名称</label>
+                    <div class="layui-inline">
+                        <div class="layui-input-inline">
+                            <select name="modules" lay-verify="required" lay-search="">
+                                <option value="">直接选择或搜索选择</option>
+                                <option value="1">layer</option>
+                                <option value="2">form</option>
+                                <option value="3">layim</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">正式党员</label>
+                    <div class="layui-inline">
+                        <div class="layui-input-inline">
+                            <input type="radio" name="" value="是" title="是" checked="">
+                            <input type="radio" name="" value="否" title="否">
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">入党时间</label>
+                    <div class="layui-inline">
+                        <div class="layui-input-inline">
+                            <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请选择时间" class="layui-input" id="start">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <div class="layui-input-inline">
+                            <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请选择时间" class="layui-input" id="end">
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-btn-container">
+                    <button class="layui-btn">查询</button>
+                    <button class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+        </div>
+        <!--高级查询弹层-->
+
 
         <!--数据表格-->
         <div class="layui-table-panel">
@@ -408,10 +438,12 @@
 <script src="../../assets/js/jquery-1.8.3.min.js"></script>
 <script src="../../assets/js/common.js"></script>
 <script type="text/javascript">
-    layui.use(['laypage', 'element','form', 'layer'], function(){
+    layui.use(['laypage', 'laydate', 'element','form', 'layer'], function(){
         var laypage = layui.laypage;
         var element = layui.element;
         var form = layui.form;
+        var laydate = layui.laydate;
+
         laypage.render({
             elem: 'demo7'
             ,count: 70 //数据总数，从服务端得到
@@ -446,6 +478,27 @@
             }
             form.render('checkbox');
         });
+        // 高级查询
+        $('.layui-form-panel').on('click', '.form-btn-query-more', function () {
+            layer.open({
+                type: 1,
+                title: '高级查询',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['600px', '300px'],
+                content: $('.layer-query-more'),
+                scrollbar: false
+            });
+        })
+
+        //入党时间开始范围
+        laydate.render({
+            elem: '#start' //指定元素
+        });
+        //入党时间结束范围
+        laydate.render({
+            elem: '#end' //指定元素
+        });
         // 新增
         $('.layui-form-panel').on('click', '.form-btn-add', function () {
             layer.open({
@@ -458,6 +511,7 @@
                 scrollbar: false
             });
         })
+        // 编辑
         $('#form-list tr').on('click', '.form-btn-edit', function () {
             layer.open({
                 type: 2,
@@ -469,6 +523,7 @@
                 scrollbar: false
             });
         })
+        // 查看
         $('#form-list tr').on('click', '.form-btn-view', function () {
             layer.open({
                 type: 2,
