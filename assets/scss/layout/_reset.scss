@@ -48,7 +48,6 @@
   .layui-laydate-content td:hover .laydate-day-mark {
     background-color: #eaeaea;
   }
-
   .laydate-day-mark i {
     position: absolute;
     left: 0;
@@ -75,4 +74,14 @@
 // 卡片
 .layui-card-header {
   border-bottom: 1px solid #dadada;
+}
+// 按钮
+.layui-btn {
+  .iconfont {
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  span {
+    vertical-align: middle;
+  }
 }
