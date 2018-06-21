@@ -1,5 +1,5 @@
 /*
- * JQuery zTree core v3.5.29
+ * JQuery zTree core v3.5.28
  * http://treejs.cn/
  *
  * Copyright (c) 2010 Hunter.z
@@ -8,7 +8,7 @@
  * http://www.opensource.org/licenses/mit-license.php
  *
  * email: hunter.z@263.net
- * Date: 2017-06-19
+ * Date: 2017-01-20
  */
 (function ($) {
     var settings = {}, roots = {}, caches = {},
@@ -406,25 +406,6 @@
                 }
             },
             addSelectedNode: function (setting, node) {
-                //添加背景盒
-                var bgStr = "<div class='ztreeCurNode'></div>";
-                $('.ztreeCurNode').remove();
-                $('.ztree li .curSelectedNode').parent('.parentDiv').before(bgStr);
-                //宽高
-                var txtW = $('.ztree li a');
-                var maxWidth=0;
-                $(txtW).each(function(){
-                    if(maxWidth){
-                        if($(this).width()>maxWidth){
-                            maxWidth = $(this).width();
-                        }
-                    }else{
-                        maxWidth = $(this).width();
-                    }
-                });
-                var ztreeCurNode = $('.ztreeCurNode');
-                $(ztreeCurNode).width(maxWidth+44);
-                //原始
                 var root = data.getRoot(setting);
                 if (!data.isSelectedNode(setting, node)) {
                     root.curSelectedList.push(node);
@@ -1271,10 +1252,10 @@
                     "' title='' treeNode", consts.id.ICON, " class='", view.makeNodeIcoClass(setting, node),
                     "' style='", view.makeNodeIcoStyle(setting, node), "'></span><span id='", node.tId, consts.id.SPAN,
                     "' class='", consts.className.NAME,
-                    "'>", name, "</span></div>");
+                    "'>", name, "</span>");
             },
             makeDOMNodeLine: function (html, setting, node) {
-                html.push("<div class='parentDiv por'><span id='", node.tId, consts.id.SWITCH, "' title='' class='", view.makeNodeLineClass(setting, node), "' treeNode", consts.id.SWITCH, "></span>");
+                html.push("<span id='", node.tId, consts.id.SWITCH, "' title='' class='", view.makeNodeLineClass(setting, node), "' treeNode", consts.id.SWITCH, "></span>");
             },
             makeDOMNodeMainAfter: function (html, setting, node) {
                 html.push("</li>");
@@ -1826,19 +1807,7 @@
                 isSelectedNode: function (node) {
                     return data.isSelectedNode(setting, node);
                 },
-                reAsyncChildNodesPromise: function (parentNode, reloadType, isSilent) {
-                    var promise = new Promise(function(resolve, reject) {
-                        try {
-                            zTreeTools.reAsyncChildNodes(parentNode, reloadType, isSilent, function() {
-                                resolve(parentNode);
-                            });
-                        } catch(e) {
-                            reject(e);
-                        }
-                    });
-                    return promise;
-                },
-                reAsyncChildNodes: function (parentNode, reloadType, isSilent, callback) {
+                reAsyncChildNodes: function (parentNode, reloadType, isSilent) {
                     if (!this.setting.async.enable) return;
                     var isRoot = !parentNode;
                     if (isRoot) {
@@ -1858,7 +1827,7 @@
                             ulObj.empty();
                         }
                     }
-                    view.asyncNode(this.setting, isRoot ? null : parentNode, !!isSilent, callback);
+                    view.asyncNode(this.setting, isRoot ? null : parentNode, !!isSilent);
                 },
                 refresh: function () {
                     this.setting.treeObj.empty();
