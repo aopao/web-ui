@@ -1053,7 +1053,6 @@
 /***** 列表页 *****/
 /*按钮*/
 .layui-list-container {
-  margin: 24px;
   padding: 24px 32px;
   background-color: #fff;
   border-radius: 2px;
@@ -1158,7 +1157,7 @@
 
 /*表格*/
 .layui-table-panel .layui-table tbody tr.active, .layui-table-panel .layui-table tbody tr:hover, .layui-table-panel .layui-table thead tr, .layui-table-panel .layui-table-click, .layui-table-panel .layui-table-header, .layui-table-panel .layui-table-hover, .layui-table-panel .layui-table-mend, .layui-table-panel .layui-table-patch, .layui-table-panel .layui-table-tool, .layui-table-panel .layui-table[lay-even] tr:nth-child(even) {
-  background-color: #fafafa;
+  background-color: #f8f8f8;
 }
 
 .layui-table-panel .layui-table {
@@ -1166,11 +1165,11 @@
 }
 
 .layui-table-panel .layui-table thead tr {
-  background-color: #ececec;
+  background-color: #efefef;
 }
 
 .layui-table-panel .layui-table thead tr:hover {
-  background-color: #f2f2f2;
+  background-color: #efefef;
 }
 
 .layui-table-panel .layui-table thead th, .layui-table-panel .layui-table thead td {
@@ -1179,4 +1178,60 @@
 
 .layui-table-panel .layui-table tr td:first-child {
   text-align: center;
+}
+
+/*左侧树*/
+.layui-tree-panel {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #f8f8f8;
+}
+
+.ztree {
+  padding: 4px 5px;
+}
+
+.ztree li a:hover {
+  text-decoration: none;
+}
+
+.ztree li a.curSelectedNode {
+  background: transparent;
+  color: #f30;
+}
+
+.ztree .ztreeCurNode {
+  position: absolute;
+  left: 0;
+  min-width: 100%;
+  min-height: 34px;
+  background-color: #eee;
+  background-image: linear-gradient(45deg, #bbb 25%, transparent 0), linear-gradient(45deg, transparent 75%, #bbb 0), linear-gradient(45deg, #bbb 25%, transparent 0), linear-gradient(45deg, transparent 75%, #bbb 0);
+  background-position: 0 0, 15px 15px, 15px 15px, 30px 30px;
+  background-size: 30px 30px;
+}
+
+/*分割线*/
+.layui-tree-divider {
+  position: fixed;
+  left: 200px;
+  top: 0;
+  bottom: 0;
+  z-index: 9;
+  width: 1px;
+  background: #dadada;
+}
+
+/*右侧内容*/
+.layui-content-panel {
+  position: absolute;
+  left: 200px;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
