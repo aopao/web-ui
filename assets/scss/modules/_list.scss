@@ -1,16 +1,22 @@
 /***** 列表页 *****/
 /*按钮*/
 .layui-list-container {
-  padding: 24px 32px;
+  padding: 15px 24px;
   background-color: #fff;
   border-radius: 2px;
 }
 .layui-form-panel {
+  .layui-form-item {
+    margin-bottom: 5px;
+  }
   .layui-btn {
     margin-left: 10px;
   }
   .layui-form-label {
     width: auto;
+  }
+  .layui-input-inline, .layui-form-label, .layui-btn {
+    margin-bottom: 5px;
   }
 }
 .layui-btn-drop {
@@ -131,16 +137,21 @@
   top: 0;
   bottom: 0;
   width: 200px;
-  overflow-x: hidden;
+  overflow-x: auto;
   overflow-y: auto;
-  background-color: #f8f8f8;
+  background-color: #fff;
 }
-.ztree {padding: 4px 5px;}
-.ztree li a:hover {text-decoration: none;}
-.ztree li a.curSelectedNode {background: transparent; color: #f30;}
-.ztree .ztreeCurNode {position: absolute; left: 0; min-width: 100%; min-height: 34px; background-color: #eee; background-image: linear-gradient(45deg, #bbb 25%, transparent 0), linear-gradient(45deg, transparent 75%, #bbb 0), linear-gradient(45deg, #bbb 25%, transparent 0), linear-gradient(45deg, transparent 75%, #bbb 0); background-position: 0 0, 15px 15px, 15px 15px, 30px 30px; background-size: 30px 30px;}
+.layui-tree-search {
+  padding: 15px 10px 5px;
+}
+.layui-ztree {padding: 5px 10px;}
+.layui-ztree li a:hover {text-decoration: none;}
+.layui-ztree li a.curSelectedNode {background: transparent; color: #f30;}
+.layui-ztree .ztreeCurNode {position: absolute; left: 0; min-width: 100%; min-height: 34px; background-color: #eee; background-image: linear-gradient(45deg, #bbb 25%, transparent 0), linear-gradient(45deg, transparent 75%, #bbb 0), linear-gradient(45deg, #bbb 25%, transparent 0), linear-gradient(45deg, transparent 75%, #bbb 0); background-position: 0 0, 15px 15px, 15px 15px, 30px 30px; background-size: 30px 30px;}
 
-/*分割线*/
+
+
+  /*分割线*/
 .layui-tree-divider {
   position: fixed;
   left: 200px;

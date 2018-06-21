@@ -1053,9 +1053,13 @@
 /***** 列表页 *****/
 /*按钮*/
 .layui-list-container {
-  padding: 24px 32px;
+  padding: 15px 24px;
   background-color: #fff;
   border-radius: 2px;
+}
+
+.layui-form-panel .layui-form-item {
+  margin-bottom: 5px;
 }
 
 .layui-form-panel .layui-btn {
@@ -1064,6 +1068,10 @@
 
 .layui-form-panel .layui-form-label {
   width: auto;
+}
+
+.layui-form-panel .layui-input-inline, .layui-form-panel .layui-form-label, .layui-form-panel .layui-btn {
+  margin-bottom: 5px;
 }
 
 .layui-btn-drop {
@@ -1187,25 +1195,29 @@
   top: 0;
   bottom: 0;
   width: 200px;
-  overflow-x: hidden;
+  overflow-x: auto;
   overflow-y: auto;
-  background-color: #f8f8f8;
+  background-color: #fff;
 }
 
-.ztree {
-  padding: 4px 5px;
+.layui-tree-search {
+  padding: 15px 10px 5px;
 }
 
-.ztree li a:hover {
+.layui-ztree {
+  padding: 5px 10px;
+}
+
+.layui-ztree li a:hover {
   text-decoration: none;
 }
 
-.ztree li a.curSelectedNode {
+.layui-ztree li a.curSelectedNode {
   background: transparent;
   color: #f30;
 }
 
-.ztree .ztreeCurNode {
+.layui-ztree .ztreeCurNode {
   position: absolute;
   left: 0;
   min-width: 100%;

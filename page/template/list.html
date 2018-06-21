@@ -21,7 +21,10 @@
 <div class="layui-layout">
     <!--左侧树-->
     <div class="layui-tree-panel">
-        <div id="treeDemo" class="ztree"></div>
+        <div class="layui-tree-search">
+            <input type="text" class="layui-input" placeholder="请输入关键字">
+        </div>
+        <div id="treeDemo" class="layui-ztree ztree"></div>
     </div>
     <!--左侧树-->
     <!--分割线-->
@@ -558,22 +561,22 @@
         };
 
         var zNodes =[
-            { id:1, pId:0, name:"中共南昌西湖区党组织", open:true},
-            { id:11, pId:1, name:"中共南昌西湖区委", open:true},
-            { id:111, pId:11, name:"中共南昌 1-1-中共南昌 1-1-1"},
-            { id:112, pId:11, name:"中共南昌 1-1-2"},
-            { id:113, pId:11, name:"中共南昌 1-1-3"},
-            { id:114, pId:11, name:"中共南昌 1-1-4"},
-            { id:12, pId:1, name:"中共南昌西湖区委 1-2", open:true},
-            { id:121, pId:12, name:"中共南昌 1-2-1"},
-            { id:122, pId:12, name:"中共南昌 1-2-2"},
-            { id:123, pId:12, name:"中共南昌 1-2-3"},
-            { id:124, pId:12, name:"中共南昌 1-2-4"},
-            { id:13, pId:1, name:"中共南昌西湖区委 1-3", open:true},
-            { id:131, pId:13, name:"中共南昌 1-3-1"},
-            { id:132, pId:13, name:"中共南昌 1-3-2"},
-            { id:133, pId:13, name:"中共南昌 1-3-3"},
-            { id:134, pId:13, name:"中共南昌 1-3-4"}
+            { id:1, pId:0, name:"党总支", open:true},
+            { id:11, pId:1, name:"组织部", open:true},
+            { id:111, pId:11, name:"支部"},
+            { id:112, pId:11, name:"支部 1-1-2"},
+            { id:113, pId:11, name:"支部 1-1-3"},
+            { id:114, pId:11, name:"支部 1-1-4"},
+            { id:12, pId:1, name:"组织部 1-2", open:true},
+            { id:121, pId:12, name:"支部 1-2-1"},
+            { id:122, pId:12, name:"支部 1-2-2"},
+            { id:123, pId:12, name:"支部 1-2-3"},
+            { id:124, pId:12, name:"支部 1-2-4"},
+            { id:13, pId:1, name:"组织部 1-3", open:true},
+            { id:131, pId:13, name:"支部 1-3-1"},
+            { id:132, pId:13, name:"支部 1-3-2"},
+            { id:133, pId:13, name:"支部 1-3-3"},
+            { id:134, pId:13, name:"支部 1-3-4"}
         ];
 
         function onClick(e,treeId, treeNode) {
