@@ -99,7 +99,7 @@
   padding-bottom: 8px;
 }
 .layui-nav-tree .layui-nav-item a {
-  padding-left: 40px;
+  padding-left: 45px;
   padding-right: 30px;
   height: 40px;
   line-height: 40px;
@@ -109,9 +109,10 @@
   top: 50%;
   left: 20px;
   margin-top: -20px;
+  font-size: 16px;
 }
 .layui-side-menu .layui-nav-child .layui-nav-child a {
-  padding-left: 53px;
+  padding-left: 55px;
 }
 .child-iframe {
   position: absolute;
@@ -124,7 +125,7 @@
 .layui-side-switch {
   position: fixed;
   z-index: 9999;
-  left: 170px;
+  left: 10px;
   bottom: 10px;
   width: 40px;
   height: 40px;
@@ -133,12 +134,43 @@
   background: rgba(0,0,0,0.3);
   opacity: .8;
   text-align: center;
+  &:hover {
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    opacity: 1;
+  }
 }
-.layui-side-switch:hover {
-  color: #fff;
-  background: rgba(0,0,0,0.5);
-  opacity: 1;
+.layadmin-side-shrink {
+  .layui-side {
+    left: 0;
+    width: 60px
+  }
+  .layui-body {
+    left: 60px
+  }
+  .layui-side-menu {
+    .layui-nav {
+      position: static;
+      width: 60px
+    }
+    .layui-nav-item {
+      position: static
+    }
+    .layui-nav-item>a {
+      padding-right: 0
+    }
+    .layui-nav-item cite, .layui-nav>.layui-nav-item>.layui-nav-child, .layui-nav>.layui-nav-item>a .layui-nav-more {
+      display: none;
+      padding: 8px 0;
+      width: 200px
+    }
+    .layui-nav>.layui-nav-itemed>a {
+      background: rgba(0,0,0,.3)
+    }
+
+  }
 }
+
 /*颜色切换*/
 .skinBtn {
   text-align: center;

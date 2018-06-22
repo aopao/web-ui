@@ -17,7 +17,7 @@
 <body>
 
 
-<div class="layui-form layui-form-edit">
+<form class="layui-form layui-form-edit">
     <table class="layui-table" border="1" cellpadding="10" cellspacing="0">
         <colgroup>
             <col width="100">
@@ -55,12 +55,12 @@
                 <select name="" lay-filter="">
                     <option value=""></option>
                     <option value="0">男</option>
-                    <option value="1" selected="">女</option>
+                    <option value="1">女</option>
                 </select>
             </td>
             <td rowspan="3">
                 <div class="upload-wrapper">
-                    <img  id="upload-img" width="144" height="144" src="img/upload/upload-pic.jpg" alt="upload">
+                    <img  id="upload-img" width="144" height="144" src="../../assets/img/person.png" alt="upload">
                 </div>
             </td>
         </tr>
@@ -113,7 +113,7 @@
                 <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入" class="layui-input">
             </td>
             <td class="label-td">学历</td>
-            <td>
+            <td colspan="2">
                 <select name="" lay-filter="">
                     <option value=""></option>
                     <option value="0">本科</option>
@@ -142,7 +142,7 @@
                 </select>
             </td>
             <td class="label-td">入党时间</td>
-            <td>
+            <td colspan="2">
                 <input type="text" class="layui-input" id="test2" placeholder="请选择时间">
             </td>
         </tr>
@@ -164,7 +164,7 @@
                 </select>
             </td>
             <td class="label-td">是否流动党员</td>
-            <td>
+            <td colspan="2">
                 <select name="" lay-filter="">
                     <option value=""></option>
                     <option value="0">是</option>
@@ -178,13 +178,19 @@
                 <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
             </td>
         </tr>
+        <tr>
+            <td class="label-td">备注</td>
+            <td colspan="6">
+                <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+            </td>
+        </tr>
         </tbody>
     </table>
     <div class="layui-btn-container">
         <button class="layui-btn">提交</button>
         <button class="layui-btn layui-btn-primary">重置</button>
     </div>
-</div>
+</form>
 
 
 
@@ -225,7 +231,7 @@
         laydate.render({
             elem: '#test1' //指定元素
         });
-        入党时间
+        // 入党时间
         laydate.render({
             elem: '#test2' //指定元素
         });

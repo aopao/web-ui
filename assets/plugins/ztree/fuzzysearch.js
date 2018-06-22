@@ -55,7 +55,7 @@
 					node[nameKey] = node.oldname.replace(rexGlobal, function(originalText){
 						//将所有匹配的子串加上高亮效果
 						var highLightText =
-							'<span style="color: whitesmoke;background-color: darkred;">'
+							'<span style="color: whitesmoke;background-color: #54a785;">'
 							+ originalText
 							+'</span>';
 						return 	highLightText;					

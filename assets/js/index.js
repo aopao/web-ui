@@ -16,29 +16,37 @@ layui.use(['form','element','layer','jquery'],function () {
     });
     // 隐藏侧边导航
     var $sideSwitch = $('.layui-side-switch');
-    var $sideMenu = $('.layui-side-menu');
-    var $layBody = $('.layui-body');
+    var $layout = $('.layui-layout');
+    var flagClass = 'layadmin-side-shrink';
     $sideSwitch.on('click', function () {
-        if($(this).hasClass('hide')) {
-            $sideMenu.stop(true,true).animate({
-                'left':'0'
-            }, 200);
-            $layBody.stop(true,true).animate({
-                'left':'220px'
-            }, 200);
-            $(this).removeClass('hide').stop(true,true).delay(400).animate({'left':'170px'}, 200);
+        if($layout.hasClass(flagClass)) {
+            $layout.removeClass(flagClass)
         } else {
-
-            $sideMenu.stop(true,true).animate({
-                'left':'-220px'
-            }, 200);
-            $layBody.stop(true,true).animate({
-                'left':'0'
-            }, 200);
-            $(this).addClass('hide').stop(true,true).animate({'left':'10px'}, 200);
+            $layout.addClass(flagClass)
 
         }
     });
+    $(document).on("mouseenter", "*[lay-tips]", function() {
+        var e = $(this);
+        var $layout = $('.layui-layout');
+        if (!e.parent().hasClass("layui-nav-item") || $layout.hasClass(flagClass)) {
+            var i = e.attr("lay-tips")
+                , t = e.attr("lay-offset")
+                , l = e.attr("lay-direction")
+                , n = layer.tips(i, this, {
+                tips: l || 1,
+                time: -1,
+                success: function(e, a) {
+                    t && e.css("margin-left", t + "px")
+                }
+            });
+            e.data("index", n)
+        }
+    }).on("mouseleave", "*[lay-tips]", function() {
+        layer.close($(this).data("index"))
+    });
+
+
     //更换皮肤
     function skins(){
         var skin = window.sessionStorage.getItem("skin");
@@ -130,5 +138,4 @@ layui.use(['form','element','layer','jquery'],function () {
     })
 
 });
-
 

@@ -17,7 +17,7 @@
 <body>
 
 
-<div class="layui-form layui-form-view">
+<form class="layui-form layui-form-edit">
     <table class="layui-table" border="1" cellpadding="10" cellspacing="0">
         <colgroup>
             <col width="100">
@@ -26,98 +26,167 @@
             <col width="200">
             <col width="100">
             <col width="200">
-            <col width="200">
+            <col width="150">
         </colgroup>
         <tbody>
         <tr>
             <td class="label-td">姓名</td>
-            <td><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
-            <td class="label-td">性别</td>
-            <td><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
-            <td class="label-td">出生年月</td>
-            <td><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
-            <td rowspan="3"></td>
-        </tr>
-        <tr>
+            <td>
+                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入" class="layui-input">
+            </td>
             <td class="label-td">民族</td>
-            <td><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
+            <td>
+                <select name="modules" lay-verify="required" lay-search="">
+                    <option value="">请选择民族</option>
+                    <option value="1">汉族</option>
+                    <option value="2">壮族</option>
+                    <option value="3">满族</option>
+                    <option value="4">回族</option>
+                    <option value="5">苗族</option>
+                    <option value="6">维吾尔族</option>
+                    <option value="7">土家族</option>
+                    <option value="8">彝族</option>
+                    <option value="9">蒙古族</option>
+                    <option value="10">藏族</option>
+                </select>
+            </td>
+            <td class="label-td">性别</td>
+            <td>
+                <select name="" lay-filter="">
+                    <option value=""></option>
+                    <option value="0">男</option>
+                    <option value="1">女</option>
+                </select>
+            </td>
+            <td rowspan="3">
+                <div class="upload-wrapper">
+                    <img  id="upload-img" width="144" height="144" src="../../assets/img/person.png" alt="upload">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="label-td">出生年月</td>
+            <td>
+                <input type="text" class="layui-input" id="test1" placeholder="请选择时间">
+            </td>
+            <td class="label-td">身份证</td>
+            <td>
+                <input type="text" name="title" lay-verify="identity" placeholder="请输入" autocomplete="off" class="layui-input">
+            </td>
             <td class="label-td">籍贯</td>
-            <td><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
-            <td class="label-td">出生地</td>
-            <td><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
+            <td>
+                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入" class="layui-input">
+            </td>
         </tr>
         <tr>
+            <td class="label-td">手机号码</td>
+            <td>
+                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入" class="layui-input">
+            </td>
+            <td class="label-td">固定电话</td>
+            <td>
+                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入" class="layui-input">
+            </td>
+            <td class="label-td">家庭地址</td>
+            <td>
+                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入" class="layui-input">
+            </td>
+        </tr>
+        <tr>
+            <td class="label-td">婚姻状况</td>
+            <td colspan="6">
+                <input type="radio" name="" value="未婚" title="未婚" checked="">
+                <input type="radio" name="" value="已婚" title="已婚">
+                <input type="radio" name="" value="丧偶" title="丧偶">
+                <input type="radio" name="" value="离婚" title="离婚">
+                <input type="radio" name="" value="再婚" title="再婚">
+                <input type="radio" name="" value="其他" title="其他">
+            </td>
+        </tr>
+        <tr>
+            <td class="label-td">工作单位</td>
+            <td>
+                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入" class="layui-input">
+            </td>
+            <td class="label-td">毕业院校</td>
+            <td>
+                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入" class="layui-input">
+            </td>
+            <td class="label-td">学历</td>
+            <td colspan="2">
+                <select name="" lay-filter="">
+                    <option value=""></option>
+                    <option value="0">本科</option>
+                    <option value="1">专科</option>
+                    <option value="1">其他</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="label-td">党籍状态</td>
+            <td>
+                <select name="" lay-filter="">
+                    <option value=""></option>
+                    <option value="0">正常</option>
+                    <option value="1">转入</option>
+                    <option value="2">转出</option>
+                </select>
+            </td>
+            <td class="label-td">人员类别</td>
+            <td>
+                <select name="" lay-filter="">
+                    <option value=""></option>
+                    <option value="0">正式党员</option>
+                    <option value="1">预备党员</option>
+                    <option value="2">入党积极分子</option>
+                </select>
+            </td>
             <td class="label-td">入党时间</td>
-            <td><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
-            <td class="label-td">参加工作时间</td>
-            <td><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
-            <td class="label-td">健康状况</td>
-            <td><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
+            <td colspan="2">
+                <input type="text" class="layui-input" id="test2" placeholder="请选择时间">
+            </td>
         </tr>
         <tr>
-            <td class="label-td" rowspan="2">学历学位</td>
-            <td class="label-td">全日制教育</td>
-            <td colspan="2"><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
-            <td class="label-td">毕业院校系及专业</td>
-            <td colspan="2"><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
+            <td class="label-td">所在党组织</td>
+            <td>
+                <select name="" lay-filter="">
+                    <option value=""></option>
+                    <option value="0">组织部</option>
+                    <option value="1">宣传部</option>
+                </select>
+            </td>
+            <td class="label-td">是否失联党员</td>
+            <td>
+                <select name="" lay-filter="">
+                    <option value=""></option>
+                    <option value="0">是</option>
+                    <option value="1">否</option>
+                </select>
+            </td>
+            <td class="label-td">是否流动党员</td>
+            <td colspan="2">
+                <select name="" lay-filter="">
+                    <option value=""></option>
+                    <option value="0">是</option>
+                    <option value="1">否</option>
+                </select>
+            </td>
         </tr>
         <tr>
-            <td class="label-td">在职教育</td>
-            <td colspan="2"><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
-            <td class="label-td">毕业院校系及专业</td>
-            <td colspan="2"><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
+            <td class="label-td">简介</td>
+            <td colspan="6">
+                <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+            </td>
         </tr>
         <tr>
-            <td class="label-td" colspan="2">单位及职务</td>
-            <td colspan="2"><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
-            <td class="label-td">单位电话</td>
-            <td colspan="2"><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
-        </tr>
-        <tr>
-            <td class="label-td">电话</td>
-            <td><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
-            <td class="label-td">类型</td>
-            <td><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
-            <td class="label-td">选派层级</td>
-            <td colspan="2"><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
-        </tr>
-        <tr>
-            <td class="label-td" rowspan="2">选派单位</td>
-            <td class="label-td">选派单位</td>
-            <td colspan="2"><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
-            <td class="label-td">主要领导职务</td>
-            <td colspan="2"><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
-        </tr>
-        <tr>
-            <td class="label-td">主要领导姓名</td>
-            <td colspan="2"><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
-            <td class="label-td">主要领导联系电话</td>
-            <td colspan="2"><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
-        </tr>
-        <tr>
-            <td class="label-td" rowspan="2">派驻社区(村)</td>
-            <td class="label-td">组织名称</td>
-            <td colspan="2"><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
-            <td class="label-td">党组织书记</td>
-            <td colspan="2"><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
-        </tr>
-        <tr>
-            <td class="label-td">社区(村)名</td>
-            <td colspan="2"><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
-            <td class="label-td">社区(村)类型</td>
-            <td colspan="2"><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" readonly class="layui-input"></td>
-        </tr>
-        <tr>
-            <td class="label-td">工作经历</td>
-            <td colspan="6"><textarea class="layui-textarea" rows="6" readonly></textarea></td>
+            <td class="label-td">备注</td>
+            <td colspan="6">
+                <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+            </td>
         </tr>
         </tbody>
     </table>
-    <div class="layui-btn-container">
-        <button class="layui-btn">提交</button>
-        <button class="layui-btn layui-btn-primary">重置</button>
-    </div>
-</div>
+</form>
 
 
 
@@ -129,10 +198,9 @@
 <script src="../../assets/js/jquery-1.8.3.min.js"></script>
 <script src="../../assets/js/common.js"></script>
 <script type="text/javascript">
-    layui.use(['element','form'], function(){
-
-    });
-
+   $(function () {
+       $('.layui-form').find('input,textarea,select').prop('readonly',true);
+   })
 
 </script>
 </body>

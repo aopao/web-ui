@@ -1214,7 +1214,7 @@
 
 .layui-ztree li a.curSelectedNode {
   background: transparent;
-  color: #f30;
+  color: #038d55;
 }
 
 .layui-ztree .ztreeCurNode {
@@ -1253,6 +1253,8 @@
   max-width: 100%;
   width: 100%;
   height: auto;
+  box-sizing: border-box;
+  border: 1px solid #e6e6e6;
 }
 
 /***** 表格页 *****/
