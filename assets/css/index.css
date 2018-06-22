@@ -415,7 +415,7 @@
   background: none;
 }
 
-/***** 主体布局 *****/
+/***** 整体布局 *****/
 .layui-header {
   position: relative;
   z-index: 1000;

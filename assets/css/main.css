@@ -1278,3 +1278,17 @@
 .layui-table-container .layui-table[lay-size=lg] td:first-child, .layui-table-container .layui-table[lay-size=lg] th:first-child {
   text-align: center;
 }
+
+/***** 介绍信 *****/
+.layui-letter-container {
+  padding: 15px 24px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.layui-letter-container .layui-title {
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+}
