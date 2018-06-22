@@ -31,6 +31,16 @@
     <div class="layui-tree-divider"></div>
     <!--右侧内容-->
     <div class="layui-content-panel">
+        <!--路径导航-->
+        <div class="layui-breadcrumb-panel">
+            <span class="layui-breadcrumb">
+              <a href="#">首页</a>
+              <a href="javascript:;"><cite>组件</cite></a>
+              <a href="javascript:;"><cite>列表页</cite></a>
+            </span>
+        </div>
+        <!--路径导航-->
+
         <div class="layui-list-container">
             <!--查询表单-->
             <div class="layui-form-panel">
@@ -39,14 +49,6 @@
                         <label class="layui-form-label">姓名</label>
                         <div class="layui-input-inline">
                             <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入" class="layui-input">
-                        </div>
-                        <label class="layui-form-label">性别</label>
-                        <div class="layui-input-inline">
-                            <select lay-verify="required">
-                                <option value="">请选择</option>
-                                <option value="1">男</option>
-                                <option value="2">女</option>
-                            </select>
                         </div>
                         <a class="layui-btn layui-btn-primary form-btn-query"><i class="iconfont icon-chaxun"></i><span>查询</span></a>
                         <a class="layui-btn layui-btn-primary form-btn-reset"><i class="iconfont icon-zhongzhi"></i><span>重置</span></a>
@@ -117,7 +119,7 @@
                             <col width="100">
                             <col width="150">
                             <col width="150">
-                            <col width="200">
+                            <col width="180">
                             <col width="150">
                         </colgroup>
                         <thead>
