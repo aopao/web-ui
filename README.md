@@ -18,12 +18,12 @@ git clone git@github.com:rs-sos/web-ui.git
 		|-- css
 		|-- img
 		|-- js
+		|-- plugins
+		|-- scss
 	|-- layui 
 		|-- ...
-
 	|-- page
-		|-- ...
-	|--	favicon 
+		|-- ...	
 	|-- index.html	
 
 - **assets**
