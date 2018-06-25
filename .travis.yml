@@ -11,17 +11,17 @@ cache:
 
 branches:
   only:
-    - dev
+    - master
+
+install:
+  - npm install
 
 before_install:
   - npm install -g yarn
 
-install:
+script:
   - yarn
   - gulp
-
-script:
-
 
 after_script:
   - git init
