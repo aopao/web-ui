@@ -19,7 +19,7 @@ install:
 before_script:
 
 script:
-
+  - gulp scss
 
 after_script:
   - git init
