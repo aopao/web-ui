@@ -14,16 +14,17 @@ branches:
     - master
 
 install:
+  - npm install
 
 before_install:
 
 script:
-
-after_script:
   - git init
   - git config user.name "${NAME}"
   - git config user.email "${EMAIL}"
   - git add *
   - git commit -m "Update branch"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
+
+
 
