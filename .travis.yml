@@ -14,14 +14,10 @@ branches:
     - master
 
 install:
-  - npm install
 
 before_install:
-  - npm install -g yarn
 
 script:
-  - yarn
-  - gulp
 
 after_script:
   - git init
