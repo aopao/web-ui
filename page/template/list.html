@@ -567,6 +567,11 @@
                 simpleData: {
                     enable: true
                 }
+            },
+            callback: {
+                // beforeExpand: beforeExpand,
+                // onExpand: onExpand,
+                onClick: zTreeOnClick
             }
         };
 
@@ -615,6 +620,17 @@
             var treeObj = $.fn.zTree.init($("#treeDemo"), setting, data);
             treeObj.expandAll(true);
         }
+
+        /**
+         * @param event
+         * @param treeId
+         * @param treeNode
+         */
+        function zTreeOnClick(event, treeId, treeNode) {
+            //这里定义点击书中节点时，相应的页面其他的操作，示例：
+            // 每次点击节点后， 弹出该节点的 tId、name 的信息
+            alert(treeNode.tId + ", " + treeNode.name);
+        };
 
 
 
