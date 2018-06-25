@@ -1,4 +1,4 @@
-web-ui
+web-ui <img src="https://travis-ci.com/rs-sos/web-ui.svg?branch=master">
 ===
 
 基于[layui](http://www.layui.com/) v2.3.0的一套后台系统界面。
