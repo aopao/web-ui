@@ -1,7 +1,7 @@
 web-ui [![Build Status](https://travis-ci.com/rs-sos/web-ui.svg?branch=master)](https://www.travis-ci.org/rs-sos/web-ui)
 ===
 
-基于[layui](http://www.layui.com/) v2.3.0的一套后台系统界面。
+基于[layui](http://www.layui.com/) v2.3.0的一套后台系统界面。 https://rs-sos.github.io/web-ui/
 
 ## 如何使用
 
