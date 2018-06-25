@@ -1,4 +1,4 @@
-web-ui <a href="https://www.travis-ci.org/zhuoyan/zhuoyan.github.io"><img src="https://travis-ci.com/rs-sos/web-ui.svg?branch=master"></a>
+web-ui <a href="https://www.travis-ci.org/rs-sos/web-ui"><img src="https://travis-ci.com/rs-sos/web-ui.svg?branch=master"></a>
 ===
 
 基于[layui](http://www.layui.com/) v2.3.0的一套后台系统界面。
