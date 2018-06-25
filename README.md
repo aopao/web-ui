@@ -1,4 +1,4 @@
-web-ui <a href="https://www.travis-ci.org/rs-sos/web-ui"><img src="https://travis-ci.com/rs-sos/web-ui.svg?branch=master"></a>
+web-ui [![Build Status](https://travis-ci.com/rs-sos/web-ui.svg?branch=master)](https://www.travis-ci.org/rs-sos/web-ui)
 ===
 
 基于[layui](http://www.layui.com/) v2.3.0的一套后台系统界面。
@@ -13,18 +13,18 @@ git clone git@github.com:rs-sos/web-ui.git
 [智慧党建](https://pro.modao.cc/app/3pmYgsQBYNnAs0EtQuBinl7YpugIKox)
 
 ## 目录结构
-	
+
 	|-- assets
 		|-- css
 		|-- img
 		|-- js
 		|-- plugins
 		|-- scss
-	|-- layui 
+	|-- layui
 		|-- ...
 	|-- page
-		|-- ...	
-	|-- index.html	
+		|-- ...
+	|-- index.html
 
 - **assets**
 	静态资源文件夹
@@ -51,5 +51,3 @@ class命名前缀：layui，连接符：-，如：class="layui-form"
 #### JS
 
 通过layui.use(mods, callback)方法加载模块
-
-
