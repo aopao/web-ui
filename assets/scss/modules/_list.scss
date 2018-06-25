@@ -100,28 +100,6 @@
 }
 /*表格*/
 .layui-table-panel {
-  .layui-table tbody tr.active, .layui-table tbody tr:hover, .layui-table thead tr, .layui-table-click, .layui-table-header, .layui-table-hover, .layui-table-mend, .layui-table-patch, .layui-table-tool, .layui-table[lay-even] tr:nth-child(even) {
-    background-color: #f8f8f8;
-  }
-  .layui-table {
-    margin: 10px 0;
-    thead {
-      tr {
-        background-color: #efefef;
-        &:hover {
-          background-color: #efefef;
-        }
-      }
-      th, td {
-        line-height: 30px;
-      }
-    }
-    tr {
-      td:first-child {
-        text-align: center;
-      }
-    }
-  }
   .layui-progress {
 
   }

@@ -99,6 +99,30 @@
   vertical-align: middle;
 }
 
+.layui-table tbody tr.active, .layui-table tbody tr:hover, .layui-table thead tr, .layui-table-click, .layui-table-header, .layui-table-hover, .layui-table-mend, .layui-table-patch, .layui-table-tool, .layui-table[lay-even] tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.layui-table {
+  margin: 10px 0;
+}
+
+.layui-table thead tr {
+  background-color: #efefef;
+}
+
+.layui-table thead tr:hover {
+  background-color: #efefef;
+}
+
+.layui-table thead th, .layui-table thead td {
+  line-height: 30px;
+}
+
+.layui-table tr td:first-child {
+  text-align: center;
+}
+
 /***** 主题颜色 *****/
 .layui-layout {
   /*index.html*/
@@ -1164,30 +1188,6 @@
 }
 
 /*表格*/
-.layui-table-panel .layui-table tbody tr.active, .layui-table-panel .layui-table tbody tr:hover, .layui-table-panel .layui-table thead tr, .layui-table-panel .layui-table-click, .layui-table-panel .layui-table-header, .layui-table-panel .layui-table-hover, .layui-table-panel .layui-table-mend, .layui-table-panel .layui-table-patch, .layui-table-panel .layui-table-tool, .layui-table-panel .layui-table[lay-even] tr:nth-child(even) {
-  background-color: #f8f8f8;
-}
-
-.layui-table-panel .layui-table {
-  margin: 10px 0;
-}
-
-.layui-table-panel .layui-table thead tr {
-  background-color: #efefef;
-}
-
-.layui-table-panel .layui-table thead tr:hover {
-  background-color: #efefef;
-}
-
-.layui-table-panel .layui-table thead th, .layui-table-panel .layui-table thead td {
-  line-height: 30px;
-}
-
-.layui-table-panel .layui-table tr td:first-child {
-  text-align: center;
-}
-
 /*左侧树*/
 .layui-tree-panel {
   position: fixed;
