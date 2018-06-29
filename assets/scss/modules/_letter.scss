@@ -9,5 +9,18 @@
     color: #000;
     text-align: center;
   }
-
+  .layui-letter-content {
+    padding: 20px 15px;
+    border: 1px solid #ccc;
+  }
+  .layui-letter-row {
+    .layui-input, select {
+      display: inline-block;
+      min-width: 100px;
+      width: auto;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      vertical-align: middle;
+    }
+  }
 }
