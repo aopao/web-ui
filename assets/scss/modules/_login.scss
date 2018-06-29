@@ -1,0 +1,296 @@
+/*登录页*/
+.login-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(to right bottom, #73bab5, #75e6b8);
+}
+.style-switch {
+  padding-right: 30px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  text-align: right;
+  height: 30px;
+  line-height: 30px;
+  font-family: Tahoma,Verdana,微软雅黑,新宋体, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+.login-logo {
+  position: absolute;
+  left: 13.7%;
+  top: 9.3%;
+}
+.login-risen {
+  margin: auto;
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  right: 0;
+  bottom: 5%;
+  width: 96px;
+  height: 18px;
+  background: url("../img/risen.png") no-repeat center;
+}
+.login-form {
+  margin: auto;
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 1102px;
+  height: 571px;
+  &#{-pic} {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 604px;
+    height: 576px;
+    background: url("../img/login-bg.png") no-repeat center;
+    background-size: contain;
+    image-rendering: -webkit-optimize-contrast;
+  }
+  &#{-content} {
+    margin-top: -214px;
+    padding: 64px 60px 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 435px;
+    height: 428px;
+    border-radius: 6px;
+    background: url("../img/mask-white.png") repeat left top;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.35);
+    box-sizing: border-box;
+  }
+  .login-form-title {
+    display: block;
+    width: 226px;
+    height: 26px;
+    background: url("../img/login-title.png") no-repeat center;
+    background-size: contain;
+    image-rendering: -webkit-optimize-contrast;
+  }
+  .login-form-items {
+    height: 45px;
+    line-height: 45px;
+    background-color: #fff;
+    border: 1px solid #b0c0bb;
+    .layui-form-label {
+      padding: 0;
+      width: 50px;
+      height: 100%;
+      text-align: center;
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 0;
+        height: 100%;
+        vertical-align: middle;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 27%;
+        bottom: 27%;
+        width: 1px;
+        background-color: #898b8b;
+      }
+      i {
+        font-size: 20px;
+        color: #54a785;
+        vertical-align: -2px;
+      }
+    }
+    .layui-input-block {
+      margin-left: 50px;
+    }
+    .layui-input {
+      line-height: 45px;
+      height: 45px;
+      font-size: 16px;
+      border: none;
+    }
+  }
+  .login-checkbox-wrapper {
+    height: 22px;
+    .layui-form-checkbox[lay-skin=primary] {
+      margin-top: 0;
+
+    }
+  }
+  .layui-btn-fluid {
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    background-color: #52a382;
+  }
+}
+
+//$media-list: (1600px, 1600/1920),
+//        (1440px, 1440/1920),
+//        (1366px, 1366/1920);
+//@each $screen, $scale in $media-list {
+//  .login-form {
+//    width: $scale*1102px;
+//    height: $scale*571px;
+//    &#{-pic} {
+//      width: $scale*604px;
+//      height: $scale*576px;
+//    }
+//    &#{-content} {
+//      margin-top: $scale*-214px;
+//      padding: $scale*64px $scale*60px 0;
+//      width: $scale*435px;
+//      height: $scale*428px;
+//    }
+//    .login-form-title {
+//      width: $scale*226px;
+//      height: $scale*26px;
+//    }
+//    .login-form-items {
+//      height: $scale*45px;
+//      line-height: $scale*45px;
+//      .layui-form-label {
+//        width: $scale*50px;
+//        i {
+//          font-size: $scale*20px;
+//        }
+//      }
+//      .layui-input-block {
+//        margin-left: $scale*50px;
+//      }
+//      .layui-input {
+//        line-height: $scale*45px;
+//        height: $scale*45px;
+//        font-size: $scale*16px;
+//      }
+//    }
+//    .layui-btn-fluid {
+//      height: $scale*42px;
+//      line-height: $scale*42px;
+//      font-size: $scale*18px;
+//    }
+//  }
+//}
+
+.bg-bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.bg-bubbles li {
+  position: absolute;
+  list-style: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.15);
+  bottom: -160px;
+  -webkit-animation: square 25s infinite;
+  animation: square 25s infinite;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+.bg-bubbles li:nth-child(1) {
+  left: 10%;
+}
+.bg-bubbles li:nth-child(2) {
+  left: 20%;
+  width: 80px;
+  height: 80px;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-duration: 17s;
+  animation-duration: 17s;
+}
+.bg-bubbles li:nth-child(3) {
+  left: 25%;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+.bg-bubbles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation-duration: 22s;
+  animation-duration: 22s;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.bg-bubbles li:nth-child(5) {
+  left: 70%;
+}
+.bg-bubbles li:nth-child(6) {
+  left: 80%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.bg-bubbles li:nth-child(7) {
+  left: 32%;
+  width: 160px;
+  height: 160px;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+}
+.bg-bubbles li:nth-child(8) {
+  left: 55%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 15s;
+  animation-delay: 15s;
+  -webkit-animation-duration: 40s;
+  animation-duration: 40s;
+}
+.bg-bubbles li:nth-child(9) {
+  left: 25%;
+  width: 10px;
+  height: 10px;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-duration: 40s;
+  animation-duration: 40s;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.bg-bubbles li:nth-child(10) {
+  left: 90%;
+  width: 160px;
+  height: 160px;
+  -webkit-animation-delay: 11s;
+  animation-delay: 11s;
+}
+@-webkit-keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-700px) rotate(600deg);
+    transform: translateY(-700px) rotate(600deg);
+  }
+}
+@keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-700px) rotate(600deg);
+    transform: translateY(-700px) rotate(600deg);
+  }
+}

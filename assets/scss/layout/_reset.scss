@@ -9,27 +9,26 @@
 .layui-fr {
   float: right !important;
 }
-.text-al {
-  text-align: left !important;
+
+$dir-list: left, center, right;
+@each $dir in $dir-list {
+  .text-#{$dir} {
+    text-align: $dir !important;
+  }
 }
-.text-ac {
-  text-align: center !important;
-}
-.text-ar {
-  text-align: right !important;
-}
+
 @for $i from 0 through 100 {
   .mb#{$i} {
-    margin-bottom: $i#{px};
+    margin-bottom: $i#{px} !important;
   }
   .mt#{$i} {
-    margin-top: $i#{px};
+    margin-top: $i#{px} !important;
   }
   .ml#{$i} {
-    margin-top: $i#{px};
+    margin-top: $i#{px} !important;
   }
   .mr#{$i} {
-    margin-top: $i#{px};
+    margin-top: $i#{px} !important;
   }
 
 }
