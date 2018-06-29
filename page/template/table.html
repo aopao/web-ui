@@ -35,7 +35,7 @@
         <div class="layui-breadcrumb-panel">
             <span class="layui-breadcrumb">
               <a href="#">首页</a>
-              <a href="javascript:;"><cite>组件</cite></a>
+              <a href="javascript:;"><cite>模板</cite></a>
               <a href="javascript:;"><cite>表格页</cite></a>
             </span>
         </div>
@@ -269,6 +269,18 @@
             // 每次点击节点后， 弹出该节点的 tId、name 的信息
             alert(treeNode.tId + ", " + treeNode.name);
         };
+
+        $('.layui-tree-divider').on('click', function () {
+            if($(this).hasClass('layui-panel-hide')) {
+                $(this).removeClass('layui-panel-hide');
+                $(this).siblings('.layui-tree-panel').removeClass('layui-panel-hide');
+                $(this).siblings('.layui-content-panel').removeClass('layui-panel-hide');
+            } else {
+                $(this).addClass('layui-panel-hide');
+                $(this).siblings('.layui-tree-panel').addClass('layui-panel-hide');
+                $(this).siblings('.layui-content-panel').addClass('layui-panel-hide');
+            }
+        });
 
 
 </script>

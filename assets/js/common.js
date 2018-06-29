@@ -4,6 +4,7 @@ $(function () {
     } else {
         $("body").addClass('green');
     }
+
 });
 
 

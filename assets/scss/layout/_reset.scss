@@ -9,6 +9,31 @@
 .layui-fr {
   float: right !important;
 }
+.text-al {
+  text-align: left !important;
+}
+.text-ac {
+  text-align: center !important;
+}
+.text-ar {
+  text-align: right !important;
+}
+@for $i from 0 through 100 {
+  .mb#{$i} {
+    margin-bottom: $i#{px};
+  }
+  .mt#{$i} {
+    margin-top: $i#{px};
+  }
+  .ml#{$i} {
+    margin-top: $i#{px};
+  }
+  .mr#{$i} {
+    margin-top: $i#{px};
+  }
+
+}
+
 // 日期
 .layui-date-col12 {
   .layui-laydate {

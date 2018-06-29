@@ -35,41 +35,54 @@
         <div class="layui-breadcrumb-panel">
             <span class="layui-breadcrumb">
               <a href="#">首页</a>
-              <a href="javascript:;"><cite>组件</cite></a>
+              <a href="javascript:;"><cite>模板</cite></a>
               <a href="javascript:;"><cite>介绍信</cite></a>
             </span>
         </div>
         <!--路径导航-->
 
-        <div class="layui-letter-container">
+        <form class="layui-form layui-letter-container">
             <div class="layui-title">中国共产党党员组织关系介绍信</div>
-            <div class="layui-form layui-letter-content">
-                <div class="layui-letter-row">
-                    <p class="layui-fr">第&nbsp;&nbsp;<input type="text" class="layui-input">&nbsp;&nbsp;号</p>
+            <div class="layui-letter-content">
+                <div class="layui-letter-row text-ar mb10">
+                    <span>第</span>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input">
+                    </div>
+                    <span>号</span>
                 </div>
                 <div class="layui-letter-row">
-                    <p><input type="text" class="layui-input"></p>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input">
+                    </div>
+                    ：
                 </div>
                 <div class="layui-letter-row">
-                    &nbsp;&nbsp;<input type="text" class="layui-input">&nbsp;&nbsp;同志
-                    &nbsp;&nbsp;<input type="text" class="layui-input">&nbsp;&nbsp;岁，
-                    &nbsp;&nbsp;
-                    <select name="modules" lay-verify="required" lay-search="">
-                        <option value="">请选择民族</option>
-                        <option value="1">汉族</option>
-                        <option value="2">壮族</option>
-                        <option value="3">满族</option>
-                        <option value="4">回族</option>
-                        <option value="5">苗族</option>
-                        <option value="6">维吾尔族</option>
-                        <option value="7">土家族</option>
-                        <option value="8">彝族</option>
-                        <option value="9">蒙古族</option>
-                        <option value="10">藏族</option>
-                    </select>
-                    &nbsp;&nbsp;族，
-                    系中共&nbsp;&nbsp;
-                    <div class="layui-input-block">
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input">
+                    </div>
+                    <span>同志</span>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input">
+                    </div>
+                    <span>岁，</span>
+                    <div class="layui-input-inline">
+                        <select name="modules" lay-verify="required" lay-search="">
+                            <option value="">请选择民族</option>
+                            <option value="1">汉族</option>
+                            <option value="2">壮族</option>
+                            <option value="3">满族</option>
+                            <option value="4">回族</option>
+                            <option value="5">苗族</option>
+                            <option value="6">维吾尔族</option>
+                            <option value="7">土家族</option>
+                            <option value="8">彝族</option>
+                            <option value="9">蒙古族</option>
+                            <option value="10">藏族</option>
+                        </select>
+                    </div>
+                    <span>族，系中共</span>
+                    <div class="layui-input-inline">
                         <select name="" lay-filter="">
                             <option value=""></option>
                             <option value="0">正式党员</option>
@@ -77,29 +90,72 @@
                             <option value="2">入党积极分子</option>
                         </select>
                     </div>
-                    &nbsp;&nbsp;党员，身份证号码
-                    &nbsp;&nbsp;<input type="text" class="layui-input">&nbsp;&nbsp;由
-                    &nbsp;&nbsp;<input type="text" class="layui-input">&nbsp;&nbsp;去
-                    &nbsp;&nbsp;<input type="text" class="layui-input">，请转接组织关系。该通知党费已交到
-                    &nbsp;&nbsp;<input type="text" class="layui-input">&nbsp;&nbsp;年
-                    &nbsp;&nbsp;<input type="text" class="layui-input">&nbsp;&nbsp;月，有效期
-                    &nbsp;&nbsp;<input type="text" class="layui-input">&nbsp;&nbsp;天
+                    <span>党员，身份证号码</span>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input">
+                    </div>
+                    <span>由</span>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input">
+                    </div>
+                    <span>去</span>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input">
+                    </div>
+                    <span>，请转接组织关系。该通知党费已交到</span>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input">
+                    </div>
+                    <span>年</span>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input">
+                    </div>
+                    <span>月，有效期</span>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input">
+                    </div>
+                    <span>天。</span>
+                </div>
+                <div class="layui-letter-row text-ar">
+                    <span class="mb0 mt25">区人大党组</span>
+                </div>
+                <div class="layui-letter-row text-ar">
+                    <span class="mb0">2017年11月11日</span>
                 </div>
                 <div class="layui-letter-row">
-                    <p class="layui-fr">区人大党组</p>
+                    <span>党员联系电话或其他联系方式</span>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input">
+                    </div>
                 </div>
                 <div class="layui-letter-row">
-                    <p class="layui-fr">2017年11月11日</p>
+                    <span>党员原所在基层党委通讯地址</span>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input">
+                    </div>
                 </div>
                 <div class="layui-letter-row">
-                    <p>党员联系电话或其他联系方式&nbsp;&nbsp;<input type="text" class="layui-input"></p>
-                    <p>党员原所在基层党委通讯地址&nbsp;&nbsp;<input type="text" class="layui-input"></p>
-                    <p>联系电话&nbsp;&nbsp;<input type="text" class="layui-input">传真&nbsp;&nbsp;<input type="text" class="layui-input">邮编&nbsp;&nbsp;<input type="text" class="layui-input"></p>
+                    <span>联系电话</span>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input">
+                    </div>
+                    <span>传真</span>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input">
+                    </div>
+                    <span>邮编</span>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input">
+                    </div>
                 </div>
 
             </div>
+            <div class="layui-btn-container">
+                <button class="layui-btn" lay-submit="">保存</button>
+                <button type="reset" class="layui-btn layui-btn-primary">返回</button>
+            </div>
 
-        </div>
+        </form>
 
     </div>
     <!--右侧内容-->
@@ -210,6 +266,17 @@
             alert(treeNode.tId + ", " + treeNode.name);
         };
 
+        $('.layui-tree-divider').on('click', function () {
+            if($(this).hasClass('layui-panel-hide')) {
+                $(this).removeClass('layui-panel-hide');
+                $(this).siblings('.layui-tree-panel').removeClass('layui-panel-hide');
+                $(this).siblings('.layui-content-panel').removeClass('layui-panel-hide');
+            } else {
+                $(this).addClass('layui-panel-hide');
+                $(this).siblings('.layui-tree-panel').addClass('layui-panel-hide');
+                $(this).siblings('.layui-content-panel').addClass('layui-panel-hide');
+            }
+        });
 
 </script>
 </body>

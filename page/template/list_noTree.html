@@ -23,7 +23,7 @@
     <div class="layui-breadcrumb-panel">
         <span class="layui-breadcrumb">
           <a href="#">首页</a>
-          <a href="javascript:;"><cite>组件</cite></a>
+          <a href="javascript:;"><cite>模板</cite></a>
           <a href="javascript:;"><cite>列表页</cite></a>
         </span>
     </div>
@@ -40,60 +40,63 @@
                     </div>
                     <a class="layui-btn layui-btn-primary form-btn-query"><i class="iconfont icon-chaxun"></i><span>查询</span></a>
                     <a class="layui-btn layui-btn-primary form-btn-reset"><i class="iconfont icon-zhongzhi"></i><span>重置</span></a>
-                    <a class="layui-btn layui-btn-primary form-btn-query-more"><i class="iconfont icon-chaxun"></i><span>高级查询</span></a>
                     <a class="layui-btn layui-btn-primary form-btn-add"><i class="iconfont icon-xinzeng"></i><span>新增</span></a>
                     <a class="layui-btn layui-btn-primary form-btn-del"><i class="iconfont icon-shanchu"></i><span>删除</span></a>
-                    <a class="layui-btn layui-btn-primary form-btn-export"><i class="iconfont icon-daochu"></i><span>导出EXCEL表格</span></a>
+                    <a class="layui-btn layui-btn-primary form-btn-export"><i class="iconfont icon-daochu"></i><span>导出EXCEL表格</span></a>                    <a class="layui-btn layui-btn-primary form-btn-query-more"><i class="iconfont icon-chaxun"></i><span>高级查询</span></a>
+                    <a class="layui-btn layui-btn-primary form-btn-query-more"><i class="iconfont icon-chaxun"></i><span>高级查询</span></a>
                 </div>
+
             </form>
+
+            <!--高级查询弹层-->
+            <div class="layer-query-more" style="display: none;">
+                <div class="layui-form" style="padding-top: 15px;">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">党组织</label>
+                        <div class="layui-inline">
+                            <div class="layui-input-inline">
+                                <select name="modules" lay-verify="required" lay-search="">
+                                    <option value="">直接选择或搜索选择</option>
+                                    <option value="1">党总支</option>
+                                    <option value="2">党支部</option>
+                                    <option value="3">其他</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">正式党员</label>
+                        <div class="layui-inline">
+                            <div class="layui-input-inline">
+                                <input type="radio" name="" value="是" title="是" checked="">
+                                <input type="radio" name="" value="否" title="否">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">入党时间</label>
+                        <div class="layui-inline">
+                            <div class="layui-input-inline">
+                                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请选择时间" class="layui-input" id="start">
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <div class="layui-input-inline">
+                                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请选择时间" class="layui-input" id="end">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <button class="layui-btn">查询</button>
+                        <button class="layui-btn layui-btn-primary">重置</button>
+                    </div>
+                </div>
+            </div>
+            <!--高级查询弹层-->
         </div>
         <!--查询表单-->
 
-        <!--高级查询弹层-->
-        <div class="layer-query-more" style="display: none;">
-            <div class="layui-form" style="padding-top: 15px;">
-                <div class="layui-form-item">
-                    <label class="layui-form-label">党组织</label>
-                    <div class="layui-inline">
-                        <div class="layui-input-inline">
-                            <select name="modules" lay-verify="required" lay-search="">
-                                <option value="">直接选择或搜索选择</option>
-                                <option value="1">党总支</option>
-                                <option value="2">党支部</option>
-                                <option value="3">其他</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="layui-form-item">
-                    <label class="layui-form-label">正式党员</label>
-                    <div class="layui-inline">
-                        <div class="layui-input-inline">
-                            <input type="radio" name="" value="是" title="是" checked="">
-                            <input type="radio" name="" value="否" title="否">
-                        </div>
-                    </div>
-                </div>
-                <div class="layui-form-item">
-                    <label class="layui-form-label">入党时间</label>
-                    <div class="layui-inline">
-                        <div class="layui-input-inline">
-                            <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请选择时间" class="layui-input" id="start">
-                        </div>
-                    </div>
-                    <div class="layui-inline">
-                        <div class="layui-input-inline">
-                            <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请选择时间" class="layui-input" id="end">
-                        </div>
-                    </div>
-                </div>
-                <div class="layui-btn-container">
-                    <button class="layui-btn">查询</button>
-                    <button class="layui-btn layui-btn-primary">重置</button>
-                </div>
-            </div>
-        </div>
-        <!--高级查询弹层-->
+
 
 
         <!--数据表格-->
@@ -469,15 +472,7 @@
         });
         // 高级查询
         $('.layui-form-panel').on('click', '.form-btn-query-more', function () {
-            layer.open({
-                type: 1,
-                title: '高级查询',
-                shadeClose: true,
-                shade: 0.8,
-                area: ['600px', '300px'],
-                content: $('.layer-query-more'),
-                scrollbar: false
-            });
+            $('.layer-query-more').slideToggle();
         })
 
         //入党时间开始范围
