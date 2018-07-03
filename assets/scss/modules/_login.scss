@@ -80,7 +80,7 @@
     background-size: contain;
     image-rendering: -webkit-optimize-contrast;
   }
-  .login-form-items {
+  .login-form-item {
     height: 45px;
     line-height: 45px;
     background-color: #fff;
@@ -122,7 +122,11 @@
       border: none;
     }
   }
+  .layui-form-item {
+    margin: 36px 0 30px;
+  }
   .login-checkbox-wrapper {
+    margin: 25px 0 25px;
     height: 22px;
     .layui-form-checkbox[lay-skin=primary] {
       margin-top: 0;
@@ -137,53 +141,62 @@
   }
 }
 
-//$media-list: (1600px, 1600/1920),
-//        (1440px, 1440/1920),
-//        (1366px, 1366/1920);
-//@each $screen, $scale in $media-list {
-//  .login-form {
-//    width: $scale*1102px;
-//    height: $scale*571px;
-//    &#{-pic} {
-//      width: $scale*604px;
-//      height: $scale*576px;
-//    }
-//    &#{-content} {
-//      margin-top: $scale*-214px;
-//      padding: $scale*64px $scale*60px 0;
-//      width: $scale*435px;
-//      height: $scale*428px;
-//    }
-//    .login-form-title {
-//      width: $scale*226px;
-//      height: $scale*26px;
-//    }
-//    .login-form-items {
-//      height: $scale*45px;
-//      line-height: $scale*45px;
-//      .layui-form-label {
-//        width: $scale*50px;
-//        i {
-//          font-size: $scale*20px;
-//        }
-//      }
-//      .layui-input-block {
-//        margin-left: $scale*50px;
-//      }
-//      .layui-input {
-//        line-height: $scale*45px;
-//        height: $scale*45px;
-//        font-size: $scale*16px;
-//      }
-//    }
-//    .layui-btn-fluid {
-//      height: $scale*42px;
-//      line-height: $scale*42px;
-//      font-size: $scale*18px;
-//    }
-//  }
-//}
+$media-list: (1600px, 1600/1920),
+        (1440px, 1440/1920),
+        (1366px, 1366/1920);
+@each $screen, $scale in $media-list {
+  @media screen and (max-width: $screen){
+    .login-form {
+      width: $scale*1102px;
+      height: $scale*571px;
+      &#{-pic} {
+        width: $scale*604px;
+        height: $scale*576px;
+      }
+      &#{-content} {
+        margin-top: $scale*-214px;
+        padding: $scale*64px $scale*60px 0;
+        width: $scale*435px;
+        height: $scale*428px;
+      }
+      .login-form-title {
+        width: $scale*226px;
+        height: $scale*26px;
+      }
+      .login-form-item {
+        height: $scale*45px;
+        line-height: $scale*45px;
+        .layui-form-label {
+          width: $scale*50px;
+          i {
+            font-size: $scale*20px;
+          }
+        }
+        .layui-input-block {
+          margin-left: $scale*50px;
+        }
+        .layui-input {
+          line-height: $scale*45px;
+          height: $scale*45px;
+          font-size: $scale*16px;
+        }
+      }
+      .layui-form-item {
+        margin: $scale*36px 0 $scale*30px;
+      }
+      .login-checkbox-wrapper {
+        margin: $scale*25px 0 $scale*25px;
+      }
+      .layui-btn-fluid {
+        height: $scale*42px;
+        line-height: $scale*42px;
+        font-size: $scale*18px;
+      }
+    }
+  }
+}
 
+/*背景*/
 .bg-bubbles {
   position: absolute;
   top: 0;
@@ -292,5 +305,40 @@
   100% {
     -webkit-transform: translateY(-700px) rotate(600deg);
     transform: translateY(-700px) rotate(600deg);
+  }
+}
+
+
+/*登录页手机简单适配*/
+@media screen and (max-width: 768px) {
+  .login-logo {
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .login-form {
+    width: 100%;
+    height: auto;
+    &#{-pic} {
+      display: none;
+    }
+    &#{-content} {
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+    }
+  }
+  .bg-bubbles {
+    display: none;
+  }
+}
+@media screen and (max-width: 420px) {
+  .login-logo {
+    img {
+      width: 80%;
+    }
+  }
+  .login-form-content {
+    width: 85%;
   }
 }

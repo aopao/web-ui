@@ -2258,21 +2258,21 @@
   image-rendering: -webkit-optimize-contrast;
 }
 
-.login-form .login-form-items {
+.login-form .login-form-item {
   height: 45px;
   line-height: 45px;
   background-color: #fff;
   border: 1px solid #b0c0bb;
 }
 
-.login-form .login-form-items .layui-form-label {
+.login-form .login-form-item .layui-form-label {
   padding: 0;
   width: 50px;
   height: 100%;
   text-align: center;
 }
 
-.login-form .login-form-items .layui-form-label:after {
+.login-form .login-form-item .layui-form-label:after {
   content: '';
   display: inline-block;
   width: 0;
@@ -2280,7 +2280,7 @@
   vertical-align: middle;
 }
 
-.login-form .login-form-items .layui-form-label:before {
+.login-form .login-form-item .layui-form-label:before {
   content: '';
   position: absolute;
   right: 0;
@@ -2290,24 +2290,29 @@
   background-color: #898b8b;
 }
 
-.login-form .login-form-items .layui-form-label i {
+.login-form .login-form-item .layui-form-label i {
   font-size: 20px;
   color: #54a785;
   vertical-align: -2px;
 }
 
-.login-form .login-form-items .layui-input-block {
+.login-form .login-form-item .layui-input-block {
   margin-left: 50px;
 }
 
-.login-form .login-form-items .layui-input {
+.login-form .login-form-item .layui-input {
   line-height: 45px;
   height: 45px;
   font-size: 16px;
   border: none;
 }
 
+.login-form .layui-form-item {
+  margin: 36px 0 30px;
+}
+
 .login-form .login-checkbox-wrapper {
+  margin: 25px 0 25px;
   height: 22px;
 }
 
@@ -2322,6 +2327,157 @@
   background-color: #52a382;
 }
 
+@media screen and (max-width: 1600px) {
+  .login-form {
+    width: 918.33333px;
+    height: 475.83333px;
+  }
+  .login-form-pic {
+    width: 503.33333px;
+    height: 480px;
+  }
+  .login-form-content {
+    margin-top: -178.33333px;
+    padding: 53.33333px 50px 0;
+    width: 362.5px;
+    height: 356.66667px;
+  }
+  .login-form .login-form-title {
+    width: 188.33333px;
+    height: 21.66667px;
+  }
+  .login-form .login-form-item {
+    height: 37.5px;
+    line-height: 37.5px;
+  }
+  .login-form .login-form-item .layui-form-label {
+    width: 41.66667px;
+  }
+  .login-form .login-form-item .layui-form-label i {
+    font-size: 16.66667px;
+  }
+  .login-form .login-form-item .layui-input-block {
+    margin-left: 41.66667px;
+  }
+  .login-form .login-form-item .layui-input {
+    line-height: 37.5px;
+    height: 37.5px;
+    font-size: 13.33333px;
+  }
+  .login-form .layui-form-item {
+    margin: 30px 0 25px;
+  }
+  .login-form .login-checkbox-wrapper {
+    margin: 20.83333px 0 20.83333px;
+  }
+  .login-form .layui-btn-fluid {
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .login-form {
+    width: 826.5px;
+    height: 428.25px;
+  }
+  .login-form-pic {
+    width: 453px;
+    height: 432px;
+  }
+  .login-form-content {
+    margin-top: -160.5px;
+    padding: 48px 45px 0;
+    width: 326.25px;
+    height: 321px;
+  }
+  .login-form .login-form-title {
+    width: 169.5px;
+    height: 19.5px;
+  }
+  .login-form .login-form-item {
+    height: 33.75px;
+    line-height: 33.75px;
+  }
+  .login-form .login-form-item .layui-form-label {
+    width: 37.5px;
+  }
+  .login-form .login-form-item .layui-form-label i {
+    font-size: 15px;
+  }
+  .login-form .login-form-item .layui-input-block {
+    margin-left: 37.5px;
+  }
+  .login-form .login-form-item .layui-input {
+    line-height: 33.75px;
+    height: 33.75px;
+    font-size: 12px;
+  }
+  .login-form .layui-form-item {
+    margin: 27px 0 22.5px;
+  }
+  .login-form .login-checkbox-wrapper {
+    margin: 18.75px 0 18.75px;
+  }
+  .login-form .layui-btn-fluid {
+    height: 31.5px;
+    line-height: 31.5px;
+    font-size: 13.5px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .login-form {
+    width: 784.02708px;
+    height: 406.24271px;
+  }
+  .login-form-pic {
+    width: 429.72083px;
+    height: 409.8px;
+  }
+  .login-form-content {
+    margin-top: -152.25208px;
+    padding: 45.53333px 42.6875px 0;
+    width: 309.48438px;
+    height: 304.50417px;
+  }
+  .login-form .login-form-title {
+    width: 160.78958px;
+    height: 18.49792px;
+  }
+  .login-form .login-form-item {
+    height: 32.01563px;
+    line-height: 32.01563px;
+  }
+  .login-form .login-form-item .layui-form-label {
+    width: 35.57292px;
+  }
+  .login-form .login-form-item .layui-form-label i {
+    font-size: 14.22917px;
+  }
+  .login-form .login-form-item .layui-input-block {
+    margin-left: 35.57292px;
+  }
+  .login-form .login-form-item .layui-input {
+    line-height: 32.01563px;
+    height: 32.01563px;
+    font-size: 11.38333px;
+  }
+  .login-form .layui-form-item {
+    margin: 25.6125px 0 21.34375px;
+  }
+  .login-form .login-checkbox-wrapper {
+    margin: 17.78646px 0 17.78646px;
+  }
+  .login-form .layui-btn-fluid {
+    height: 29.88125px;
+    line-height: 29.88125px;
+    font-size: 12.80625px;
+  }
+}
+
+/*背景*/
 .bg-bubbles {
   position: absolute;
   top: 0;
@@ -2443,5 +2599,38 @@
   100% {
     -webkit-transform: translateY(-700px) rotate(600deg);
     transform: translateY(-700px) rotate(600deg);
+  }
+}
+
+/*登录页手机简单适配*/
+@media screen and (max-width: 768px) {
+  .login-logo {
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .login-form {
+    width: 100%;
+    height: auto;
+  }
+  .login-form-pic {
+    display: none;
+  }
+  .login-form-content {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+  }
+  .bg-bubbles {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .login-logo img {
+    width: 80%;
+  }
+  .login-form-content {
+    width: 85%;
   }
 }
