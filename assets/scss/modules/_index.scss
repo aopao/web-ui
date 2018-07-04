@@ -132,12 +132,12 @@
   height: 40px;
   line-height: 40px;
   color: #afafaf;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0,0,0,0.2);
   opacity: .8;
   text-align: center;
   &:hover {
     color: #fff;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.3);
     opacity: 1;
   }
 }
@@ -166,7 +166,7 @@
       width: 200px
     }
     .layui-nav>.layui-nav-itemed>a {
-      background: rgba(0,0,0,.3)
+      background: rgba(0,0,0,.1)
     }
 
   }

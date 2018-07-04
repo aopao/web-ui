@@ -182,11 +182,9 @@
 <script type="text/javascript" src="../../assets/plugins/ztree/fuzzysearch.js"></script>
 <!--ztree-->
 <script type="text/javascript">
-    layui.use(['laypage', 'laydate', 'element','form', 'layer'], function() {
-        var element = layui.element;
-
-    });
-
+    layui.use(['element','form', 'layer'], function() {
+        var element = layui.element
+            ,layer = layui.layer;
 
         //ztree配置
         var setting = {
@@ -267,9 +265,11 @@
         function zTreeOnClick(event, treeId, treeNode) {
             //这里定义点击书中节点时，相应的页面其他的操作，示例：
             // 每次点击节点后， 弹出该节点的 tId、name 的信息
-            alert(treeNode.tId + ", " + treeNode.name);
+            layer.msg(treeNode.tId + ", " + treeNode.name);
         };
 
+
+        // 树折叠
         $('.layui-tree-divider').on('click', function () {
             if($(this).hasClass('layui-panel-hide')) {
                 $(this).removeClass('layui-panel-hide');
@@ -282,6 +282,8 @@
             }
         });
 
+
+    });
 
 </script>
 </body>
