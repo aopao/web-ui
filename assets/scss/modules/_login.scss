@@ -1,4 +1,4 @@
-/*登录页*/
+/*登录页布局*/
 .login-container {
   position: fixed;
   left: 0;
@@ -138,6 +138,9 @@
     line-height: 42px;
     font-size: 18px;
     background-color: #52a382;
+  }
+  .login-form-danger {
+    border-color: #FF5722 !important;
   }
 }
 

@@ -52,3 +52,8 @@ class命名前缀：layui，连接符：-，如：class="layui-form"
 #### JS
 
 通过layui.use(mods, callback)方法加载模块
+
+#### 其他
+
+覆盖了layui部分样式
+修改了laydate.js

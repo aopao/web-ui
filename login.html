@@ -51,7 +51,7 @@
 	</div>
 	<!--样式切换-->
 	<!--登录表单-->
-	<div class="login-form layui-form">
+	<form class="login-form layui-form">
 		<div class="login-form-pic"></div>
 		<div class="login-form-content">
 			<div class="login-form-title"></div>
@@ -59,7 +59,7 @@
 			<div class="layui-form-item login-form-item">
 				<label class="layui-form-label"><i class="iconfont icon-user"></i></label>
 				<div class="layui-input-block">
-					<input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输入用户名" class="layui-input">
+					<input type="text" name="username" lay-verify="username" autocomplete="off" placeholder="请输入用户名" class="layui-input">
 				</div>
 			</div>
 			<!--用户名-->
@@ -67,7 +67,7 @@
 			<div class="layui-form-item login-form-item">
 				<label class="layui-form-label"><i class="iconfont icon-password"></i></label>
 				<div class="layui-input-block">
-					<input type="password" name="password" placeholder="请输入密码" autocomplete="off" class="layui-input">
+					<input type="password" name="password" lay-verify="password" placeholder="请输入密码" autocomplete="off" class="layui-input">
 				</div>
 			</div>
 			<!--密码-->
@@ -82,7 +82,7 @@
 			</div>
 			<!--登录按钮-->
 		</div>
-	</div>
+	</form>
 	<!--登录表单-->
 	<!--copyright-->
 	<div class="login-risen"></div>
@@ -93,19 +93,63 @@
 <script type="text/javascript" src="./layui/layui.js"></script>
 <script>
 	// 表单登录
-	layui.use(['form', 'layer'], function () {
+	layui.use(['form', 'layer', 'jquery'], function () {
 		var form = layui.form,
 			layer = layui.layer;
+			$ = layui.jquery;
+
+        // 验证规则
+        form.verify({
+            username: function(value, item){ //value：表单的值、item：表单的DOM对象
+                if(!new RegExp("^[a-zA-Z0-9_\u4e00-\u9fa5\\s·]+$").test(value)){
+                    return '用户名不能有特殊字符';
+                }
+                if(/(^\_)|(\__)|(\_+$)/.test(value)){
+                    return '用户名首尾不能出现下划线\'_\'';
+                }
+                if(/^\d+\d+\d$/.test(value)){
+                    return '用户名不能全为数字';
+                }
+            }
+            ,password: [
+                /^[\S]{6,12}$/
+                ,'密码必须6到12位，且不能出现空格'
+            ]
+        });
+
+        // 监听验证
+		var status = function() {
+		    var status = 'layui-form-danger';
+		    if($(this).hasClass(status)) {
+		        $(this).closest('.login-form-item').addClass('login-form-danger');
+			}
+		}
+		$('.layui-form').on('keyup,focus,blur', '.layui-input', status);
+
+		// 表单提交
         form.on('submit(login)', function(data) {
 			var arr = [];
 			var formObj = data.field;
+			// 遍历对象
             for(prop in formObj) {
                 if(formObj.hasOwnProperty(prop) && typeof formObj[prop] !== 'function') {
                     arr.push(prop+'='+formObj[prop]);
                 }
             }
-            layer.msg(arr.join('&'))
+            layer.msg(arr.join('&'));
+            return false;
+			// 延时跳转
+			// if(true) {
+             //    setTimeout(function () {
+             //        window.location.href = 'index.html'
+             //    }, 2000)
+			// }
         });
+
+
+
+
+
     });
 </script>
 </body>

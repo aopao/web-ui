@@ -1751,6 +1751,10 @@
   text-align: center;
 }
 
+.layui-form-danger + .layui-form-select .layui-input, .layui-form-danger {
+  border-color: #FF5722 !important;
+}
+
 /***** 主题颜色 *****/
 .layui-layout {
   /*index.html*/

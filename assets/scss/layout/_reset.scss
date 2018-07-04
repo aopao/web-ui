@@ -132,3 +132,8 @@ $dir-list: left, center, right;
     }
   }
 }
+
+// 表单
+.layui-form-danger+.layui-form-select .layui-input, .layui-form-danger {
+  border-color: #FF5722!important;
+}
