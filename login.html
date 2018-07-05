@@ -28,9 +28,9 @@
 	<!--logo-->
 	<!--样式切换-->
 	<div class="login-theme">
-		<a href="javascript:;" class="login-theme-green">Green</a>&nbsp;&nbsp;/&nbsp;&nbsp;
-		<a href="javascript:;" class="login-theme-red">Red</a>&nbsp;&nbsp;/&nbsp;&nbsp;
-		<a href="javascript:;" class="login-theme-blue">Blue</a>
+		<a href="javascript:;" class="login-theme-green" lay-title="绿色">Green</a>&nbsp;&nbsp;/&nbsp;&nbsp;
+		<a href="javascript:;" class="login-theme-red" lay-title="红色">Red</a>&nbsp;&nbsp;/&nbsp;&nbsp;
+		<a href="javascript:;" class="login-theme-blue" lay-title="蓝色">Blue</a>
 	</div>
 	<!--样式切换-->
 	<!--登录表单-->
@@ -83,13 +83,15 @@
 
 		// 主题
 		var $container = $('.login-container');
-		var theme = window.sessionStorage.getItem('loginTheme') || 'login-theme-green';
-		$container.removeClass().addClass('login-container '+theme.replace('login-theme-',''));
+		var theme = window.sessionStorage.getItem('skin') || 'green';
+		$container.removeClass().addClass('login-container '+theme);
 
 		$('.login-theme').on('click', 'a', function () {
-			var theme = this.getAttribute('class') || 'login-theme-green';
-			$container.removeClass().addClass('login-container '+theme.replace('login-theme-',''));
-			window.sessionStorage.setItem('loginTheme', theme);
+			var theme = this.getAttribute('class').replace('login-theme-','') || 'green';
+			var title = this.getAttribute('lay-title') || '绿色';
+			$container.removeClass().addClass('login-container '+theme);
+            window.sessionStorage.setItem("skin",theme);
+            window.sessionStorage.setItem("skinValue",title);
 		});
 
         // 验证规则

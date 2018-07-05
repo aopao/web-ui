@@ -13,15 +13,18 @@
   background: #54a785;
 }
 
+.green .layui-header .logo i {
+  background: url("../img/logo-green.png") no-repeat center;
+  background-size: contain;
+  image-rendering: -webkit-optimize-contrast;
+}
+
 .green .layui-side {
   background-color: #fff;
 }
 
 .green .layui-nav {
   background-color: #fff;
-}
-
-.green .layui-nav {
   color: #333;
 }
 
@@ -151,15 +154,18 @@
   background: #d65b5e;
 }
 
+.red .layui-header .logo i {
+  background: url("../img/logo-red.png") no-repeat center;
+  background-size: contain;
+  image-rendering: -webkit-optimize-contrast;
+}
+
 .red .layui-side {
   background-color: #fff;
 }
 
 .red .layui-nav {
   background-color: #fff;
-}
-
-.red .layui-nav {
   color: #333;
 }
 
@@ -289,15 +295,18 @@
   background: #208ed3;
 }
 
+.blue .layui-header .logo i {
+  background: url("../img/logo-blue.png") no-repeat center;
+  background-size: contain;
+  image-rendering: -webkit-optimize-contrast;
+}
+
 .blue .layui-side {
   background-color: #fff;
 }
 
 .blue .layui-nav {
   background-color: #fff;
-}
-
-.blue .layui-nav {
   color: #333;
 }
 
@@ -415,6 +424,49 @@
   background: none;
 }
 
+.sidebar-toggle {
+  position: fixed;
+  right: 50px;
+  bottom: 45px;
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  background: #222;
+  line-height: 0;
+  z-index: 1050;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sidebar {
+    display: none !important;
+  }
+  .sidebar-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .sidebar-toggle {
+    display: none;
+  }
+}
+
+.sidebar-toggle-line {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  margin-top: 3px;
+  background: #87daff;
+}
+
+.sidebar-toggle-line:first-child {
+  margin-top: 0;
+}
+
 /***** 整体布局 *****/
 .layui-header {
   position: relative;
@@ -437,11 +489,11 @@
   color: #fff;
 }
 
-.layui-header .logo img {
+.layui-header .logo i {
   margin-right: 10px;
   display: inline-block;
   width: 40px;
-  height: auto;
+  height: 40px;
   vertical-align: -8px;
 }
 
