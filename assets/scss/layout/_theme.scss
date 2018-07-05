@@ -1,5 +1,5 @@
 /***** 主题颜色 *****/
-$theme-list: (layui-layout, #038d55, #54a785, #fff),
+$theme-list: (green, #038d55, #54a785, #fff),
         (red, #c9393a, #d65b5e, #fff),
         (blue, #0272bd, #208ed3, #fff);
 @each $theme-name, $theme-base, $theme-header-bg, $theme-side-bg in $theme-list {

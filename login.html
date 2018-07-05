@@ -19,35 +19,18 @@
 
 <!--登录页-->
 <div class="login-container">
-	<!--背景-->
-	<ul class="bg-bubbles">
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-	</ul>
-	<!--背景-->
 	<!--logo-->
 	<div class="login-logo">
-		<img src="./assets/img/login-logo.png" alt="logo">
+		<img class="login-logo-green" src="./assets/img/login-logo1.png" alt="logo">
+		<img class="login-logo-red" src="./assets/img/login-logo2.png" alt="logo">
+		<img class="login-logo-blue" src="./assets/img/login-logo1.png" alt="logo">
 	</div>
 	<!--logo-->
 	<!--样式切换-->
-	<div class="style-switch">
-		<a href="#" class="green">Green</a>&nbsp;&nbsp;/&nbsp;&nbsp;
-		<a href="#" class="red">Red</a>&nbsp;&nbsp;/&nbsp;&nbsp;
-		<a href="#" class="blue">Blue</a>
+	<div class="login-theme">
+		<a href="javascript:;" class="login-theme-green">Green</a>&nbsp;&nbsp;/&nbsp;&nbsp;
+		<a href="javascript:;" class="login-theme-red">Red</a>&nbsp;&nbsp;/&nbsp;&nbsp;
+		<a href="javascript:;" class="login-theme-blue">Blue</a>
 	</div>
 	<!--样式切换-->
 	<!--登录表单-->
@@ -98,6 +81,17 @@
 			layer = layui.layer;
 			$ = layui.jquery;
 
+		// 主题
+		var $container = $('.login-container');
+		var theme = window.sessionStorage.getItem('loginTheme') || 'login-theme-green';
+		$container.removeClass().addClass('login-container '+theme.replace('login-theme-',''));
+
+		$('.login-theme').on('click', 'a', function () {
+			var theme = this.getAttribute('class') || 'login-theme-green';
+			$container.removeClass().addClass('login-container '+theme.replace('login-theme-',''));
+			window.sessionStorage.setItem('loginTheme', theme);
+		});
+
         // 验证规则
         form.verify({
             username: function(value, item){ //value：表单的值、item：表单的DOM对象
@@ -129,7 +123,7 @@
 		$('.layui-form').on('blur', '.layui-input', status);
 
 		// 获取保存的密码
-        var cookies = JSON.parse(window.localStorage.getItem('login'));
+        var cookies = JSON.parse(window.localStorage.getItem('loginData'));
         if(cookies) {
             form.val("login-form", cookies)
 		}
@@ -141,9 +135,9 @@
             console.log(formObj);
             // 记住密码
             if(formObj.remember == 'on') {
-                window.localStorage.setItem('login',JSON.stringify(formObj));
+                window.localStorage.setItem('loginData',JSON.stringify(formObj));
             } else {
-                window.localStorage.setItem('login',null);
+                window.localStorage.setItem('loginData',null);
 			}
             // 延时跳转到首页
             if(true) {
@@ -153,10 +147,6 @@
             };
             return false;
         });
-
-
-
-
 
     });
 </script>
