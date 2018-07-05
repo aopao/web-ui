@@ -11,239 +11,146 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="icon" href="favicon.png">
-    <link rel="stylesheet" href="./assets/plugins/iconfont/iconfont.css">
+	<link rel="stylesheet" href="./assets/plugins/iconfont/iconfont.css">
 	<link rel="stylesheet" href="./layui/css/layui.css">
-	<link rel="stylesheet" href="./assets/css/index.css">
+	<link rel="stylesheet" href="./assets/css/login.css">
 </head>
-<body class="main_body">
-	<div class="layui-layout green">
-		<!-- 顶部 -->
-		<div class="layui-header">
-			<!--logo-->
-			<a href="#" class="logo"><i></i>党建后台管理系统</a>
-            <div class="layui-layout-right">
-                <p>欢迎您，开发区组织部</p>
-				<div class="sidebar-toggle">
-					<div class="sidebar-toggle-line-wrap">
-						<span class="sidebar-toggle-line sidebar-toggle-line-first">
-						</span><span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-						<span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-					</div>
-				</div>
-                <ul class="layui-nav">
-                    <li class="layui-nav-item">
-                        <a href="javascript:;">
-                            <i class="layui-icon layui-icon-set-sm"></i>设置&nbsp;&nbsp;&nbsp;&nbsp;
-                        </a>
-                        <dl class="layui-nav-child">
-                            <dd><a id="themes-btn" href="javascript:;"><i class="layui-icon layui-icon-theme"></i>主题切换</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-util"></i>退出</a></dd>
-                        </dl>
-                    </li>
-                    <li class="layui-nav-item"><a href=""><i class="iconfont icon-Signout"></i>退出</a></li>
+<body>
 
-                </ul>
-            </div>
-		</div>
-		<!--左侧导航控制-->
-		<a class="layui-side-switch" href="javascript:;"><i class="layui-icon layui-icon-left"></i></a>
-		<!-- 左侧导航 -->
-		<div class="layui-side layui-side-menu">
-			<div class="layui-side-scroll">
-				<ul class="layui-nav layui-nav-tree" lay-filter="side-menu">
-					<li class="layui-nav-item layui-nav-itemed">
-						<a href="javascript:;" lay-tips="首页" lay-direction="2" lay-href="page/template/home.html">
-							<i class="layui-icon layui-icon-home"></i>
-							<cite>首页</cite>
-						</a>
-					</li>
-                    <li class="layui-nav-item">
-                        <a href="javascript:;" lay-tips="模板" lay-direction="2">
-                            <i class="layui-icon layui-icon-component"></i>
-                            <cite>模板</cite>
-                            <span class="layui-nav-more"></span>
-                        </a>
-                        <dl class="layui-nav-child">
-							<dd class="layui-nav-item">
-								<a href="javascript:;" lay-href="./page/template/new_form.html">新增页</a>
-							</dd>
-                            <dd class="layui-nav-item">
-                                <a href="javascript:;" lay-href="./page/template/list_noTree.html">列表一</a>
-                            </dd>
-                            <dd class="layui-nav-item">
-                                <a href="javascript:;" lay-href="./page/template/list.html">列表二</a>
-                            </dd>
-                            <dd class="layui-nav-item">
-                                <a href="javascript:;" lay-href="./page/template/table.html">表格页</a>
-                            </dd>
-                             <dd class="layui-nav-item">
-                                <a href="javascript:;" lay-href="./page/template/letter.html">介绍信</a>
-                            </dd>
-                        </dl>
-                    </li>
-					<li class="layui-nav-item">
-						<a href="javascript:;" lay-tips="党组织管理" lay-direction="2">
-							<i class="layui-icon layui-icon-flag"></i>
-							<cite>党组织管理</cite>
-							<span class="layui-nav-more"></span>
-						</a>
-						<dl class="layui-nav-child">
-							<dd class="layui-nav-item">
-								<a href="javascript:;">党组织信息管理<span class="layui-nav-more"></span></a>
-								<dl class="layui-nav-child">
-									<dd>
-										<a href="javascript:;" lay-href="component/button/">党组织信息</a>
-									</dd>
-									<dd>
-										<a href="javascript:;" lay-href="component/button/">回收站</a>
-									</dd>
-								</dl>
-							</dd>
-							<dd class="layui-nav-item">
-								<a href="javascript:;">党内关怀<span class="layui-nav-more"></span></a>
-								<dl class="layui-nav-child">
-									<dd>
-										<a href="javascript:;" lay-href="component/button/">困难党员申请</a>
-									</dd>
-									<dd>
-										<a href="javascript:;" lay-href="component/button/">困难党员记录</a>
-									</dd>
-								</dl>
-							</dd>
-							<dd class="layui-nav-item">
-								<a href="javascript:;">党组织班子管理<span class="layui-nav-more"></span></a>
-								<dl class="layui-nav-child">
-									<dd>
-										<a href="javascript:;" lay-href="component/button/">班子管理</a>
-									</dd>
-								</dl>
-							</dd>
-							<dd class="layui-nav-item">
-								<a href="javascript:;" lay-href="component/button/">党组织堡垒图</a>
-							</dd>
-						</dl>
-					</li>
-					<li class="layui-nav-item">
-						<a href="javascript:;" lay-tips="党员管理" lay-direction="2">
-							<i class="layui-icon layui-icon-user"></i>
-							<cite>党员管理</cite>
-							<span class="layui-nav-more"></span>
-						</a>
-						<dl class="layui-nav-child">
-							<dd class="layui-nav-item">
-								<a href="javascript:;">党员信息管理<span class="layui-nav-more"></span></a>
-								<dl class="layui-nav-child">
-									<dd>
-										<a href="javascript:;" lay-href="component/button/">在册党员信息</a>
-									</dd>
-									<dd>
-										<a href="javascript:;" lay-href="component/button/">预备党员信息</a>
-									</dd>
-									<dd>
-										<a href="javascript:;" lay-href="component/button/">预备党员信息</a>
-									</dd>
-									<dd>
-										<a href="javascript:;" lay-href="component/button/">历史党员信息</a>
-									</dd>
-								</dl>
-							</dd>
-							<dd class="layui-nav-item">
-								<a href="javascript:;">党费缴纳管理<span class="layui-nav-more"></span></a>
-								<dl class="layui-nav-child">
-									<dd>
-										<a href="javascript:;" lay-href="component/button/">党费缴纳</a>
-									</dd>
-									<dd>
-										<a href="javascript:;" lay-href="component/button/">党费统计</a>
-									</dd>
-								</dl>
-							</dd>
-							<dd class="layui-nav-item">
-								<a href="javascript:;">发展党员<span class="layui-nav-more"></span></a>
-								<dl class="layui-nav-child">
-									<dd>
-										<a href="javascript:;" lay-href="component/button/">发展党员流程</a>
-									</dd>
-									<dd>
-										<a href="javascript:;" lay-href="component/button/">发展党员信息库</a>
-									</dd>
-								</dl>
-							</dd>
-						</dl>
-					</li>
-					<li class="layui-nav-item">
-						<a href="javascript:;" lay-tips="活动管理" lay-direction="2">
-							<i class="layui-icon layui-icon-template-1"></i>
-							<cite>活动管理</cite>
-							<span class="layui-nav-more"></span>
-						</a>
-						<dl class="layui-nav-child">
-							<dd class="layui-nav-item">
-								<a href="javascript:;">活动类型管理<span class="layui-nav-more"></span></a>
-								<dl class="layui-nav-child">
-									<dd>
-										<a href="javascript:;" lay-href="component/button/">活动类型列表</a>
-									</dd>
-								</dl>
-							</dd>
-							<dd class="layui-nav-item">
-								<a href="javascript:;">活动记录<span class="layui-nav-more"></span></a>
-								<dl class="layui-nav-child">
-									<dd>
-										<a href="javascript:;" lay-href="component/button/">活动列表</a>
-									</dd>
-									<dd>
-										<a href="javascript:;" lay-href="component/button/">万名党员进党校</a>
-									</dd>
-								</dl>
-							</dd>
-							<dd class="layui-nav-item">
-								<a href="javascript:;">活动指标<span class="layui-nav-more"></span></a>
-								<dl class="layui-nav-child">
-									<dd>
-										<a href="javascript:;" lay-href="component/button/">党组织考核指标</a>
-									</dd>
-									<dd>
-										<a href="javascript:;" lay-href="component/button/">党员考核指标</a>
-									</dd>
-								</dl>
-							</dd>
-						</dl>
-					</li>
-					<li class="layui-nav-item">
-						<a href="javascript:;" lay-tips="组工信息量化考核" lay-direction="2">
-							<i class="layui-icon layui-icon-template"></i>
-							<cite>组工信息量化考核</cite>
-							<span class="layui-nav-more"></span>
-						</a>
-						<dl class="layui-nav-child">
-							<dd class="layui-nav-item">
-								<a href="javascript:;" lay-href="component/button/">组工信息统计分析</a>
-							</dd>
-							<dd class="layui-nav-item">
-								<a href="javascript:;" lay-href="component/button/">组工信息列表</a>
-							</dd>
-							<dd class="layui-nav-item">
-								<a href="javascript:;" lay-href="component/button/">组工信息审核列表</a>
-							</dd>
-							<dd class="layui-nav-item">
-								<a href="javascript:;" lay-href="component/button/">已采用组工信息列表</a>
-							</dd>
-						</dl>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!-- 右侧内容 -->
-		<div class="layui-body">
-			<iframe class="child-iframe" src="./page/template/home.html"></iframe>
-		</div>
+<!--登录页-->
+<div class="login-container">
+	<!--logo-->
+	<div class="login-logo">
+		<img class="login-logo-green" src="./assets/img/login-logo1.png" alt="logo">
+		<img class="login-logo-red" src="./assets/img/login-logo2.png" alt="logo">
+		<img class="login-logo-blue" src="./assets/img/login-logo1.png" alt="logo">
 	</div>
-	<script type="text/javascript" src="./layui/layui.js"></script>
-	<script src="./assets/js/jquery-1.8.3.min.js"></script>
-	<script src="./assets/js/common.js"></script>
-	<script src="./assets/js/velocity.min.js"></script>
-	<script src="./assets/js/motion.js"></script>
-	<script src="./assets/js/index.js"></script>
+	<!--logo-->
+	<!--样式切换-->
+	<div class="login-theme">
+		<a href="javascript:;" class="login-theme-green" lay-title="绿色">Green</a>&nbsp;&nbsp;/&nbsp;&nbsp;
+		<a href="javascript:;" class="login-theme-red" lay-title="红色">Red</a>&nbsp;&nbsp;/&nbsp;&nbsp;
+		<a href="javascript:;" class="login-theme-blue" lay-title="蓝色">Blue</a>
+	</div>
+	<!--样式切换-->
+	<!--登录表单-->
+	<form class="login-form layui-form" lay-filter="login-form">
+		<div class="login-form-pic"></div>
+		<div class="login-form-content">
+			<div class="login-form-title"></div>
+			<!--用户名-->
+			<div class="layui-form-item login-form-item">
+				<label class="layui-form-label"><i class="iconfont icon-user"></i></label>
+				<div class="layui-input-block">
+					<input type="text" name="username" lay-verify="username" autocomplete="off" placeholder="请输入用户名" class="layui-input">
+				</div>
+			</div>
+			<!--用户名-->
+			<!--密码-->
+			<div class="layui-form-item login-form-item">
+				<label class="layui-form-label"><i class="iconfont icon-password"></i></label>
+				<div class="layui-input-block">
+					<input type="password" name="password" lay-verify="password" placeholder="请输入密码" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<!--密码-->
+			<!--记住密码-->
+			<div class="layui-form-item login-checkbox-wrapper">
+				<input type="checkbox" name="remember" lay-skin="primary" title="记住密码">
+			</div>
+			<!--记住密码-->
+			<!--登录按钮-->
+			<div class="layui-form-item">
+				<button class="layui-btn layui-btn-fluid" lay-submit lay-filter="login">登&nbsp;&nbsp;录</button>
+			</div>
+			<!--登录按钮-->
+		</div>
+	</form>
+	<!--登录表单-->
+	<!--copyright-->
+	<div class="login-risen"></div>
+	<!--copyright-->
+</div>
+<!--登录页-->
+
+<script type="text/javascript" src="./layui/layui.js"></script>
+<script>
+	// 表单登录
+	layui.use(['form', 'layer', 'jquery'], function () {
+		var form = layui.form,
+			layer = layui.layer;
+			$ = layui.jquery;
+
+		// 主题
+		var $container = $('.login-container');
+		var theme = window.sessionStorage.getItem('skin') || 'green';
+		$container.removeClass().addClass('login-container '+theme);
+
+		$('.login-theme').on('click', 'a', function () {
+			var theme = this.getAttribute('class').replace('login-theme-','') || 'green';
+			var title = this.getAttribute('lay-title') || '绿色';
+			$container.removeClass().addClass('login-container '+theme);
+            window.sessionStorage.setItem("skin",theme);
+            window.sessionStorage.setItem("skinValue",title);
+		});
+
+        // 验证规则
+        form.verify({
+            username: function(value, item){ //value：表单的值、item：表单的DOM对象
+                if(!new RegExp("^[a-zA-Z0-9_\u4e00-\u9fa5\\s·]+$").test(value)){
+                    return '用户名不能有特殊字符';
+                }
+                if(/(^\_)|(\__)|(\_+$)/.test(value)){
+                    return '用户名首尾不能出现下划线\'_\'';
+                }
+                if(/^\d+\d+\d$/.test(value)){
+                    return '用户名不能全为数字';
+                }
+            }
+            ,password: [
+                /^[\S]{6,12}$/
+                ,'密码必须6到12位，且不能出现空格'
+            ]
+        });
+
+        // 监听验证
+		var status = function() {
+		    var status = 'layui-form-danger';
+		    if($(this).hasClass(status)) {
+		        $(this).closest('.login-form-item').addClass('login-form-danger');
+			} else {
+                $(this).closest('.login-form-item').removeClass('login-form-danger');
+			}
+		}
+		$('.layui-form').on('blur', '.layui-input', status);
+
+		// 获取保存的密码
+        var cookies = JSON.parse(window.localStorage.getItem('loginData'));
+        if(cookies) {
+            form.val("login-form", cookies)
+		}
+
+        // 表单提交
+        form.on('submit(login)', function(data) {
+			var formObj = data.field;
+			// 获取表单数据
+            layer.msg(JSON.stringify(formObj));
+            // 记住密码
+            if(formObj.remember == 'on') {
+                window.localStorage.setItem('loginData',JSON.stringify(formObj));
+            } else {
+                window.localStorage.setItem('loginData',null);
+			}
+            // 延时跳转到首页
+            if(true) {
+                setTimeout(function () {
+                    window.location.href = 'main.html';
+                }, 2000)
+            };
+            return false;
+        });
+
+    });
+</script>
 </body>
 </html>

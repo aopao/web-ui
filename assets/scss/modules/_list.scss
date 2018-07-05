@@ -150,14 +150,14 @@
     left: 0;
     right: 0;
     top: 50%;
-    border-right: 4px solid #333;
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
+    border-right: 4px solid #909090;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
   }
   &.layui-panel-hide {
     left: 0;
     &:after {
-      border-left: 4px solid #333;
+      border-left: 4px solid #909090;
       border-right: none;
     }
   }

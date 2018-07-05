@@ -44,25 +44,27 @@
         <div class="layui-list-container">
             <!--查询表单-->
             <div class="layui-form-panel">
-                <form class="layui-form">
-                    <div class="layui-form-item">
+                <div class="layui-form">
+                    <form class="layui-form-item">
                         <label class="layui-form-label">姓名</label>
                         <div class="layui-input-inline">
-                            <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入" class="layui-input">
+                            <input type="text" name="title" lay-verify="required" autocomplete="off" placeholder="请输入" class="layui-input">
                         </div>
-                        <a class="layui-btn layui-btn-primary form-btn-query"><i class="iconfont icon-chaxun"></i><span>查询</span></a>
+                        <a class="layui-btn layui-btn-primary form-btn-query" lay-submit=""><i class="iconfont icon-chaxun"></i><span>查询</span></a>
                         <a class="layui-btn layui-btn-primary form-btn-reset"><i class="iconfont icon-zhongzhi"></i><span>重置</span></a>
                         <a class="layui-btn layui-btn-primary form-btn-add"><i class="iconfont icon-xinzeng"></i><span>新增</span></a>
                         <a class="layui-btn layui-btn-primary form-btn-del"><i class="iconfont icon-shanchu"></i><span>删除</span></a>
                         <a class="layui-btn layui-btn-primary form-btn-export"><i class="iconfont icon-daochu"></i><span>导出EXCEL表格</span></a>
                         <a class="layui-btn layui-btn-primary form-btn-query-more"><i class="iconfont icon-chaxun"></i><span>高级查询</span></a>
-                    </div>
-
-                </form>
+                        <!--隐藏的重置按钮-->
+                        <button type="reset" class="layui-btn layui-btn-primary" style="display: none;">重置</button>
+                        <!--隐藏的重置按钮-->
+                    </form>
+                </div>
 
                 <!--高级查询弹层-->
                 <div class="layer-query-more" style="display: none;">
-                    <div class="layui-form" style="padding-top: 15px;">
+                    <form class="layui-form" style="padding-top: 15px;">
                         <div class="layui-inline">
                             <label class="layui-form-label">党组织</label>
                             <div class="layui-inline">
@@ -99,10 +101,13 @@
                             </div>
                         </div>
                         <div class="layui-inline">
-                            <button class="layui-btn">查询</button>
-                            <button class="layui-btn layui-btn-primary">重置</button>
+                            <a class="layui-btn layui-btn-primary form-btn-query" lay-submit=""><i class="iconfont icon-chaxun"></i><span>查询</span></a>
+                            <a class="layui-btn layui-btn-primary form-btn-reset"><i class="iconfont icon-zhongzhi"></i><span>重置</span></a>
+                            <!--隐藏的重置按钮-->
+                            <button type="reset" class="layui-btn layui-btn-primary" style="display: none;">重置</button>
+                            <!--隐藏的重置按钮-->
                         </div>
-                    </div>
+                    </form>
                 </div>
                 <!--高级查询弹层-->
             </div>
@@ -471,6 +476,11 @@
                     //do something
                 }
             }
+        });
+
+        // 重置按钮
+        $('.layui-form').on('click', '.form-btn-reset', function () {
+            $(this).closest('.layui-form').find('button[type="reset"]').trigger('click');
         });
 
         // 全选

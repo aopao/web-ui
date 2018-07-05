@@ -56,4 +56,4 @@ class命名前缀：layui，连接符：-，如：class="layui-form"
 #### 其他
 
 覆盖了layui部分样式
-修改了laydate.js
+修改了laydate.js和form.js
