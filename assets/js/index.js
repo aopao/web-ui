@@ -26,6 +26,7 @@ layui.use(['form','element','layer','jquery'],function () {
 
         }
     });
+
     $(document).on("mouseenter", "*[lay-tips]", function() {
         var e = $(this);
         var $layout = $('.layui-layout');

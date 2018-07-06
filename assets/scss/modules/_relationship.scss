@@ -8,6 +8,21 @@
       .layui-relationship-btn, .layui-relationship-tips {
         padding: 0 60px;
       }
+      .layui-relationship-inner {
+          i {
+            color: #f58db2 ;
+          }
+      }
+      .layui-relationship-go {
+        i {
+          color: #89b8d7 ;
+        }
+      }
+      .layui-relationship-come {
+        i {
+          color: #23c3aa ;
+        }
+      }
       a {
         margin-bottom: 30px;
         display: block;
@@ -15,7 +30,7 @@
         height: 160px;
         font-size: 24px;
         border: 1px solid #dadada;
-        border-radius: 3px;
+        border-radius: 6px;
         text-align: center;
         i {
           margin-right: 15px;
