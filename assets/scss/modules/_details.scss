@@ -1,0 +1,23 @@
+/*详情页*/
+.layui-details-container {
+  padding-top: 32px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #333;
+  .layui-title-lg {
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+  }
+  .layui-title-sm {
+    margin: 5px 10px 0;
+    text-align: center;
+  }
+  .layui-content {
+    padding: 32px 48px;
+    line-height: 30px;
+  }
+}
+

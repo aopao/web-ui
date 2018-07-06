@@ -65,14 +65,14 @@ layui.use(['form','element','layer','jquery'],function () {
     $("#themes-btn").click(function(){
         layer.open({
             title : "更换皮肤",
-            area : ["280px","180px"],
+            area : ["300px","180px"],
             type : "1",
-            content : '<div class="skins_box" style="padding: 20px 20px 0;">'+
+            content : '<div class="skins_box" style="padding: 20px 0 0;">'+
             '<form class="layui-form">'+
-            '<div class="layui-form-item">'+
-            '<input type="radio" name="skin" value="默认" title="默认" lay-filter="default" checked="">'+
-            '<input type="radio" name="skin" value="红色" title="红色" lay-filter="red">'+
-            '<input type="radio" name="skin" value="蓝色" title="蓝色" lay-filter="blue">'+
+            '<div class="layui-form-item" style="padding-left: 15px;">'+
+            '<input type="radio" name="skin" value="护眼绿" title="护眼绿" lay-filter="green" checked="">'+
+            '<input type="radio" name="skin" value="党建红" title="党建红" lay-filter="red">'+
+            '<input type="radio" name="skin" value="科技蓝" title="科技蓝" lay-filter="blue">'+
             '</div>'+
             '<div class="layui-form-item skinBtn">'+
             '<a href="javascript:;" class="layui-btn layui-btn-small layui-btn-normal" lay-submit="" lay-filter="changeSkin">确定更换</a>'+
@@ -95,12 +95,12 @@ layui.use(['form','element','layer','jquery'],function () {
                 // $(".skins_box").removeClass("layui-hide");
                 $(".skins_box .layui-form-radio").on("click",function(){
                     var skinColor;
-                    if($(this).find("div").text() == "红色"){
+                    if($(this).find("div").text() == "党建红"){
                         skinColor = "red";
-                    }else if($(this).find("div").text() == "蓝色"){
+                    }else if($(this).find("div").text() == "科技蓝"){
                         skinColor = "blue";
-                    }else if($(this).find("div").text() == "默认"){
-                        skinColor = "";
+                    }else if($(this).find("div").text() == "护眼绿"){
+                        skinColor = "green";
                     }
                     $("body").removeAttr("class").addClass("main_body "+skinColor+"");
                     $(".child-iframe").contents().find('body').removeAttr("class").addClass("page_body "+skinColor+"");
@@ -109,12 +109,12 @@ layui.use(['form','element','layer','jquery'],function () {
                 var skinColor;
                 form.on("submit(changeSkin)",function(data){
                     if(data.field.skin != "自定义"){
-                        if(data.field.skin == "红色"){
+                        if(data.field.skin == "党建红"){
                             skinColor = "red";
-                        }else if(data.field.skin == "蓝色"){
+                        }else if(data.field.skin == "科技蓝"){
                             skinColor = "blue";
-                        }else if(data.field.skin == "默认"){
-                            skinColor = "";
+                        }else if(data.field.skin == "护眼绿"){
+                            skinColor = "green";
                         }
                         window.sessionStorage.setItem("skin",skinColor);
                     }

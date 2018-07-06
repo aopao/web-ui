@@ -670,5 +670,6 @@
 
 /*颜色切换*/
 .skinBtn {
+  margin-top: 15px;
   text-align: center;
 }

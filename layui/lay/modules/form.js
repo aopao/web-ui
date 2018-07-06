@@ -672,8 +672,10 @@ layui.define('layer', function(exports){
   //表单reset重置渲染
   $dom.on('reset', ELEM, function(){
     var filter = $(this).attr('lay-filter');
+    var $ele = $(this);
     setTimeout(function(){
       form.render(null, filter);
+      $ele.find('.layui-form-danger').removeClass('layui-form-danger');
     }, 50);
   });
   
