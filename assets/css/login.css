@@ -2043,11 +2043,11 @@
 }
 
 .blue .layui-list a:hover {
-  color: #0272bd;
+  color: #1E9FFF;
 }
 
 .blue .layui-header {
-  background: #208ed3;
+  background: #0979c2;
 }
 
 .blue .layui-header .logo i {
@@ -2070,7 +2070,7 @@
 }
 
 .blue .layui-nav .layui-nav-child dd.layui-this a, .blue .layui-nav-child dd.layui-this {
-  background-color: #0272bd;
+  background-color: #1E9FFF;
 }
 
 .blue .layui-nav-tree .layui-nav-item a:hover {
@@ -2082,11 +2082,11 @@
 }
 
 .blue .layui-header .layui-nav .layui-nav-child a .layui-icon {
-  color: #0272bd;
+  color: #1E9FFF;
 }
 
 .blue .layui-layout-right .layui-nav .layui-nav-child a {
-  color: #0272bd;
+  color: #1E9FFF;
 }
 
 .blue .layui-layout-right .layui-nav dd.layui-this a {
@@ -2102,24 +2102,24 @@
 }
 
 .blue .layui-nav-itemed > a, .blue .layui-nav-tree .layui-nav-title a, .blue .layui-nav-tree .layui-nav-title a:hover {
-  color: #0272bd !important;
+  color: #1E9FFF !important;
 }
 
 .blue .layui-nav-tree .layui-nav-child dd.layui-this, .blue .layui-nav-tree .layui-nav-child dd.layui-this a, .blue .layui-nav-tree .layui-this, .blue .layui-nav-tree .layui-this > a, .blue .layui-nav-tree .layui-this > a:hover {
   background-color: #efefef;
-  color: #0272bd;
+  color: #1E9FFF;
 }
 
 .blue .layui-nav .layui-nav-more {
-  border-color: #0272bd transparent transparent;
+  border-color: #1E9FFF transparent transparent;
 }
 
 .blue .layui-nav .layui-nav-mored, .blue .layui-nav-itemed > a .layui-nav-more {
-  border-color: transparent transparent #0272bd;
+  border-color: transparent transparent #1E9FFF;
 }
 
 .blue .layui-nav .layui-this:after, .blue .layui-nav-bar, .blue .layui-nav-tree .layui-nav-itemed:after {
-  background-color: #0272bd;
+  background-color: #1E9FFF;
 }
 
 .blue .layui-header .layui-nav .layui-nav-more {
@@ -2135,35 +2135,35 @@
 }
 
 .blue .layui-tab-brief > .layui-tab-title .layui-this {
-  color: #0272bd;
+  color: #1E9FFF;
 }
 
 .blue .layui-tab-brief > .layui-tab-more li.layui-this:after, .blue .layui-tab-brief > .layui-tab-title .layui-this:after {
-  border-color: #0272bd;
+  border-color: #1E9FFF;
 }
 
 .blue .index-panel-model .layui-model i {
-  color: #0272bd;
+  color: #1E9FFF;
 }
 
 .blue .layui-laydate .layui-this {
-  background-color: #208ed3 !important;
+  background-color: #0979c2 !important;
 }
 
 .blue .layui-carousel-container .layui-carousel-ind li.layui-this {
-  background-color: #208ed3;
+  background-color: #0979c2;
 }
 
 .blue .layui-menu-items .layui-icon {
-  color: #0272bd;
+  color: #1E9FFF;
 }
 
 .blue .layui-menu-items .tips {
-  background-color: #208ed3;
+  background-color: #0979c2;
 }
 
 .blue .layui-menu-items:hover .tips {
-  background-color: #0272bd;
+  background-color: #1E9FFF;
 }
 
 .blue .layui-laydate .laydate-day-mark::after {
@@ -2171,8 +2171,8 @@
   top: 0;
   width: 0;
   height: 0;
-  border-left: 10px solid #0272bd;
-  border-top: 8px solid #0272bd;
+  border-left: 10px solid #1E9FFF;
+  border-top: 8px solid #1E9FFF;
   border-right: 10px solid transparent;
   border-bottom: 8px solid transparent;
   border-radius: 0;
