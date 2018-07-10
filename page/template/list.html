@@ -45,12 +45,12 @@
             <!--查询表单-->
             <div class="layui-form-panel">
                 <div class="layui-form">
-                    <form class="layui-form-item">
+                    <div class="layui-form-item">
                         <label class="layui-form-label">姓名</label>
                         <div class="layui-input-inline">
                             <input type="text" name="title" lay-verify="required" autocomplete="off" placeholder="请输入" class="layui-input">
                         </div>
-                        <a class="layui-btn layui-btn-primary form-btn-query" lay-submit=""><i class="iconfont icon-chaxun"></i><span>查询</span></a>
+                        <a class="layui-btn layui-btn-primary form-btn-query"><i class="iconfont icon-chaxun"></i><span>查询</span></a>
                         <a class="layui-btn layui-btn-primary form-btn-reset"><i class="iconfont icon-zhongzhi"></i><span>重置</span></a>
                         <a class="layui-btn layui-btn-primary form-btn-add"><i class="iconfont icon-xinzeng"></i><span>新增</span></a>
                         <a class="layui-btn layui-btn-primary form-btn-del"><i class="iconfont icon-shanchu"></i><span>删除</span></a>
@@ -59,7 +59,7 @@
                         <!--隐藏的重置按钮-->
                         <button type="reset" class="layui-btn layui-btn-primary" style="display: none;">重置</button>
                         <!--隐藏的重置按钮-->
-                    </form>
+                    </div>
                 </div>
 
                 <!--高级查询弹层-->
@@ -462,6 +462,7 @@
         var element = layui.element;
         var form = layui.form;
         var laydate = layui.laydate;
+
 
         laypage.render({
             elem: 'demo7'

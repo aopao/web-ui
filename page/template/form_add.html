@@ -11,6 +11,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="../../layui/css/layui.css">
+    <link rel="stylesheet" href="../../assets/plugins/ztree/zTreeStyle.css">
     <link rel="stylesheet" href="../../assets/css/index.css">
     <link rel="stylesheet" href="../../assets/css/main.css">
 </head>
@@ -106,7 +107,7 @@
         <tr>
             <td class="label-td">工作单位</td>
             <td>
-                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入" class="layui-input">
+                <input type="text" name="title" id="input-tree" lay-verify="title" autocomplete="off" placeholder="请输入" class="layui-input"">
             </td>
             <td class="label-td">毕业院校</td>
             <td>
@@ -193,13 +194,24 @@
 </form>
 
 
-
-
+<!--弹出树-->
+<div class="layui-tree-wrapper" style="display: none;">
+    <div class="layui-tree-search">
+        <input type="text" class="layui-input" id="layer-input-tree" placeholder="请输入关键字">
+    </div>
+    <div id="layer-tree" class="layui-ztree ztree"></div>
+</div>
 
 
 
 <script type="text/javascript" src="../../layui/layui.js"></script>
 <script src="../../assets/js/jquery-1.8.3.min.js"></script>
+<!--ztree-->
+<script type="text/javascript" src="../../assets/plugins/ztree/dataset.js"></script>
+<script type="text/javascript" src="../../assets/plugins/ztree/jquery.ztree.all.min.js"></script>
+<script type="text/javascript" src="../../assets/plugins/ztree/jquery.ztree.exhide.min.js"></script>
+<script type="text/javascript" src="../../assets/plugins/ztree/fuzzysearch.js"></script>
+<!--ztree-->
 <script src="../../assets/js/common.js"></script>
 <script type="text/javascript">
     layui.use(['element','form','upload','laydate'], function(){
@@ -236,7 +248,103 @@
             elem: '#test2' //指定元素
         });
 
+        // 弹出树
+        $('#input-tree').on('click', function () {
+            layer.open({
+                type: 1,
+                title: '弹出树',
+                skin: 'layui-layer-demo', //样式类名
+                closeBtn: 0, //不显示关闭按钮
+                anim: 2,
+                area: ['300px', '500px'],
+                shadeClose: true, //开启遮罩关闭
+                content: $('.layui-tree-wrapper'),
+                success: function () {
+                    //ztree配置
+                    var setting = {
+                        check: {
+                            enable: true//checkbox
+                        },
+                        view: {
+                            nameIsHTML: true, //允许name支持html
+                            selectedMulti: false
+                        },
+                        edit: {
+                            enable: false,
+                            editNameSelectAll: false
+                        },
+                        data: {
+                            simpleData: {
+                                enable: true
+                            }
+                        },
+                        callback: {
+                            // beforeExpand: beforeExpand,
+                            // onExpand: onExpand,
+                            onClick: zTreeOnClick
+                        }
+                    };
+                    loadDataFromLocal();//从本地dataset.js文件读取模拟数据并初始化树形图
+                    /**
+                     * 通过ajax方法从服务器获取数据并初始化树形图
+                     */
+                    function loadDataFromServer(urlStr){
+                        $.ajax({
+                            type: "get",
+                            dataType: "json",
+                            url: urlStr,  //服务请求地址
+                            success: function(data) {
+                                initThisZtree(data);//传入数据,初始化ztree
+                                fuzzySearch('layer-tree','#layer-input-tree',null,true); //初始化模糊搜索方法
+                            }
+                        });
+                    }
+                    /**
+                     * 从本地js/dataset.js文件读取模拟数据并初始化树形图
+                     */
+                    function loadDataFromLocal(){
+                        //此处的树节点数据mockData是在本地js/dataSet.js中预先定义的模拟数据
+                        initThisZtree(mockData);//传入数据,初始化ztree
+                        // zTreeId ztree对象的id,不需要#
+                        // searchField 输入框选择器
+                        // isHighLight 是否高亮,默认高亮,传入false禁用
+                        // isExpand 是否展开,默认合拢,传入true展开
+                        fuzzySearch('layer-tree','#layer-input-tree',null,true); //初始化模糊搜索方法
+                    }
+
+                    /**
+                     * 初始化ztree
+                     *
+                     * @param {Object} data
+                     */
+                    function initThisZtree(data){
+                        //初始化ztree三个参数分别是(jQuery对象,ztree设置,树节点数据)
+                        var treeObj = $.fn.zTree.init($("#layer-tree"), setting, data);
+                        treeObj.expandAll(true);
+                    }
+
+                    /**
+                     * @param event
+                     * @param treeId
+                     * @param treeNode
+                     */
+                    function zTreeOnClick(event, treeId, treeNode) {
+                        //这里定义点击书中节点时，相应的页面其他的操作，示例：
+                        // 每次点击节点后， 弹出该节点的 tId、name 的信息
+                        layer.msg(treeNode.tId + ", " + treeNode.name);
+                        // 赋值
+                        $('#layer-input-tree, #input-tree').val(treeNode.name);
+                    };
+
+                }
+            });
+        });
+        $('.layer-tree-btn').on('click', function () {
+
+        });
+
     });
+
 
 
 </script>
