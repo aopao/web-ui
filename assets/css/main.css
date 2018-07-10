@@ -2873,6 +2873,18 @@
 }
 
 /*表格*/
+.layui-table-panel .layui-btn-group {
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.layui-table-panel .layui-btn-group .layui-btn {
+  margin: 0 2px !important;
+  border-left: none;
+  border-radius: 0;
+}
+
 /*左侧树*/
 .layui-tree-panel {
   position: fixed;
@@ -3345,4 +3357,23 @@
 
 .my-carousel #test2 div[carousel-item] > * {
   line-height: 280px;
+}
+
+/*二维码*/
+.qrcode-group {
+  text-align: center;
+}
+
+.qrcode-group .qrcode-items {
+  margin: 10px 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.qrcode-group:after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
 }

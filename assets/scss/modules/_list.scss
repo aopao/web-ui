@@ -105,7 +105,14 @@
 
   }
   .layui-btn-group {
-
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+    .layui-btn {
+      margin: 0 2px !important;
+      border-left: none;
+      border-radius: 0;
+    }
   }
 }
 

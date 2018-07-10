@@ -22,3 +22,20 @@
     line-height: 280px;
   }
 }
+
+/*二维码*/
+.qrcode-group {
+  text-align: center;
+  .qrcode-items {
+    margin: 10px 20px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
