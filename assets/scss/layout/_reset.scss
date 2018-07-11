@@ -138,3 +138,10 @@ $dir-list: left, center, right;
 .layui-form-danger+.layui-form-select .layui-input, .layui-form-danger {
   border-color: #FF5722!important;
 }
+.layui-disabled, .layui-disabled:hover {
+  color: #909090!important;
+  cursor: not-allowed!important;
+}
+.layui-radio-disbaled>i {
+  color: #909090!important;
+}

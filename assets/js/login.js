@@ -1,5 +1,5 @@
 // 登录页
-layui.define(['form', 'layer', 'jquery'], function (exports) {
+layui.define(['form','layer','jquery'], function (exports) {
     var form = layui.form
         ,layer = layui.layer
         ,$ = layui.jquery;

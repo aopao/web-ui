@@ -1755,6 +1755,15 @@
   border-color: #FF5722 !important;
 }
 
+.layui-disabled, .layui-disabled:hover {
+  color: #909090 !important;
+  cursor: not-allowed !important;
+}
+
+.layui-radio-disbaled > i {
+  color: #909090 !important;
+}
+
 /***** 主题颜色 *****/
 .green {
   /*index.html*/
@@ -1895,6 +1904,11 @@
   border-bottom: 8px solid transparent;
   border-radius: 0;
   background: none;
+}
+
+.green .layui-ztree li a.curSelectedNode {
+  background: transparent;
+  color: #038d55;
 }
 
 .red {
@@ -2038,6 +2052,11 @@
   background: none;
 }
 
+.red .layui-ztree li a.curSelectedNode {
+  background: transparent;
+  color: #c9393a;
+}
+
 .blue {
   /*index.html*/
 }
@@ -2177,6 +2196,11 @@
   border-bottom: 8px solid transparent;
   border-radius: 0;
   background: none;
+}
+
+.blue .layui-ztree li a.curSelectedNode {
+  background: transparent;
+  color: #1E9FFF;
 }
 
 .sidebar-toggle {
@@ -2913,11 +2937,6 @@
   text-decoration: none;
 }
 
-.layui-ztree li a.curSelectedNode {
-  background: transparent;
-  color: #038d55;
-}
-
 .layui-ztree .ztreeCurNode {
   position: absolute;
   left: 0;
@@ -3055,8 +3074,17 @@
 /*关系转接*/
 .layui-relationship-container .layui-relationship {
   padding: 0;
-  padding-top: 200px;
+  padding-top: 150px;
   background-color: #fff;
+}
+
+.layui-relationship-container .layui-relationship .layui-title {
+  margin-bottom: 24px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 30px;
+  color: #000;
+  text-align: center;
 }
 
 .layui-relationship-container .layui-relationship .layui-row .layui-relationship-btn, .layui-relationship-container .layui-relationship .layui-row .layui-relationship-tips {

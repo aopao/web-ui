@@ -106,6 +106,7 @@ $theme-list: (green, #038d55, #54a785, #fff),
         background-color: $theme-base;
       }
     }
+    // 时间输入框
     .layui-laydate .laydate-day-mark::after {
       left: 0;
       top: 0;
@@ -118,6 +119,22 @@ $theme-list: (green, #038d55, #54a785, #fff),
       border-radius: 0;
       background: none;
     }
+    // ztree 高亮
+    .layui-ztree li a.curSelectedNode {
+      background: transparent;
+      color: $theme-base;
+    }
+    // 按钮
+    //.layui-btn {
+    //  background-color: $theme-header-bg;
+    //}
+    //.layui-btn-primary {
+    //  background-color: #fff;
+    //}
+    // 表单
+    //.layui-form-radio>i:hover, .layui-form-radioed>i {
+    //  color: $theme-base;
+    //}
   }
 }
 

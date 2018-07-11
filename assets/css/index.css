@@ -142,6 +142,11 @@
   background: none;
 }
 
+.green .layui-ztree li a.curSelectedNode {
+  background: transparent;
+  color: #038d55;
+}
+
 .red {
   /*index.html*/
 }
@@ -283,6 +288,11 @@
   background: none;
 }
 
+.red .layui-ztree li a.curSelectedNode {
+  background: transparent;
+  color: #c9393a;
+}
+
 .blue {
   /*index.html*/
 }
@@ -422,6 +432,11 @@
   border-bottom: 8px solid transparent;
   border-radius: 0;
   background: none;
+}
+
+.blue .layui-ztree li a.curSelectedNode {
+  background: transparent;
+  color: #1E9FFF;
 }
 
 .sidebar-toggle {
