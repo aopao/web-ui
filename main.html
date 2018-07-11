@@ -30,16 +30,19 @@
                         </a>
                         <dl class="layui-nav-child">
                             <dd><a id="themes-btn" href="javascript:;"><i class="layui-icon layui-icon-theme"></i>主题切换</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-util"></i>退出</a></dd>
+                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-password"></i>修改密码</a></dd>
                         </dl>
                     </li>
-                    <li class="layui-nav-item"><a href=""><i class="iconfont icon-Signout"></i>退出</a></li>
-
+                    <li class="layui-nav-item">
+						<a id="signout-btn" href="javascript:;"><i class="iconfont icon-Signout"></i>退出</a>
+					</li>
                 </ul>
             </div>
 		</div>
+		<!-- 顶部 -->
 		<!--左侧导航控制-->
 		<a class="layui-side-switch" href="javascript:;"><i class="layui-icon layui-icon-left"></i></a>
+		<!--左侧导航控制-->
 		<!-- 左侧导航 -->
 		<div class="layui-side layui-side-menu">
 			<div class="layui-side-scroll">
@@ -58,31 +61,31 @@
                         </a>
                         <dl class="layui-nav-child">
 							<dd class="layui-nav-item">
-								<a href="javascript:;" lay-href="./page/template/new_form.html">新增页</a>
+								<a href="javascript:;" lay-href="./page/form/new_form.html">新增页</a>
 							</dd>
                             <dd class="layui-nav-item">
-                                <a href="javascript:;" lay-href="./page/template/list_noTree.html">列表一</a>
+                                <a href="javascript:;" lay-href="./page/list/list_noTree.html">列表一</a>
                             </dd>
                             <dd class="layui-nav-item">
-                                <a href="javascript:;" lay-href="./page/template/list.html">列表二</a>
+                                <a href="javascript:;" lay-href="./page/list/list.html">列表二</a>
                             </dd>
                             <dd class="layui-nav-item">
-                                <a href="javascript:;" lay-href="./page/template/table.html">表格页</a>
+                                <a href="javascript:;" lay-href="./page/table/table.html">表格页</a>
                             </dd>
                              <dd class="layui-nav-item">
-                                <a href="javascript:;" lay-href="./page/template/letter.html">介绍信</a>
+                                <a href="javascript:;" lay-href="./page/letter/letter.html">介绍信</a>
                             </dd>
 							<dd class="layui-nav-item">
-								<a href="javascript:;" lay-href="./page/template/relationship.html">关系转接</a>
+								<a href="javascript:;" lay-href="./page/relationship/relationship.html">关系转接</a>
 							</dd>
 							<dd class="layui-nav-item">
-								<a href="javascript:;" lay-href="./page/template/map.html">地图</a>
+								<a href="javascript:;" lay-href="./page/map/map.html">地图</a>
 							</dd>
 							<dd class="layui-nav-item">
-								<a href="javascript:;" lay-href="./page/template/details.html">文章详情</a>
+								<a href="javascript:;" lay-href="./page/details/details.html">文章详情</a>
 							</dd>
 							<dd class="layui-nav-item">
-								<a href="javascript:;" lay-href="./page/template/comments.html">组件</a>
+								<a href="javascript:;" lay-href="./page/comments/comments.html">组件</a>
 							</dd>
                         </dl>
                     </li>
@@ -239,14 +242,18 @@
 				</ul>
 			</div>
 		</div>
+		<!-- 左侧导航 -->
 		<!-- 右侧内容 -->
 		<div class="layui-body">
-			<iframe class="child-iframe" src="./page/template/home.html"></iframe>
+			<iframe class="child-iframe" src="./page/home/home.html"></iframe>
 		</div>
+		<!-- 右侧内容 -->
 	</div>
 	<script type="text/javascript" src="./layui/layui.js"></script>
-	<script src="./assets/js/jquery-1.8.3.min.js"></script>
-	<script src="./assets/js/common.js"></script>
-	<script src="./assets/js/index.js"></script>
+	<script src="./assets/js/config.js"></script>
+	<script>
+		// 引用模块
+		layui.use(['common', 'main'], function () {});
+	</script>
 </body>
 </html>

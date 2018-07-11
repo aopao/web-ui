@@ -292,7 +292,7 @@
 }
 
 .blue .layui-header {
-  background: #0979c2;
+  background: #087fc3;
 }
 
 .blue .layui-header .logo i {
@@ -392,11 +392,11 @@
 }
 
 .blue .layui-laydate .layui-this {
-  background-color: #0979c2 !important;
+  background-color: #087fc3 !important;
 }
 
 .blue .layui-carousel-container .layui-carousel-ind li.layui-this {
-  background-color: #0979c2;
+  background-color: #087fc3;
 }
 
 .blue .layui-menu-items .layui-icon {
@@ -404,7 +404,7 @@
 }
 
 .blue .layui-menu-items .tips {
-  background-color: #0979c2;
+  background-color: #087fc3;
 }
 
 .blue .layui-menu-items:hover .tips {

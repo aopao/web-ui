@@ -1,8 +1,9 @@
-layui.use(['form','element','layer','jquery'],function () {
-    var $ = layui.jquery;
-    var form = layui.form;
-    var layer = layui.layer;
-    var element = layui.element;
+// 系统整体布局模块
+layui.define(['form','element','layer','jquery'],function (exports) {
+    var $ = layui.jquery
+    ,form = layui.form
+    ,layer = layui.layer
+    ,element = layui.element;
     // 侧边导航
     element.on('nav(side-menu)', function(elem){
         var $items = $(this).parent();
@@ -26,7 +27,7 @@ layui.use(['form','element','layer','jquery'],function () {
 
         }
     });
-
+    // 侧边弹层
     $(document).on("mouseenter", "*[lay-tips]", function() {
         var e = $(this);
         var $layout = $('.layui-layout');
@@ -46,9 +47,7 @@ layui.use(['form','element','layer','jquery'],function () {
     }).on("mouseleave", "*[lay-tips]", function() {
         layer.close($(this).data("index"))
     });
-
-
-    //更换皮肤
+    // 切换主题
     function skins(){
         var skin = window.sessionStorage.getItem("skin");
         if(skin){  //如果更换过皮肤
@@ -135,8 +134,12 @@ layui.use(['form','element','layer','jquery'],function () {
                 $(".child-iframe").contents().find('body').removeAttr("class").addClass("page_body "+window.sessionStorage.getItem("skin")+"");
                 skins();
             }
-        })
-    })
-
+        });
+    });
+    // 退出
+    $("#signout-btn").on('click', function(){
+        window.location.href = 'index.html';
+    });
+    exports('main', {});
 });
 

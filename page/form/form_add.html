@@ -18,7 +18,7 @@
 <body>
 
 
-<form class="layui-form layui-form-edit">
+<div class="layui-form layui-form-edit">
     <table class="layui-table" border="1" cellpadding="10" cellspacing="0">
         <colgroup>
             <col width="100">
@@ -191,7 +191,7 @@
         <button type="submit" class="layui-btn" lay-submit="">提交</button>
         <button type="reset" class="layui-btn layui-btn-primary">重置</button>
     </div>
-</form>
+</>
 
 
 <!--弹出树-->
@@ -254,8 +254,6 @@
                 type: 1,
                 title: '弹出树',
                 skin: 'layui-layer-demo', //样式类名
-                closeBtn: 0, //不显示关闭按钮
-                anim: 2,
                 area: ['300px', '500px'],
                 shadeClose: true, //开启遮罩关闭
                 content: $('.layui-tree-wrapper'),

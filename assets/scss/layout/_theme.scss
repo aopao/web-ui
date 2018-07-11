@@ -1,7 +1,7 @@
 /***** 主题颜色 *****/
 $theme-list: (green, #038d55, #54a785, #fff),
         (red, #c9393a, #d65b5e, #fff),
-        (blue, #1E9FFF, #0979c2, #fff);
+        (blue, #1E9FFF, #087fc3, #fff);
 @each $theme-name, $theme-base, $theme-header-bg, $theme-side-bg in $theme-list {
   .#{$theme-name} {
     .layui-list a:hover {
