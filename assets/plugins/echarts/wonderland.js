@@ -49,7 +49,7 @@
                     "width": "3"
                 }
             },
-            "symbolSize": "8",
+            "symbolSize": "3",
             "symbol": "emptyCircle",
             "smooth": false
         },

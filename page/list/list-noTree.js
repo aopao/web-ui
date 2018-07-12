@@ -9,13 +9,30 @@ layui.use(['common','laypage','laydate','element','form','layer'], function(){
     $('.layui-form-panel').on('click', '.form-btn-query-more', function () {
         $('.layer-query-more').slideToggle();
     });
-    //入党时间开始范围
-    laydate.render({
-        elem: '#start' //指定元素
+    // 入党时间开始范围
+    var insStart = laydate.render({
+        elem: '#start'
+        // ,min: 0
+        ,done: function(value, date){
+            //更新结束日期的最小日期
+            insEnd.config.min = lay.extend({}, date, {
+                month: date.month - 1
+            });
+
+            //自动弹出结束日期的选择器
+            insEnd.config.elem[0].focus();
+        }
     });
-    //入党时间结束范围
-    laydate.render({
-        elem: '#end' //指定元素
+    // 入党时间结束范围
+    var insEnd = laydate.render({
+        elem: '#end'
+        ,min: 0
+        ,done: function(value, date){
+            //更新开始日期的最大日期
+            insStart.config.max = lay.extend({}, date, {
+                month: date.month - 1
+            });
+        }
     });
     // 重置按钮
     $('.layui-form').on('click', '.form-btn-reset', function () {
